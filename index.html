@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Papan Pasar Tenaga Kerja IT — Indonesia 2020–2026</title>
+<style>
+:root{
+  --bg:#0B0F17; --pnl:#121927; --pnl2:#0E1523; --pnl3:#161F30;
+  --ln:#1D2940; --ln2:#274060;
+  --tx:#E8EDF6; --mut:#96A2B6; --dim:#5F6D82;
+  --up:#3FD9A4; --dn:#FF6B6B; --am:#FFC24B; --sky:#79B8FF; --red:#E24C4B;
+  --mono:"SF Mono",ui-monospace,"Cascadia Code","JetBrains Mono",Menlo,Consolas,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--tx);font-family:var(--sans);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.board{max-width:1680px;margin:0 auto;padding:0 26px 60px}
+a{color:var(--sky);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--sky);outline-offset:2px;border-radius:4px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ===== topbar ===== */
+.top{position:sticky;top:0;z-index:50;background:rgba(11,15,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--ln);margin:0 -26px;padding:0 26px}
+.top-in{max-width:1680px;margin:0 auto;display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:10px 0}
+.brand{font-family:var(--mono);font-size:13px;letter-spacing:.14em;font-weight:700;color:var(--tx);display:flex;gap:10px;align-items:center;white-space:nowrap}
+.brand .dotlive{width:8px;height:8px;border-radius:50%;background:var(--up);box-shadow:0 0 8px var(--up)}
+.brand em{font-style:normal;color:var(--dim)}
+.topnav{display:flex;gap:2px;flex-wrap:wrap;font-family:var(--mono);font-size:11px}
+.topnav a{color:var(--mut);padding:4px 9px;border-radius:99px;border:1px solid transparent}
+.topnav a:hover{color:var(--tx);border-color:var(--ln);text-decoration:none;background:var(--pnl)}
+
+/* ===== hero ===== */
+.hero{display:grid;grid-template-columns:7fr 5fr;gap:22px;padding:34px 0 26px;border-bottom:1px solid var(--ln)}
+.claimbox{position:relative;padding:26px 28px;background:linear-gradient(145deg,rgba(226,76,75,.09),rgba(226,76,75,.03) 60%);border:1px solid rgba(226,76,75,.35);border-radius:14px;overflow:hidden}
+.claim-kicker{font-family:var(--mono);font-size:11px;letter-spacing:.22em;color:var(--red);margin-bottom:14px}
+.claim-figure{font-family:var(--mono);font-weight:800;font-size:clamp(38px,8.5vw,112px);line-height:.95;color:var(--tx);position:relative;display:inline-block;letter-spacing:-.03em}
+.claim-figure::after{content:"";position:absolute;left:-3%;right:-3%;top:52%;height:5px;background:var(--red);transform:rotate(-2.2deg);border-radius:3px;box-shadow:0 2px 14px rgba(226,76,75,.6)}
+.claim-unit{font-family:var(--mono);color:var(--mut);font-size:clamp(13px,1.2vw,16px);display:block;margin-top:6px;letter-spacing:.06em}
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch;margin-top:22px}
+.chain-node{font-family:var(--mono);font-size:10.5px;line-height:1.45;padding:8px 11px;background:rgba(11,15,23,.55);border:1px solid var(--ln);border-radius:8px;color:var(--mut);flex:1 1 200px;max-width:300px}
+.chain-node b{color:var(--tx);display:block;font-size:11px}
+.chain-node .bad{color:var(--red)}
+.chain-arrow{align-self:center;color:var(--dim);font-family:var(--mono);font-size:14px;flex:0 0 auto}
+
+.realbox{display:flex;flex-direction:column;gap:14px}
+.realbox-main{padding:24px 26px;background:var(--pnl);border:1px solid var(--ln2);border-radius:14px}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.22em;color:var(--dim);text-transform:uppercase}
+.real-figure{font-family:var(--mono);font-weight:800;font-size:clamp(46px,5vw,72px);line-height:1;color:var(--tx)}
+.real-figure b{color:var(--up);font-weight:800}
+.real-range{font-family:var(--mono);font-size:14px;color:var(--mut);margin-top:6px}
+.anchors{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:16px}
+.anchor{background:var(--pnl2);border:1px solid var(--ln);border-radius:8px;padding:8px 10px;font-size:12px;color:var(--mut)}
+.anchor b{font-family:var(--mono);color:var(--tx);font-size:13px;display:block}
+.verdict{font-family:var(--serif);font-style:italic;font-size:16.5px;color:var(--tx);line-height:1.6;border-left:3px solid var(--am);padding:4px 0 4px 14px}
+.verdict small{display:block;font-family:var(--sans);font-style:normal;color:var(--dim);margin-top:8px;font-size:12px;letter-spacing:.02em}
+
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;padding:20px 0 8px}
+.kpi{background:var(--pnl2);border:1px solid var(--ln);border-radius:12px;padding:14px 16px}
+.kpi .v{font-family:var(--mono);font-weight:700;font-size:24px;letter-spacing:-.01em}
+.kpi .k{font-size:12px;color:var(--mut);margin-top:3px;line-height:1.4}
+.kpi .s{font-size:10.5px;color:var(--dim);margin-top:7px;font-family:var(--mono)}
+
+/* ===== sections ===== */
+.sec{padding:30px 0 10px}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:6px;flex-wrap:wrap}
+.sec-no{font-family:var(--mono);font-size:12px;color:var(--red);letter-spacing:.2em}
+.sec-title{font-family:var(--mono);font-size:21px;font-weight:700;letter-spacing:.02em}
+.sec-sub{color:var(--mut);font-size:13.5px;max-width:920px;margin-bottom:18px}
+.sec-sub b{color:var(--tx)}
+.row{display:grid;gap:16px}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g5-2{grid-template-columns:7fr 5fr}.g2-5{grid-template-columns:5fr 7fr}
+.panel{background:var(--pnl);border:1px solid var(--ln);border-radius:12px;padding:18px 18px 16px;min-width:0}
+.panel h3{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;color:var(--mut);font-weight:600;margin-bottom:12px;text-transform:uppercase}
+.panel h3 .u{color:var(--dn)}
+.srcnote{margin-top:12px;padding-top:10px;border-top:1px dashed var(--ln);font-size:11px;color:var(--dim);line-height:1.6;font-family:var(--mono)}
+
+/* conf meter & chips */
+.cm{display:inline-flex;gap:2px;vertical-align:-1px;margin-right:6px}
+.cm i{width:4px;height:9px;border-radius:1px;background:var(--ln2);display:block}
+.cm i.on{background:var(--up)}
+.cm.w i.on{background:var(--dn)}
+.cm.a i.on{background:var(--am)}
+.tag{display:inline-block;font-family:var(--mono);font-size:10px;padding:2px 7px;border-radius:99px;border:1px solid var(--ln2);color:var(--mut);margin-right:5px;white-space:nowrap}
+.tag.warn{color:var(--am);border-color:rgba(255,194,75,.4)}
+.tag.bad{color:var(--dn);border-color:rgba(255,107,107,.4)}
+.tag.good{color:var(--up);border-color:rgba(63,217,164,.4)}
+.tag.info{color:var(--sky);border-color:rgba(121,184,255,.4)}
+
+/* bars */
+.bars{display:flex;flex-direction:column;gap:7px}
+.brow{display:grid;grid-template-columns:172px 1fr 64px;gap:10px;align-items:center;font-size:13px}
+.brow .lb{color:var(--tx);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:default}
+.brow .lb small{color:var(--dim);display:block;font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brow .tr{height:16px;background:var(--pnl2);border-radius:3px;position:relative;overflow:hidden}
+.brow .fl{position:absolute;inset:0 auto 0 0;border-radius:3px;background:linear-gradient(90deg,#2E5C8F,var(--sky));}
+.brow.dn .fl{background:linear-gradient(90deg,#7A3138,var(--dn))}
+.brow.up .fl{background:linear-gradient(90deg,#1E5F4B,var(--up))}
+.brow.am .fl{background:linear-gradient(90deg,#78571C,var(--am))}
+.brow .vv{font-family:var(--mono);font-size:12px;color:var(--mut);text-align:right;white-space:nowrap}
+.brow:hover .lb{color:#fff}
+
+/* skill chips */
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.skill{background:var(--pnl2);border:1px solid var(--ln);border-radius:8px;padding:7px 11px;font-size:12.5px;color:var(--mut)}
+.skill b{font-family:var(--mono);color:var(--tx);margin-right:6px;font-size:13px}
+
+/* percentile bands */
+.tabs{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+.tab{font-family:var(--mono);font-size:11.5px;padding:5px 12px;border-radius:99px;border:1px solid var(--ln2);color:var(--mut);background:var(--pnl2);cursor:pointer}
+.tab[aria-selected="true"]{color:var(--bg);background:var(--sky);border-color:var(--sky);font-weight:700}
+.bb{display:flex;flex-direction:column;gap:9px}
+.bb-row{display:grid;grid-template-columns:74px 1fr 118px;gap:10px;align-items:center;font-size:12.5px}
+.bb-row .lv{color:var(--mut);font-family:var(--mono);text-align:right;font-size:11.5px}
+.bb-track{height:22px;background:var(--pnl2);border-radius:5px;position:relative}
+.bb-band{position:absolute;top:4px;bottom:4px;background:linear-gradient(90deg,rgba(121,184,255,.28),rgba(121,184,255,.55));border-radius:4px}
+.bb-mid{position:absolute;top:2px;bottom:2px;width:3px;background:var(--sky);border-radius:2px}
+.bb-row .yy{text-align:right;font-family:var(--mono);font-size:11px}
+.pct-neg{color:var(--dn)}.pct-pos{color:var(--up)}
+
+/* ladder (MP averages) */
+.ladderrows{display:grid;grid-template-columns:repeat(2,1fr);gap:0 26px}
+.lrow{display:grid;grid-template-columns:160px 1fr 56px;gap:8px;align-items:center;font-size:12.5px;padding:4px 2px}
+.lrow .rl{color:var(--mut);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lrow .tr{height:10px;background:var(--pnl2);border-radius:3px;position:relative}
+.lrow .fl{position:absolute;inset:0 auto 0 0;background:var(--am);border-radius:3px;opacity:.85}
+.lrow .vv{font-family:var(--mono);color:var(--mut);font-size:11.5px}
+
+/* stat wall */
+.stats{display:grid;gap:10px}
+.stat{background:var(--pnl2);border:1px solid var(--ln);border-radius:10px;padding:12px 14px}
+.stat .sv{font-family:var(--mono);font-weight:700;font-size:22px}
+.stat .sk{font-size:12px;color:var(--mut);margin-top:2px;line-height:1.45}
+.stat .ss{font-size:10.5px;color:var(--dim);margin-top:6px;font-family:var(--mono)}
+.pos .sv{color:var(--up)}.neg .sv{color:var(--dn)}.neu .sv{color:var(--sky)}.amb .sv{color:var(--am)}
+
+/* timeline */
+.tl{position:relative;margin:8px 0 4px}
+.tl-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:0}
+.tl-col{border-left:1px solid var(--ln);padding:2px 8px 12px;min-height:150px;position:relative}
+.tl-col:first-child{border-left:none}
+.tl-yr{font-family:var(--mono);font-size:11px;color:var(--dim);letter-spacing:.1em;margin-bottom:8px}
+.tl-ev{font-size:11.5px;color:var(--mut);margin-bottom:6px;line-height:1.45}
+.tl-ev b{color:var(--tx);font-family:var(--mono)}
+.tl-ev.hot{color:var(--dn)}.tl-ev.cold{color:var(--sky)}
+.tl-ev.grow{color:var(--up)}
+
+/* svg charts */
+.chart-wrap svg{display:block;width:100%;height:auto}
+.chart-wrap text{font-family:var(--mono)}
+
+/* funnel */
+.funl{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.fstep{background:var(--pnl2);border:1px solid var(--ln);border-radius:10px;padding:12px 13px;position:relative}
+.fstep .fv{font-family:var(--mono);font-weight:700;font-size:20px}
+.fstep .fk{font-size:11.5px;color:var(--mut);margin:2px 0 8px;line-height:1.4}
+.fbar{height:7px;background:var(--pnl);border-radius:3px;overflow:hidden}
+.fbar i{display:block;height:100%;background:linear-gradient(90deg,#2E5C8F,var(--sky))}
+.fstep .fs{font-size:10px;color:var(--dim);margin-top:8px;font-family:var(--mono)}
+
+/* split ledger */
+.ledger{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.led-col{border-radius:10px;padding:14px;border:1px solid}
+.led-col.formal{background:rgba(63,217,164,.05);border-color:rgba(63,217,164,.3)}
+.led-col.informal{background:rgba(255,107,107,.05);border-color:rgba(255,107,107,.3)}
+.led-col h4{font-family:var(--mono);font-size:12px;letter-spacing:.12em;margin-bottom:10px}
+.led-col.formal h4{color:var(--up)}.led-col.informal h4{color:var(--dn)}
+.led-item{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px dashed var(--ln);font-size:12.5px}
+.led-item:last-child{border-bottom:none}
+.led-item .li-k{color:var(--mut);line-height:1.45}
+.led-item .li-v{font-family:var(--mono);color:var(--tx);white-space:nowrap;font-weight:700}
+
+/* tables */
+table.vt{width:100%;border-collapse:collapse;font-size:12.5px}
+.vt th{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:var(--dim);text-align:left;padding:6px 8px;border-bottom:1px solid var(--ln)}
+.vt td{padding:7px 8px;border-bottom:1px solid rgba(29,41,64,.55);color:var(--mut);vertical-align:top}
+.vt td b{color:var(--tx);font-family:var(--mono);font-weight:600}
+.vt tr:hover td{background:rgba(121,184,255,.04)}
+.vv-ok{color:var(--up)}.vv-warn{color:var(--am)}.vv-bad{color:var(--dn)}
+
+/* tooltip */
+.tip{position:fixed;z-index:99;background:#060A12;border:1px solid var(--ln2);border-radius:8px;padding:9px 11px;font-size:12px;color:var(--tx);max-width:290px;line-height:1.5;pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .12s,transform .12s;box-shadow:0 10px 28px rgba(0,0,0,.55)}
+.tip.show{opacity:1;transform:translateY(0)}
+.tip b{color:var(--sky)}
+
+/* rejected gallery */
+.rej{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.rej-item{background:var(--pnl2);border:1px solid rgba(255,107,107,.25);border-radius:10px;padding:13px 14px}
+.rej-item .rk{font-size:12.5px;color:var(--tx);margin-bottom:5px;line-height:1.5}
+.rej-item .rw{font-size:11.5px;color:var(--mut)}
+.rej-item .rw b{color:var(--dn);font-family:var(--mono)}
+
+footer{margin-top:44px;padding:22px 0 8px;border-top:1px solid var(--ln);color:var(--dim);font-size:12px;line-height:1.8}
+footer b{color:var(--mut)}
+
+/* responsive */
+@media(max-width:1250px){.kpis{grid-template-columns:repeat(3,1fr)}.g5-2,.g2-5{grid-template-columns:1fr}.rej{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .g2,.g3,.ledger,.ladderrows{grid-template-columns:1fr}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .funl{grid-template-columns:repeat(2,1fr)}
+  .rej{grid-template-columns:1fr}
+  .board{padding:0 16px 40px}.top{margin:0 -16px;padding:0 16px}
+  .brow{grid-template-columns:110px 1fr 58px;font-size:12px}
+  .chain{flex-direction:column}
+  .chain-node{max-width:none}
+  .chain-arrow{transform:rotate(90deg);margin:-3px 0}
+}
+@media(max-width:520px){
+  .brand em{display:none}
+  .topnav{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+  .topnav::-webkit-scrollbar{display:none}
+}
+</style>
+</head>
+<body>
+<div class="board" id="top">
+
+<div class="top"><div class="top-in">
+  <div class="brand"><span class="dotlive"></span>PAPAN PASAR IT <em>· INDONESIA 2020–2026</em></div>
+  <nav class="topnav" aria-label="Navigasi bagian">
+    <a href="#demand">demand</a><a href="#gaji">gaji</a><a href="#siklus">siklus</a><a href="#pasokan">pasokan</a><a href="#komposisi">komposisi</a><a href="#formal">formal/informal</a><a href="#regional">regional</a><a href="#emerging">emerging</a><a href="#kredibilitas">kredibilitas</a>
+  </nav>
+</div></div>
+
+<!-- ============ HERO: KLAIM vs REALITA ============ -->
+<header class="hero">
+  <div class="claimbox">
+    <div class="claim-kicker">KLAIM PALING TERKENAL — DIBONGKAR</div>
+    <span class="claim-figure">9.000.000</span>
+    <span class="claim-unit">“Indonesia butuh 9 juta talenta digital per 2030 (~600 ribu/tahun)”</span>
+    <div class="chain" id="chain" aria-label="Rantai asal klaim 9 juta"></div>
+    <div class="srcnote" style="margin-top:14px">Penelusuran asal-usul (file 05 + spot-check): tidak ada model demand pasar nyata di ujung rantai — restimasi retorika. Komdigi sendiri sudah menggeser angka dua kali (12 jt pada IMDI 2024; 456 rb/tahun versi BPSDM 2025).</div>
+  </div>
+  <div class="realbox">
+    <div class="realbox-main">
+      <div class="kicker">Realita terverifikasi — IT profesional yang bekerja</div>
+      <div class="real-figure">≈ <b>950 rb</b></div>
+      <div class="real-range">rentang 700 rb – 1,2 jt · inti software engineer murni 300–600 rb (≈450 rb) · lapisan digital luas 2,5–4 jt</div>
+      <div class="anchors">
+        <div class="anchor">Sakernas kategori J<b>1,25 jt</b><span class="cm" data-tip="BPS kategori 'Informasi & Komunikasi' Feb 2025 — termasuk telco/broadcast (30–50%); verdict: pakai-dengan-catatan" tabindex="0"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></div>
+        <div class="anchor">KBLI 62 (pemrograman dsb)<b>580–870 rb</b><span class="cm" data-tip="Sakernas 5-digit, supervisor-coded — verdict: lemah, hanya tren nasional" tabindex="0"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></div>
+        <div class="anchor">Klaim Kominfo 2023<b>1,09 jt</b><span class="cm w" data-tip="Pernyataan pejabat; metode tidak dipublikasikan" tabindex="0"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></div>
+        <div class="anchor">ADBI (basis Sakernas 2018)<b>894 rb</b><span class="cm" data-tip="Kajian ADB Institute WP 1258" tabindex="0"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></div>
+      </div>
+    </div>
+    <p class="verdict">“Tidak ada satu pun angka ‘kebutuhan talenta’ yang merupakan estimasi demand pasar nyata. Kondisi riil yang didukung data adalah <b style="font-style:normal">mismatch senioritas</b>: fresh graduate oversupply, profesional senior langka.” <small>— verdik sintesis files 05·12·15, cross-check audit file 18</small></p>
+    <div class="kpis" id="kpis"></div>
+  </div>
+</header>
+
+<!-- ============ 01 DEMAND ============ -->
+<section class="sec" id="demand">
+  <div class="sec-head"><span class="sec-no">01</span><span class="sec-title">DEMAND PER ROLE</span>
+  <span class="tag warn">hitungan keyword — jangan dijumlah antar-baris (overlap)</span></div>
+  <p class="sec-sub">Snapshot lowongan aktif di LinkedIn (guest search, lokasi=Indonesia, <b>9 Nov 2026</b>). Ini <b>proxy demand</b> — bukan total pasar; kedalaman pasar unik nasional jauh lebih kecil (GlobalData Jan 2024: 2.717 lowongan tech aktif terlacak). Data role di bawah mewakili frekuensi label, berguna untuk <b>perbandingan relatif antar role</b>.</p>
+  <div class="row g5-2">
+    <div class="panel">
+      <h3>Lowongan aktif per label role · LinkedIn, 9 Nov 2026</h3>
+      <div class="bars" id="roles"></div>
+      <div class="srcnote">Sumber: LinkedIn guest job search (dieksekusi 9 Nov 2026, bisa direproduksi). Confidence 3 setelah re-audit (guest totals kadang ter-blok) · file 02 + 18.</div>
+    </div>
+    <div class="panel">
+      <h3>Permintaan bahasa backend</h3>
+      <div class="bars" id="langs"></div>
+      <div style="height:14px"></div>
+      <h3>Skill yang paling sering diminta</h3>
+      <div class="chips">
+        <span class="skill"><b>MySQL</b>17% postingan tech</span><span class="skill"><b>JavaScript</b>14%</span><span class="skill"><b>Python</b>13%</span><span class="skill"><b>PostgreSQL</b>13%</span><span class="skill"><b>Node.js</b>11%</span><span class="skill"><b>React</b>10%</span><span class="skill"><b>Java</b>10%</span><span class="skill"><b>SQL</b>8%</span>
+      </div>
+      <div style="height:14px"></div>
+      <h3>Role paling cepat tumbuh <span class="u">(judul, 2022→2024)</span></h3>
+      <div class="stats">
+        <div class="stat pos"><div class="sv">#2</div><div class="sk">Cyber Security Engineer — Jobs on the Rise ID 2025</div><div class="ss">LinkedIn/WEF · pertumbuhan judul Jan'22–Jul'24</div></div>
+        <div class="stat pos"><div class="sv">#3</div><div class="sk">SOC Analyst — pada 15 besar</div><div class="ss">LinkedIn/WEF · JoR 2025</div></div>
+        <div class="stat amb"><div class="sv">≈0</div><div class="sk">AI Engineer absen dari 15 besar Indonesia — kebalikan 15/21 negara lain. Hanya #1 untuk fresh grad.</div><div class="ss">JoR 2025 + LinkedIn Grad Guide</div></div>
+      </div>
+      <div class="srcnote">Pertumbuhan relatif AI hiring Indonesia +31,7% adalah yang tercepat di dunia (AI Index 2026) — tapi dari basis kecil: 96 rb jiwa AI talent = 0,06% angkatan kerja.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 GAJI ============ -->
+<section class="sec" id="gaji">
+  <div class="sec-head"><span class="sec-no">02</span><span class="sec-title">GAJI — DUA KELUARGA DATA, JANGAN DICAMPUR</span></div>
+  <p class="sec-sub"><b>Advertised</b> (Glints/NodeFlair): median lowongan, condong junior & UKM — lb (libra) bawah pasar. <b>Placement</b> (Michael Page/Robert Walters): rata-rata kandidat yang DITEMPATKAN, condong senior & MNC — pb atas pasar. Keduanya benar untuk fenomena berbeda; jarak antar keduanya = ruang negosiasi senior.</p>
+  <div class="row g2">
+    <div class="panel">
+      <h3>Percentile gaji dasar — payslip-verified 2025 · pilih role</h3>
+      <div class="tabs" id="sal-tabs" role="tablist"></div>
+      <div class="bb" id="sal-bands"></div>
+      <div class="srcnote">NodeFlair Asia Tech Salary Report 2025 (gaji riil terverifikasi payslip; P10–P90, Rp jt/bln). ⚠ <200 titik data pada banyak sel ID — baca sebagai peta, bukan kalibrator. Semua role senior terpangkas pada 2025.</div>
+    </div>
+    <div class="panel">
+      <h3>Tangga gaji placement (Michael Page 2025, Rp jt/bln, rata-rata)</h3>
+      <div class="ladderrows" id="ladder"></div>
+      <div class="srcnote">~5.000 benchmark point placement. Robert Walters 2026 (per tahun): SW developer Rp 440–770 jt · data scientist 450–850 jt · head cyber 1,3–1,6 M · CTO 1,9–3,2 M. Levels.fyi Jakarta (self-report, N=244): median total comp Rp 21,1 jt/bln.</div>
+    </div>
+  </div>
+  <div class="row g3" style="margin-top:16px">
+    <div class="panel">
+      <h3>Tekno-winter terlihat di payslip</h3>
+      <div class="stats">
+        <div class="stat neg"><div class="sv">−29%</div><div class="sk">gaji DevOps senior YoY 2025 (NodeFlair)</div><div class="ss">SE senior −13% · lead SE −23,6%</div></div>
+        <div class="stat neg"><div class="sv">5,13 → 4,98 jt</div><div class="sk">rata-rata upah Info-Comm (Sakernas, pegawai) Agu 2023 → Agu 2024</div><div class="ss">BPS pakai-dengan-catatan — cross-check kredibilitas</div></div>
+        <div class="stat pos"><div class="sv">+20,8% vs +11,1%</div><div class="sk">gaji advertised senior vs entry-level, H1'24→H1'26 (Glints)</div><div class="ss">rasio senior:entry melebar 2,7× → 2,9×</div></div>
+        <div class="stat pos"><div class="sv">5,9%</div><div class="sk">budget kenaikan gaji tech 2026 — tertinggi di SEA</div><div class="ss">Aon Salary Increase Survey Okt 2025 (conf 4)</div></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Tipe pemberi kerja, gaji devops senior (kasus 2025)</h3>
+      <div class="bars">
+        <div class="brow up"><span class="lb">Bank digital (lead DevOps) <small>48 jt/bln — kasus</small></span><span class="tr"><span class="fl" data-w="100"></span></span><span class="vv">48 jt</span></div>
+        <div class="brow"><span class="lb">GoTo (senior) <small>36 jt/bln — kasus</small></span><span class="tr"><span class="fl" data-w="75"></span></span><span class="vv">36 jt</span></div>
+        <div class="brow"><span class="lb">Traveloka (senior) <small>32 jt/bln — kasus</small></span><span class="tr"><span class="fl" data-w="67"></span></span><span class="vv">32 jt</span></div>
+        <div class="brow"><span class="lb">Shopee (Sr QA) <small>28 jt/bln — kasus</small></span><span class="tr"><span class="fl" data-w="58"></span></span><span class="vv">28 jt</span></div>
+        <div class="brow am"><span class="lb">Startup mid-level <small>19–23 jt/bln — kasus</small></span><span class="tr"><span class="fl" data-w="45"></span></span><span class="vv">19–23 jt</span></div>
+      </div>
+      <div class="srcnote">Kasus public case-per-case (file 06) — arah, bukan survei. Grab unicorn tercatat Rp 672 jt/thn total comp (top pasar).</div>
+    </div>
+    <div class="panel">
+      <h3>Remote untuk perusahaan asing = 2–3× lokal</h3>
+      <div class="stats">
+        <div class="stat neu"><div class="sv">2–3×</div><div class="sk">premium vs median senior lokal — kasus 55–75 jt/bln</div><div class="ss">file 06 · case-grade</div></div>
+        <div class="stat"><div class="sv">$50 rb/thn</div><div class="sk">ekspektasi rata-rata dev Indonesia di Arc.dev (vetted; self-reported expectations, bias ke atas)</div><div class="ss">arc.dev · conf 3</div></div>
+        <div class="stat amb"><div class="sv">86%</div><div class="sk">startup SEA (termasuk Indonesia) menawarkan ESOP; bonus 2–4 bulan di big tech; TC ≈ 1,3× base</div><div class="ss">Glints × Monk's Hill (10 rb+ titik) · conf 4</div></div>
+        <div class="stat amb"><div class="sv">$18–19/jam</div><div class="sk">tarif freelancer Indonesia versi Payoneer — snapshot 2018; edisi terbaru tidak memuat baris Indonesia lagi</div><div class="ss">Payoneer 2018 PDF · conf 3 · stale-jujur</div></div>
+      </div>
+      <div class="srcnote">File 06+14b. Angka take-up Deel & KITAS E33G: resmi tidak dipublikasikan — klaim yang beredar tanpa sumber. Jangan kutip.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 SIKLUS PASAR ============ -->
+<section class="sec" id="siklus">
+  <div class="sec-head"><span class="sec-no">03</span><span class="sec-title">SIKLUS PASAR 2020 → 2026</span>
+  <span class="tag good">boom → bust → dua-tier</span></div>
+  <p class="sec-sub">Froth 2020–22 (intake TI/SI ~2×, ekspansi big tech) → puncak PHK Q4 2022 → gelombang kecil 2023–24 → pangkas gaji senior 2025 → stabilisasi selektif 2026. Pasar pecah jadi dua tingkat: <b>senior ketat</b> (perang counter-offer, budget gaji tertinggi SEA) vs <b>junior oversupply</b> (400+ pelamar per lowongan publik).</p>
+  <div class="panel">
+    <h3>Garis waktu</h3>
+    <div class="tl"><div class="tl-grid">
+      <div class="tl-col"><div class="tl-yr">2020–21</div><div class="tl-ev grow">Boom pandemi digital. Intake TI+SI <27 rb → akan ~94 rb (2025)</div><div class="tl-ev grow">VC $4,3 M/213 ronde (2021, 11 unicorn) · 41% perusahaan menambah headcount (MP 2021)</div></div>
+      <div class="tl-col"><div class="tl-yr">2022</div><div class="tl-ev hot"><b>Q4 puncak layoffs</b> — GoTo 1.300 (−12%), Ruangguru 200, Sirclo 160, Shopee 186... ~25 event, ~3.450 korban</div><div class="tl-ev grow">Uang VC terakhir masuk; salary senior masih naik</div></div>
+      <div class="tl-col"><div class="tl-yr">2023</div><div class="tl-ev hot">~75 event — Moladin 400, OLX 300, EdenFarm 378, “silent layoffs” lazim</div><div class="tl-ev">PHK claimant JKP 64.885 · VC turun ke $1,3 M · 57% pekerja aktif cari peluang (MP “Invisible Riv.”)</div></div>
+      <div class="tl-col"><div class="tl-yr">2024</div><div class="tl-ev hot">Engineering kena langsung: Tokopedia 450 (pasca-akuisisi TikTok), Accelbyte, Xendit</div><div class="tl-ev">JKP 77.965 · VC $323 jt (−75%, zero unicorn baru) · 38% perusahaan sulit cari talenta (MP N=972)</div></div>
+      <div class="tl-col"><div class="tl-yr">2025</div><div class="tl-ev hot">Tokopedia ~420 · TikTok-Tokopedia turun ke ~10% staf era-akuisisi</div><div class="tl-ev cold">GoTo stabil 3.553 karyawan tetap · JKP 88.519 (semua sektor)</div></div>
+      <div class="tl-col"><div class="tl-yr">2026</div><div class="tl-ev cold">Stabilisasi: budget gaji tech +5,9% (tertinggi SEA), 42% perusahaan menambah hiring</div><div class="tl-ev">JKP Jan–Okt 72.336 · premium AI mulai muncul di placement · VC menuju $0,5–0,6 M/yr</div></div>
+      <div class="tl-col"><div class="tl-yr">Berlapis</div><div class="tl-ev">Sejak 2020: <b>149 event tech layoffs</b> (107 perusahaan), floor 8.722 korban; estimasi sebenarnya 10–15 rb (unreported lazim)</div></div>
+    </div></div>
+    <div class="srcnote">File 12 (tracker ecommurz + Kemnaker JKP official series; JKP = claimant lower-bound formal-sector) · file 18 re-verified. Angka JKP 2023 dikoreksi audit: 64.885.</div>
+  </div>
+  <div class="row g3" style="margin-top:16px">
+    <div class="panel">
+      <h3>Penggerak #1 — VC funding startup (def. ketat)</h3>
+      <div class="bars" id="vc-bars"></div>
+      <div class="srcnote">Tracxn + Indonesia.vc via file 19 · ⚠ 2022 punya konflik scope sumber ($3,24 M vs $4,2 M — bar pakai batas konservatif); 2025 = YTD-Sept dengan AI-led revival Q3 (Amazon-Astro $51,9 jt).</div>
+    </div>
+    <div class="panel">
+      <h3>Penggerak #2 — intensi hiring per tahun (arsip Michael Page)</h3>
+      <div class="stats">
+        <div class="stat pos"><div class="sv">41% → 57%</div><div class="sk">2021: 41% perusahaan menambah headcount; 2023: “Invisible Revolution” — 57% pekerja aktif berburu peluang (meski PHK)</div><div class="ss">MP Talent Trends edisi 2021/2023 · conf 3</div></div>
+        <div class="stat neg"><div class="sv">38%</div><div class="sk">2024: perusahaan sulit cari talenta — gap ekspektasi-gaji melebar</div><div class="ss">MP 2024 · N=972 Indonesia · conf 3</div></div>
+        <div class="stat pos"><div class="sv">42%</div><div class="sk">H2-2025: berencana menambah hiring aktif — pemulihan selektif</div><div class="ss">JobStreet by SEEK HCB · conf 3</div></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Overwinter survivors (Glints×MHV, N=1.838)</h3>
+      <div class="stats">
+        <div class="stat pos"><div class="sv">78%</div><div class="sk">startup SEA tetap hiring sepanjang musim dingin 2023–24 — tapi membekukan pay: gaji tech −6% YoY, engineering terparah</div><div class="ss">Glints×Monk's Hill 2024 · conf 4</div></div>
+        <div class="stat neu"><div class="sv">15%</div><div class="sk">porsi IT dari total rekrutmen 2023 (JobStreet N=1.180) — demand IT riil lebih kecil dari persepsi hype</div><div class="ss">conf 3</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="row g3" style="margin-top:16px">
+    <div class="panel">
+      <h3>Ketat di atas, banjir di bawah</h3>
+      <div class="stats">
+        <div class="stat neg"><div class="sv">200 → 400+</div><div class="sk">pelamar per lowongan publik (JobStreet 2023 → 2026, semua industri) — sinyal paling keras</div><div class="ss">conf 3 · konteks industri umum</div></div>
+        <div class="stat neg"><div class="sv">300k : 50k</div><div class="sk">pencari magang vs slot MagangHub</div><div class="ss">conf 3</div></div>
+        <div class="stat amb"><div class="sv">15%</div><div class="sk">attrition sukarela Emerging Tech (sector-tertinggi) — era froth 2022</div><div class="ss">Mercer TRS · conf 4 · data era-froth</div></div>
+        <div class="stat pos"><div class="sv">42%</div><div class="sk">perusahaan menambah hiring aktif H2-2025</div><div class="ss">JobStreet by SEEK HCB · conf 3</div></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>PHK claimant (JKP, semua sektor)</h3>
+      <div class="chart-wrap" id="jkp-chart" aria-label="Grafik garis penerima JKP 2022 sampai 2026"></div>
+      <div class="srcnote">Kemnaker Satudata · conf 4 · lower-bound formal-sector, tidak ada potongan sektor IT.</div>
+    </div>
+    <div class="panel">
+      <h3>Layoff GoTo — kasus skala besar</h3>
+      <div class="chart-wrap" id="goto-chart" aria-label="Grafik jumlah karyawan GoTo 2022 sampai 2026"></div>
+      <div class="srcnote">~10,8–11 rb (pra-Nov'22) → 3.553 (31 Des 2025, FY2025 FS; catatan karyawan tidak-diaudit di dalam FS audited — label jujur diterapkan) → ~3.375 (est. Revelio mid-2026). Collapse ~70% lalu stabil.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 PASOKAN ============ -->
+<section class="sec" id="pasokan">
+  <div class="sec-head"><span class="sec-no">04</span><span class="sec-title">PIPELINE PASOKAN — LUAS DI BAWAH, MENYEMPIT KE ATAS</span>
+  <span class="tag info">semua sumber non-BPS: PDDikti · Dapodik · data.komdigi</span></div>
+  <div class="panel">
+    <h3>Corong talenta per tahun (angka aliran, bukan stok)</h3>
+    <div class="funl">
+      <div class="fstep"><div class="fv">841.834</div><div class="fk">siswa aktif SMK jurusan TIK (TKJ/TJKT 681.530 + RPL/PPLG 160.304) = 17,3% seluruh SMK — aliran lulusan ~270 rb/thn</div><div class="fbar"><i data-w="100"></i></div><div class="fs">Dapodik live, Nov 2026 · conf 5</div></div>
+      <div class="fstep"><div class="fv">94.370</div><div class="fk">mahasiswa baru TI + SI (46.035 + 48.335) — dua prodi komputasi pertama yang dua-duanya masuk 10 besar nasional</div><div class="fbar"><i data-w="72"></i></div><div class="fs">Statistik PT 2025 · conf 5 · intake ~2× vs 2021</div></div>
+      <div class="fstep"><div class="fv">70–85 rb</div><div class="fk">lulusan komputasi per tahun (TI 35.919 + SI 25.866 terverifikasi 2023/24; TI 31.837 + SI 26.932 pada 2024/25; 4 prodi lain ~10–20 rb est.)</div><div class="fbar"><i data-w="58"></i></div><div class="fs">PDDikti + est. bottom-up · conf 3</div></div>
+      <div class="fstep"><div class="fv">±4–6 rb</div><div class="fk">intake bootcamp kredibel + core DTS academy per tahun — inti pelatihan berkualitas jauh lebih kecil dari headline pemerintah</div><div class="fbar"><i data-w="22"></i></div><div class="fs">est. agregasi · conf 2</div></div>
+    </div>
+  </div>
+  <div class="row g3" style="margin-top:16px">
+    <div class="panel">
+      <h3>Program pemerintah — baca komposisinya</h3>
+      <div class="stats">
+        <div class="stat amb"><div class="sv">572.072</div><div class="sk">“lulusan DTS” kumulatif 2018–Okt 2025 — tapi <b>88% adalah Microskill</b> (mikro-kredensial self-paced); core academy hanya 68.964. BPK menemukan data peserta bermasalah.</div><div class="ss">Komdigi via DPR brief · conf 3 · honesty-label dipakai</div></div>
+        <div class="stat"><div class="sv">122k : 75k</div><div class="sk">DTS 2023 — diterima vs lulus (completion gap 38%) · 2024: 134k diterima : 102k lulus</div><div class="ss">file resmi data.komdigi · conf 4</div></div>
+        <div class="stat"><div class="sv">≈198 rb</div><div class="sk">MSIB kumulatif batch 1–7 (est. penjumlahan; floor resmi “>150rb”) — dan share tech-nya tidak pernah dipublikasikan</div><div class="ss">conf 2–5 campuran · file 03+15</div></div>
+        <div class="stat neu"><div class="sv">83%</div><div class="sk">peserta DTS PROA sudah bekerja saat mendaftar — program ini upskilling, bukan rekrutmen fresh-grad</div><div class="ss">bpsdm.komdigi 2024 · conf 4</div></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Penyerapan nyata — bukti lapangan</h3>
+      <div class="stats">
+        <div class="stat pos"><div class="sv">4.000</div><div class="sk">rekrutan “mayoritas IT” BCA 2023 (dari ~27 rb total) — belanja bank digital jadi mesin penyerapan terkuat</div><div class="ss">BCA AR 2023 · conf 5</div></div>
+        <div class="stat pos"><div class="sv">Rp 9 jt</div><div class="sk">median gaji pertama lulusan Fasilkom UI (2024); UGM Rp 6 jt · 91,6% kerja <6 bln</div><div class="ss">tracer elite-campus · conf 4</div></div>
+        <div class="stat amb"><div class="sv">86,9%</div><div class="sk">Hacktiv8 placed-dalam-180-hari (format CIRR) — tapi ⅓ berupa magang/kontrak</div><div class="ss">conf 3</div></div>
+        <div class="stat neg"><div class="sv">“oversupply”</div><div class="sk">model akademik BRIN: kelebihan ~151 rb lulusan digital-skilled 2021–25 (supply 3,37 jt vs okupansi 3,22 jt) — kontra-narasi resmi</div><div class="ss">Sustainability 15(1):754 · conf 4 · demand-line BPS-flagged</div></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Bootcamp — angka marketing, konf rendah</h3>
+      <div class="stats">
+        <div class="stat amb"><div class="sv">3.100</div><div class="sk">alumni Hacktiv8 (self-reported)</div><div class="ss">conf 2 · context-only</div></div>
+        <div class="stat amb"><div class="sv">15.000</div><div class="sk">alumni RevoU (self-reported; klaim “90% placement” DITOLAK — recirculated marketing)</div><div class="ss">conf 2 · context-only</div></div>
+        <div class="stat pos"><div class="sv">~3.000/thn</div><div class="sk">Bangkit (Google×GoTo×Traveloka) admitted</div><div class="ss">conf 3</div></div>
+        <div class="stat neu"><div class="sv">12.886</div><div class="sk">lulusan program sertifikasi MSIB mitra bootcamp per batch (bila tersedia) — angka flow kecil vs kesan publik</div><div class="ss">est. · conf 2</div></div>
+        <div class="stat"><div class="sv">99.271</div><div class="sk">rekap 2025 peserta-kompeten per-akademi (DEA 31.946 · TA 20.581 · GTA 15.482 · VSGA 15.019) — baseline audit-grade terbaru</div><div class="ss">data.komdigi live · conf 4</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 KOMPOSISI ============ -->
+<section class="sec" id="komposisi">
+  <div class="sec-head"><span class="sec-no">05</span><span class="sec-title">KOMPOSISI PEKERJA — MICRODATA ASLI</span>
+  <span class="tag info">Stack Overflow Developer Survey 2024 · baris Country==Indonesia · N=354</span></div>
+  <p class="sec-sub">Satu-satunya microdata survey riset-grade yang bisa difilter per-baris untuk Indonesia (dataset resmi 17,7 MB — mirror GitHub, difilter python). Bias: self-select, condong komunitas; angka saling-berbatasan bukan sensus — tapi ini kelas data yang lebih tinggi dari pada klaim bulat pemerintah.</p>
+  <div class="row g5-2">
+    <div class="panel">
+      <h3>Cara kerja responden IT Indonesia</h3>
+      <div class="chart-wrap" id="so-remote" aria-label="Distribusi mode kerja"></div>
+      <div style="height:8px"></div>
+      <div class="chart-wrap" id="so-dev" aria-label="Distribusi tipe developer"></div>
+      <div class="srcnote">Full-time murni 43,8% · freelance/kontraktor ~25% (campuran jawaban) · median pengalaman coding profesional 7,5 thn · median kompensasi reporter ~USD 7.360/thn (pro dev ~USD 11.040). Survey self-select N=354 = 0,54% responden global. Slice 2025 (N=181, microdata resmi): employed 60%, freelance 18,8%, in-person 38% — pola stabil antar-tahun.</div>
+    </div>
+    <div class="panel">
+      <h3>Gender — stagnan di ~27–28%</h3>
+      <div class="stats">
+        <div class="stat neu"><div class="sv">27–28%</div><div class="sk">perempuan dalam okupasi ICT (Sakernas'19 via deskripsi ILO, McKinsey'20, BCG'20 — konvergen)</div><div class="ss">conf 3, data pra-2021</div></div>
+        <div class="stat amb"><div class="sv">12%</div><div class="sk">perempuan di posisi eksekutif tech</div><div class="ss">McKinsey/BCG · conf 2–3</div></div>
+        <div class="stat neg"><div class="sv">18,4% vs 54,9%</div><div class="sk">rasio perempuan TI ITB vs Ilmu Komputer IPB — produksi sangat heterogen antar kampus</div><div class="ss">PDDikti-derived 2024/25 · conf 3–4</div></div>
+        <div class="stat neg"><div class="sv">−33%</div><div class="sk">pay gap profesional/teknisi (model ILO 2025) — gap terparah justru di entry-level quantile</div><div class="ss">conf 3</div></div>
+      </div>
+      <div class="srcnote">Engineering students nasional 27,9% perempuan (vs 55,9% dari seluruh enrollment) — pipeline S1 tidak lebih parah dari angkatan kerja, tapi eksekutif masih 12%: bottleneck di karier, bukan sekolah.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 FORMAL vs INFORMAL ============ -->
+<section class="sec" id="formal">
+  <div class="sec-head"><span class="sec-no">06</span><span class="sec-title">FORMAL vs NON-FORMAL</span>
+  <span class="tag warn">registrasi bukan pekerjaan — inti aktif lebih tipis 2+ orde magnitudo</span></div>
+  <div class="ledger">
+    <div class="led-col formal">
+      <h4>SEGMEN FORMAL — inti profesional</h4>
+      <div class="led-item"><span class="li-k">BPJS Ketenagakerjaan aktif (semua sektor)</span><span class="li-v">39,7 jt</span></div>
+      <div class="led-item"><span class="li-k">Pasar IT services (wajar kontrak, vendor, SI)</span><span class="li-v">$4,8–6,3 M</span></div>
+      <div class="led-item"><span class="li-k">Ekspor jasa ICT (IMF/WDI 2024) — bar paling ketat</span><span class="li-v">$3,76 M</span></div>
+      <div class="led-item"><span class="li-k">Top employer IT-services: Telkomsigma 5,3–6 rb · Metrodata 4,1 rb · Accenture 1,4 rb · IBM >1 rb</span><span class="li-v">≈12 rb+</span></div>
+      <div class="led-item"><span class="li-k">Rekrutmen IT BCA/thn (2023) · IT capex bank 1,9–4,6 T</span><span class="li-v">4.000</span></div>
+      <div class="led-item"><span class="li-k">Body-shop: vendor menempatkan staf di bank/telco (Mandiri ~18 rb semua-fungsi, 2012) — skala nyata, angka IT tidak dipublikasikan</span><span class="li-v">skala besar</span></div>
+      <div class="srcnote">Sumber: BPJSTK (conf 5, tanpa potongan KBLI — IT formale tidak bisa diturunkan langsung) · Mordor/Ken/VMR (conf 3, sebaran definisi >2×) · WDI (conf 4) ·ARS perusahaan (conf 5).</div>
+    </div>
+    <div class="led-col informal">
+      <h4>SEGMEN INFORMAL — lapisan masuk</h4>
+      <div class="led-item"><span class="li-k">1000 Startup Digital: pekerjaan tetap vs freelance yang dihasilkan</span><span class="li-v">4 rb : 20 rb</span></div>
+      <div class="led-item"><span class="li-k">Profil freelancer terdaftar 9 platform internasional (2018)</span><span class="li-v">171 rb · 1,2% aktif</span></div>
+      <div class="led-item"><span class="li-k">Sribu: registrasi vs klien dilayani 13 tahun (semua kategori)</span><span class="li-v">1,3 jt : 40–50 rb</span></div>
+      <div class="led-item"><span class="li-k">Upwork: profil Indonesia yang pernah terima ≥$1 / ≥$100 rb</span><span class="li-v"><10 rb / 169</span></div>
+      <div class="led-item"><span class="li-k">Platform earnings ~20 jt jiwa — hampir semua e-commerce/ojol, bukan IT</span><span class="li-v">konteks</span></div>
+      <div class="led-item"><span class="li-k">Freelance remote “formal” via TaaS/EOR (Gigson dsb) — ada verifikasi eksistensi, volume tidak dipublikasikan</span><span class="li-v">gap</span></div>
+      <div class="srcnote">Konklusi model (file 07+15): registrasi masif ≠ pendapatan. Inti pekerja IT menafkahi diri lewat saluran formal; ketidakformalan dominan di lapisan entry & freelance paruh-waktu — rasio program startup pemerintah sendiri 5:1 informal.</div>
+    </div>
+  </div>
+  <div class="row g2" style="margin-top:16px">
+    <div class="panel">
+      <h3>Sisi negara sebagai pembeli, bukan pemberi kerja</h3>
+      <div class="stats">
+        <div class="stat neu"><div class="sv">3,12</div><div class="sk">indeks SPBE 2024 (dari 2,79) — 615–621 lembaga dievaluasi: demand IT pemerintah mengalir lewat pengadaan vendor (formal-kontrak)</div><div class="ss">KemenPANRB · conf 5</div></div>
+        <div class="stat amb"><div class="sv">4.215</div><div class="sk">formasi CPNS Komdigi 2024 (dari 207.247 total formasi nasional) — jumlah PNS-IT nasional tidak dipublikasikan siapa pun</div><div class="ss">BKN/Setkab · conf 4 · data gap jujur</div></div>
+        <div class="stat neg"><div class="sv">−Rp 256 T</div><div class="sk">efisiensi APBN K/L 2025 (Inpres 1/2025) memangkas demand IT publik — dikonfirmasi arsip Metrodata</div><div class="ss">conf 4</div></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Diagnosis metrik “informal” resmi — hati-hati</h3>
+      <p style="font-size:13px;color:var(--mut);line-height:1.7">Kerangka formal/informal BPS mengukur <b>status kepegawaian</b>, bukan jenis pekerjaan: freelancer IT & remote kontraktor asing diklasifikasi “informal” secara sistematis. Artinya: share informal 57,7% (Nov 2025) <b>tidak bisa dibaca</b> sebagai “57,7% pekerja IT informal”. Verdict audit (file 10): pakai-dengan-catatan + patahan seri definisi Feb 2025.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 REGIONAL ============ -->
+<section class="sec" id="regional">
+  <div class="sec-head"><span class="sec-no">07</span><span class="sec-title">GEOGRAFI — JAKARTA MENELAN PASAR</span></div>
+  <div class="row g5-2">
+    <div class="panel">
+      <h3>Diferensial gaji mid-level IT vs Jakarta (2026)</h3>
+      <div class="bars">
+        <div class="brow up"><span class="lb">Jakarta <small>baseline 12–20 jt</small></span><span class="tr"><span class="fl" data-w="100"></span></span><span class="vv">0%</span></div>
+        <div class="brow"><span class="lb">Surabaya</span><span class="tr"><span class="fl" data-w="75"></span></span><span class="vv">−25%</span></div>
+        <div class="brow"><span class="lb">Bandung</span><span class="tr"><span class="fl" data-w="70"></span></span><span class="vv">−30%</span></div>
+        <div class="brow am"><span class="lb">Bali <small>anomali: pariwisata digital</small></span><span class="tr"><span class="fl" data-w="65"></span></span><span class="vv">−35%</span></div>
+        <div class="brow"><span class="lb">Semarang</span><span class="tr"><span class="fl" data-w="62"></span></span><span class="vv">−38%</span></div>
+        <div class="brow dn"><span class="lb">Yogyakarta <small>gaji rendah, produksi tinggi</small></span><span class="tr"><span class="fl" data-w="55"></span></span><span class="vv">−45%</span></div>
+      </div>
+      <div class="srcnote">Aniday recruiter benchmarks 2026 (conf 3) · file 08. Outlier: Batam/Kepri justru TERTINGGI rata-rata advertised SWE Rp 14 jt/bln (JobStreet advertised — efektif relokasi industri).</div>
+    </div>
+    <div class="panel">
+      <h3>Konsentrasi</h3>
+      <div class="stats">
+        <div class="stat neu"><div class="sv">84,8%</div><div class="sk">skor ekosistem startup nasional milik Jakarta — 1.303% lebih kuat dari #2 Bandung</div><div class="ss">StartupBlink 2026 · conf 4</div></div>
+        <div class="stat neu"><div class="sv">~55%</div><div class="sk">lowongan LinkedIn ber-lokasi Jakarta (snapshot Nov 2026) · sampel JobStreet: ~70% Jabodetabek</div><div class="ss">conf 3 / 2</div></div>
+        <div class="stat amb"><div class="sv">1/3</div><div class="sk">lulusan digital Bandung pindah ke Jakarta dalam 18 bulan; Bandung produksi 8 rb/thn tapi <3% nilai VC</div><div class="ss">Digital Districts 2025 · conf 3</div></div>
+        <div class="stat neg"><div class="sv">2.717</div><div class="sk">lowongan tech aktif terlacak nasional (GlobalData Jan 2024) — kedalaman pasar unik di luar hub besar sangat dangkal</div><div class="ss">conf 3 · definisi ketat</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 EMERGING ============ -->
+<section class="sec" id="emerging">
+  <div class="sec-head"><span class="sec-no">08</span><span class="sec-title">ROLE EMERGING — TIGA MESIN DEMAND BARU</span>
+  <span class="tag warn">angka “training tickets” = bukan pekerjaan</span></div>
+  <div class="row g3">
+    <div class="panel">
+      <h3>AI — tercepat tumbuh, dari basis mini</h3>
+      <div class="stats">
+        <div class="stat pos"><div class="sv">+31,7%</div><div class="sk">pertumbuhan hiring AI relatif — tercepat di dunia (2026)</div><div class="ss">LinkedIn AI Index · conf 4</div></div>
+        <div class="stat neu"><div class="sv">28 → 96 rb</div><div class="sk">headcount AI talent 2019→2024 (0,06% angkatan kerja; >70% reskill lintas profesi)</div><div class="ss">conf 3</div></div>
+        <div class="stat pos"><div class="sv">18 jt bisnis</div><div class="sk">bisnis Indonesia memakai AI, +47% YoY; 57% sebut skills-gap barrier utama</div><div class="ss">AWS/Access Partnership 2026 · conf 4</div></div>
+        <div class="stat amb"><div class="sv">tanpa angka</div><div class="sk">premium gaji AI Indonesia belum ada angka publik yang kredibel (barometer PwC global 56% — jangan dilokalkan)</div><div class="ss">verdict file 09</div></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Cloud & infrastruktur — kapital riil masuk</h3>
+      <div class="stats">
+        <div class="stat pos"><div class="sv">$1,7 M</div><div class="sk">Microsoft 2024–28 (verified PR+Reuters) · AWS Jakarta $5 M / 24,7k job-yr termodelek</div><div class="ss">conf 5 / 3 (modeled — bukan payroll)</div></div>
+        <div class="stat pos"><div class="sv">$200 jt → $1 M</div><div class="sk">Indosat×NVIDIA Surakarta AI DC → pabrik AI (klaim latih 1 jt); Zankore $800 jt / 200 MW</div><div class="ss">DCD · conf 3–4</div></div>
+        <div class="stat neu"><div class="sv"><30%</div><div class="sk">adopsi cloud enterprise — tier terbawah APAC: ruang demand ke depan besar</div><div class="ss">ADBI · conf 3</div></div>
+        <div class="stat pos"><div class="sv">>1 jt</div><div class="sk">individu terlatih AWS di Indonesia (audit-adjust dari klaim 1,3 jt) — bukan sertifikasi semua</div><div class="ss">AWS via file 09+18 · conf 3</div></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Keamanan siber — demand paling nyata di survei</h3>
+      <div class="stats">
+        <div class="stat neg"><div class="sv">73%</div><div class="sk">organisasi kesulitan merekrut kandidat siber memadai — terburuk #3 dari 29 negara</div><div class="ss">Fortinet 2022 · conf 4</div></div>
+        <div class="stat neu"><div class="sv">#2 & #3</div><div class="sk">Cyber Security Engineer & SOC Analyst di JoR 2025 — security bukan AI yang paling panas di Indonesia</div><div class="ss">LinkedIn/WEF · conf 4</div></div>
+        <div class="stat neg"><div class="sv">404 jt</div><div class="sk">anomali terdeteksi BSSN 2023 — tekanan ancaman nyata, TAPI angka “butuh X tenaga siber” = folklore tidak tertelusur</div><div class="ss">BSSN conf 3; workforce-quantification ditolak</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 09 KREDIBILITAS ============ -->
+<section class="sec" id="kredibilitas">
+  <div class="sec-head"><span class="sec-no">09</span><span class="sec-title">KREDIBILITAS & METODOLOGI</span>
+  <span class="tag info">audit BPS · spot-check 12 figure · 33 angka ditolak</span></div>
+  <p class="sec-sub">Papan ini menyertakan label kepercayaan pada setiap angka. Meter 5-segmen: <b class="vv-ok">4–5</b> resmi/audited · <b class="vv-warn">3</b> survei/vendor dengan metode dijelaskan · <b class="vv-bad">≤2</b> hanya konteks. Sesuai permintaan: data BPS hanya dipakai bila metodologinya sudah diaudit — verdict per-seri di bawah.</p>
+  <div class="row g5-2">
+    <div class="panel">
+      <h3>Verdict audit BPS (Sakernas)</h3>
+      <table class="vt" id="bps-table">
+        <tr><th>Seri</th><th>Verdict</th></tr>
+      </table>
+      <div class="srcnote">Kesimpulan audit (file 10): <b>bukan fabrikasi/politis</b> — metodologi dipublikasikan, dibantu ILO; kelemahannya fitness-for-purpose pada granularitas tech (kode KBLI manual oleh supervisor, sampling error sektoral, churn metode 2024–25). Kredibilitas lintas-check: upah Info-Comm sempat turun tepat saat tech-winter — sinyal data mengikuti realita.</div>
+    </div>
+    <div class="panel">
+      <h3>Klaim publik yang DITOLAK dari papan ini</h3>
+      <div class="rej">
+        <div class="rej-item"><div class="rk">“Gartner: belanja IT Indonesia $XX M”</div><div class="rw"><b>TIDAK ADA</b> — Gartner tak pernah mempublikasi angka spesifik Indonesia 2023–26; semua sirkulasi tak bersumber</div></div>
+        <div class="rej-item"><div class="rk">“77% perusahaan Indonesia sulit isi lowongan (Manpower)”</div><div class="rw"><b>Salah atribusi</b> — Indonesia tidak masuk sampel negara ManpowerGroup; itu angka APAC</div></div>
+        <div class="rej-item"><div class="rk">“Indonesia butuh 45rb–1,5 jt tenaga siber”</div><div class="rw"><b>Folklore</b> — tak tertelusur ke publikasi BSSN/Komdigi manapun</div></div>
+        <div class="rej-item"><div class="rk">“Kemnaker: 1,98 jt pekerja ICT 2025”</div><div class="rw"><b>Proyeksi demand</b> yang disalahartikan sebagai stok pekerja</div></div>
+        <div class="rej-item"><div class="rk">“AWS-trained 1,3 jt (2026)”</div><div class="rw">Audit penyesuaian: terverifikasi <b>>1 jt</b> (Feb 2026) — 800 rb (2025)</div></div>
+        <div class="rej-item"><div class="rk">“GMV digital $90 M (2024)”</div><div class="rw">Edisi 2025 merevisi ke <b>$87 M</b> (restatement e-commerce)</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <b>Papan Pasar Tenaga Kerja IT Indonesia</b> — disusun 9 Nov 2026 dari 20 berkas riset paralel (±0,5 MB, 400+ data point bertanda sumber-tahun-conf), dual-verified: sintesis rekonsiliasi (file 15) + spot-check independen 12 figure (file 18: 7 confirmed · 3 adjusted · 2 unreachable · 0 fabrikasi). Korreksi audit diterapkan: enrolled TI 234.983 / SI 208.348 · JKP 2023 64.885 · AWS >1 jt · GMV-2024 $87 M · label GoTo “FS-disclosed non-audited”. Data BPS dipakai hanya berseri “pakai-dengan-catatan”. Microdata Stack Overflow (slice 354 baris 2024 + 181 baris 2025) disimpan di research/. Berkas lengkap: direktori <b>research/</b>.<br>
+  Cara baca papan: bandingkan <b>arah dan urutan</b>, bukan desimal — semua angka membawa ambang ketidakpastian metodologis di label masing-masing. Meter 5-segmen perlu dibaca sebelum percaya pada baris apa pun.
+</footer>
+
+</div>
+
+<script>
+/* ================= DATA ================= */
+const KPI=[
+ {v:"≈950 rb",k:"IT profesional bekerja (700rb–1,2jt)",s:"triangulasi · conf 2–3"},
+ {v:"11 rb",k:"lowongan IT aktif terlacak LinkedIn (Nov 2026)",s:"proxy, bukan total · conf 3"},
+ {v:"70–85 rb",k:"lulusan komputasi per tahun",s:"PDDikti + est. · conf 3"},
+ {v:"$99 M",k:"GMV ekonomi digital 2025 (+14%)",s:"e-Conomy SEA 2025 · conf 4"},
+ {v:"5,9%",k:"budget kenaikan gaji tech 2026 — tertinggi SEA",s:"Aon · conf 4"},
+ {v:"5 : 1",k:"rasio informal:formal pekerjaan program startup negeri",s:"1000 Startup Digital · conf 3"}
+];
+
+const CHAIN=[
+ {t:"JPMorgan × McKinsey", s:"“New Skills at Work” 2016 — model non-publik: kekurangan kumulatif 2015–2030, skilled+semi-skilled ICT, ASEAN-5", c:"bad"},
+ {t:"World Bank 2018", s:"“Preparing ICT Skills…” — desk-review 3 bulan, bukan pemodelan asli", c:""},
+ {t:"Pejabat RI", s:"salah atribusi 3 versi (McKinsey-2018 / WB / “WEF 2015”)", c:"bad"},
+ {t:"Putaran media", s:"dipakai tanpa verifikasi 8 tahun — komposisi definisi berubah tiap kutip", c:""}
+];
+
+const ROLES=[
+ {k:"Data analyst",v:2151,n:"BI 1.357 · label terbesar"},
+ {k:"Software engineer",v:1461,n:"developer 1.402 · programmer 1.339 — overlap"},
+ {k:"AI + ML engineer",v:1058,n:"AI 653 + ML 405"},
+ {k:"QA engineer",v:1013,n:"tester 838 — overlap"},
+ {k:"Backend",v:870,n:"golang 413: label tunggal terbesar di keluarga BE"},
+ {k:"IT support",v:859,n:"sysadmin 650 · network 460"},
+ {k:"Data scientist",v:804,n:""},
+ {k:"DevOps",v:772,n:"SRE 750"},
+ {k:"Data engineer",v:772,n:""},
+ {k:"Cloud engineer",v:676,n:""},
+ {k:"Fullstack",v:651,n:""},
+ {k:"Cybersecurity",v:611,n:"duplikat 601 — label kembar"},
+ {k:"Frontend",v:654,n:"329+325 keyword kembar"},
+ {k:"Web developer",v:608,n:""},
+ {k:"ERP",v:572,n:"SAP 378 · Odoo 290"},
+ {k:"Mobile",v:271,n:"Flutter 157 · Android 147 · iOS 103 · RN 93"}
+];
+
+const LANGS=[["Python",578],["Java",553],["Golang",413],["Node.js",284],["PHP",201]];
+
+const SAL={
+ "Software Engineer":[["Junior",4.5,7.5,12.0,-5.3],["Mid",5.0,9.0,15.0,-6.8],["Senior",5.5,12.5,24.0,-13.0],["Lead",7.0,12.5,25.0,-23.6]],
+ "Mobile Dev":[["Junior",5.0,7.8,11.5,4.4],["Mid",5.8,9.5,14.0,4.9],["Senior",7.0,11.0,22.5,-11.2]],
+ "Data Scientist":[["Junior",6.3,8.5,14.0,6.8],["Mid",7.0,11.3,21.5,-1.4],["Senior",9.0,12.5,25.0,-12.0]],
+ "QA":[["Junior",4.5,6.8,10.0,-7.4],["Mid",5.5,8.0,11.0,-2.0],["Senior",7.3,10.0,14.5,-21.3]],
+ "DevOps":[["Junior",6.0,8.5,12.0,-8.9],["Mid",7.3,9.0,15.0,-17.2],["Senior",10.0,15.0,20.0,-29.0]]
+};
+
+const LADDER=[["Front-end",20],["QA engineer",23],["Back-end",25],["Mobile",25],["Full-stack",30],["ERP SME",37],["Tech lead",40],["UX/UI",43],["Sol. architect",55],["Eng manager",67],["Head of Eng",81],["VP Eng",108],["Head of Data",80],["VP Data",132]];
+
+const JKP=[["2022",25114],["2023",64885],["2024",77965],["2025",88519],["2026 Jan–Okt",72336]];
+const GOTO=[["pra-Nov '22",10800],["2023",3888],["2024 (FS)",3352],["2025 (FS)",3553],["mid-26 (est)",3375]];
+
+const SO_REMOTE=[["Hybrid",41],["Remote penuh",28.6],["In-person",30.5]];
+const SO_DEV=[["Full-stack",32],["Back-end",19.5],["Mobile",6.5],["Lainnya",42]];
+
+const BPS_ROWS=[
+ ["TPT (pengangguran) nasional & provinsi","<span class='vv-warn'>pakai-dgn-catatan</span> — aturan 1-jam menyamukan"],
+ ["Okupasi kategori J (Info-Comm, ~1,25 jt)","<span class='vv-warn'>pakai-dgn-catatan</span> — hanya nasional, ronde Agustus"],
+ ["KBLI 62 5-digit (6201–6209)","<span class='vv-bad'>lemah</span> — tren nasional saja, jangan point-estimate"],
+ ["Share formal/informal (57,7%)","<span class='vv-warn'>pakai-dgn-catatan</span> — patahan definisi ICLS-21 Feb 2025; freelancer IT salah-format"],
+ ["Upah rata-rata Info-Comm","<span class='vv-warn'>pakai-dgn-catatan</span> — hanya pegawai, kategori-J lebar"],
+ ["Ronde baru Nov 2025","<span class='vv-bad'>hindari</span> — konfound musiman, dikritik LPEM UI"],
+ ["Level 2020–awal 2022","<span class='vv-bad'>hindari utk level</span> — dipakai hanya arah (disrupsi pandemi)"]
+];
+
+/* ================= HELPERS ================= */
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+function fmtID(n){return n.toLocaleString("id-ID")}
+function tips(node,html){node.dataset.tip=html;node.setAttribute("tabindex","0");return node}
+const tipEl=document.createElement("div");tipEl.className="tip";tipEl.setAttribute("role","tooltip","");document.body.appendChild(tipEl);
+function moveTip(e){const pad=14;let x=e.clientX+pad,y=e.clientY+pad;const r=tipEl.getBoundingClientRect();
+ if(x+r.width>innerWidth-8)x=e.clientX-r.width-pad; if(y+r.height>innerHeight-8)y=e.clientY-r.height-pad; tipEl.style.left=x+"px";tipEl.style.top=y+"px"}
+document.addEventListener("mouseover",e=>{const t=e.target.closest("[data-tip]");if(!t)return;tipEl.innerHTML=t.dataset.tip;tipEl.classList.add("show");moveTip(e)});
+document.addEventListener("mousemove",e=>{if(tipEl.classList.contains("show"))moveTip(e)});
+document.addEventListener("mouseout",e=>{if(e.target.closest("[data-tip]"))tipEl.classList.remove("show")});
+document.addEventListener("focusin",e=>{const t=e.target.closest("[data-tip]");if(!t)return;tipEl.innerHTML=t.dataset.tip;tipEl.classList.add("show");const r=t.getBoundingClientRect();tipEl.style.left=r.left+"px";tipEl.style.top=r.top-tipEl.offsetHeight-8+"px"});
+document.addEventListener("focusout",()=>tipEl.classList.remove("show"));
+addEventListener("scroll",()=>tipEl.classList.remove("show"),{passive:true});
+
+/* fill data-w bars */
+function paintW(){document.querySelectorAll("[data-w]").forEach(el=>{const p=+el.dataset.w;requestAnimationFrame(()=>{el.style.width=Math.max(2,p)+"%"})})}
+function barsFill(){const t=$$(".brow");t.forEach(r=>{const f=r.querySelector("[data-w]");if(f)f.style.width=Math.max(2,+f.dataset.w)+"%"})}
+
+/* ================= RENDER ================= */
+/* KPI */
+$("#kpis").innerHTML=KPI.map(k=>`<div class="kpi"><div class="v">${k.v}</div><div class="k">${k.k}</div><div class="s">${k.s}</div></div>`).join("");
+
+/* chain */
+$("#chain").innerHTML=CHAIN.map((c,i)=>`<div class="chain-node"><b class="${c.c}">${c.t}</b>${c.s}</div>${i<CHAIN.length-1?'<span class="chain-arrow">→</span>':""}`).join("");
+
+/* roles bars */
+const maxRole=ROLES[0].v;
+$("#roles").innerHTML=ROLES.map(r=>(
+ `<div class="brow"><span class="lb">${r.k}${r.n?`<small>${r.n}</small>`:""}</span>`+
+ `<span class="tr"><span class="fl" data-w="${(r.v/maxRole*100).toFixed(1)}"></span></span>`+
+ `<span class="vv">${fmtID(r.v)}</span></div>`)).join("");
+
+/* langs */
+const maxL=LANGS[0][1];
+$("#langs").innerHTML=LANGS.map(l=>(
+ `<div class="brow"><span class="lb">${l[0]}</span><span class="tr"><span class="fl" style="width:${(l[1]/maxL*100).toFixed(1)}%"></span></span><span class="vv">${fmtID(l[1])}</span></div>`)).join("");
+
+/* salary tabs */
+const tabs=$("#sal-tabs");
+Object.keys(SAL).forEach((name,i)=>{
+ const b=document.createElement("button");b.className="tab";b.textContent=name;b.setAttribute("role","tab");b.setAttribute("aria-selected",i===0);
+ b.onclick=()=>{[...tabs.children].forEach(c=>c.setAttribute("aria-selected","false"));b.setAttribute("aria-selected","true");drawSal(name)};
+ tabs.appendChild(b);
+ if(i===0)drawSal(name);
+});
+function drawSal(name){
+ const data=SAL[name];const max=26;
+ $("#sal-bands").innerHTML=data.map(d=>{
+  const[lv,p10,med,p90,yoy]=d;
+  const L=(p10/max*100),W=((p90-p10)/max*100),M=(med/max*100);
+  const cls=yoy<0?"pct-neg":"pct-pos", sg=yoy<0?"▼":"▲";
+  return `<div class="bb-row"><span class="lv">${lv}</span>`+
+   `<span class="bb-track" tabindex="0" role="img" aria-label="${lv}: P10 ${p10} juta, median ${med} juta, P90 ${p90} juta per bulan, perubahan tahunan ${yoy} persen" data-tip="<b>${lv}</b> — P10 Rp ${fmtID(p10)} jt · <b>median Rp ${fmtID(med)} jt</b> · P90 Rp ${p90} jt/bln<br>YoY: ${yoy}%">`+
+   `<span class="bb-band" style="left:${L}%;width:${W}%"></span><span class="bb-mid" style="left:${M}%"></span></span>`+
+   `<span class="yy ${cls}">${sg} ${Math.abs(yoy)}% <small style="color:var(--dim)">YoY</small></span></div>`;
+ }).join("");
+}
+
+/* ladder */
+const maxLad=Math.max(...LADDER.map(l=>l[1]));
+$("#ladder").innerHTML=LADDER.map(l=>(
+ `<div class="lrow"><span class="rl">${l[0]}</span><span class="tr"><span class="fl" style="width:${(l[1]/maxLad*100).toFixed(1)}%"></span></span><span class="vv">${l[1]} jt</span></div>`)).join("");
+
+/* line chart helper */
+function lineSeries(el,rows,unit,color,ylab){
+ const W=560,H=200,pad={l:46,r:14,t:16,b:30};
+ const max=Math.max(...rows.map(r=>r[1]))*1.12, min=0;
+ const iw=W-pad.l-pad.r, ih=H-pad.t-pad.b;
+ const x=i=>pad.l+iw*(i/(rows.length-1)), y=v=>pad.t+ih*(1-(v-min)/(max-min));
+ let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${ylab}">`;
+ for(let g=0;g<=4;g++){const gy=pad.t+ih*g/4, gv=max*(1-g/4);
+  s+=`<line x1="${pad.l}" y1="${gy}" x2="${W-pad.r}" y2="${gy}" stroke="#1D2940" stroke-width="1"/>`+
+     `<text x="${pad.l-6}" y="${gy+3}" fill="#5F6D82" font-size="9" text-anchor="end">${gv>=1000?(gv/1000).toFixed(1).replace(".",",")+"k":Math.round(gv)}</text>`}
+ const pts=rows.map((r,i)=>`${x(i)},${y(r[1])}`).join(" ");
+ s+=`<polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2.5" stroke-linejoin="round"/>`;
+ s+=`<polygon points="${pad.l},${y(0)} ${pts} ${W-pad.r},${y(0)}" fill="${color}" opacity="0.09"/>`;
+ rows.forEach((r,i)=>{const cy=y(r[1]);
+  s+=`<circle cx="${x(i)}" cy="${cy}" r="4" fill="#0B0F17" stroke="${color}" stroke-width="2"><title>${r[0]}: ${fmtID(r[1])} ${unit}</title></circle>`+
+     `<text x="${x(i)}" y="${pad.t+ih+16}" fill="#96A2B6" font-size="9" text-anchor="middle">${r[0]}</text>`+
+     `<text x="${x(i)}" y="${cy-10}" fill="#E8EDF6" font-size="10" text-anchor="middle" font-weight="700">${fmtID(r[1])}</text>`});
+ s+="</svg>";el.innerHTML=s;
+}
+lineSeries($("#jkp-chart"),JKP,"jiwa","#FF6B6B","Penerima JKP per tahun");
+lineSeries($("#goto-chart"),GOTO,"org","#79B8FF","Jumlah karyawan GoTo");
+
+/* VC funding bars */
+const VC=[["2020",3.3],["2021",4.3],["2022*",3.2],["2023",1.3],["2024",0.32],["2025*",0.17]];
+const maxVC=4.3;
+$("#vc-bars").innerHTML=VC.map(v=>(
+ `<div class="brow ${v[1]<=1?"dn":v[1]>=3?"up":""}"><span class="lb">${v[0]}</span>`+
+ `<span class="tr"><span class="fl" style="width:${(v[1]/maxVC*100).toFixed(1)}%"></span></span>`+
+ `<span class="vv">$${String(v[1]).replace(".",",")} M</span></div>`)).join("");
+
+/* donut helper */
+function donut(el,rows,title){
+ const W=260,H=150,cx=75,cy=75,R=58,r2=38;const total=rows.reduce((a,b)=>a+b[1],0);
+ const cols=["#79B8FF","#3FD9A4","#FFC24B","#5F6D82"];
+ let a0=-Math.PI/2,s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${title}">`;
+ rows.forEach((d,i)=>{const frac=d[1]/total, a1=a0+frac*2*Math.PI;
+  const big=frac>.5?1:0;
+  const c=Math.cos,si=Math.sin;
+  const p=(rad,a)=>`${cx+rad*c(a)},${cy+rad*si(a)}`;
+  s+=`<path d="M ${p(R,a0)} A ${R} ${R} 0 ${big} 1 ${p(R,a1)} L ${p(r2,a1)} A ${r2} ${r2} 0 ${big} 0 ${p(r2,a0)} Z" fill="${cols[i%cols.length]}" opacity="${i===rows.length-1?.45:.95}"><title>${d[0]}: ${d[1]}%</title></path>`;
+  a0=a1});
+ s+=`<text x="${cx}" y="${cy+4}" fill="#E8EDF6" font-size="13" text-anchor="middle" font-weight="700">N=354</text>`;
+ let ly=12;rows.forEach((d,i)=>{s+=`<circle cx="168" cy="${ly-3}" r="4" fill="${cols[i%cols.length]}"/><text x="178" y="${ly}" fill="#96A2B6" font-size="10.5">${d[0]} — ${d[1]}%</text>`;ly+=17});
+ s+="</svg>";el.innerHTML=s;
+}
+donut($("#so-remote"),SO_REMOTE,"Mode kerja responden Indonesia");
+donut($("#so-dev"),SO_DEV,"Tipe developer");
+
+/* bps verdict table */
+(()=>{const tb=$("#bps-table");BPS_ROWS.slice(1).forEach(r=>{const tr=document.createElement("tr");
+ tr.innerHTML=`<td><b>${r[0]}</b></td><td>${r[1]}</td>`;tb.appendChild(tr)})})();
+
+paintW();
+</script>
+</body>
+</html>

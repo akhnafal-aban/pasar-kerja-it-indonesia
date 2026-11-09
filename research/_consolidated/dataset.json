@@ -1,0 +1,5056 @@
+{
+  "01-education-pipeline": [
+    {
+      "indicator": "graduates_progdi_teknik_informatika",
+      "value": 35919,
+      "unit": "orang/tahun",
+      "year": "2023/24",
+      "source": "PDDikti via Detik & JawaPos network",
+      "methodology": "PDDikti administrative census, per-prodi rollup of graduates",
+      "url": "https://www.detik.com/edu/perguruan-tinggi/d-8463110/kemdikti-bakal-tutup-sejumlah-prodi-simak-lagi-20-prodi-dengan-lulusan-terbanyak",
+      "confidence": 4
+    },
+    {
+      "indicator": "graduates_progdi_sistem_informasi",
+      "value": 25866,
+      "unit": "orang/tahun",
+      "year": "2023/24",
+      "source": "PDDikti via Detik & JawaPos network",
+      "methodology": "PDDikti administrative census, per-prodi rollup",
+      "url": "https://www.detik.com/edu/perguruan-tinggi/d-8463110/",
+      "confidence": 4
+    },
+    {
+      "indicator": "est_computing_graduates_all_target_majors",
+      "value": 75000,
+      "unit": "orang/tahun (est range 70–85k)",
+      "year": "2023/24",
+      "source": "Bottom-up from PDDikti top-prodi data",
+      "methodology": "TI 35.9k + SI 25.9k + est 10–20k for Ilmu Komputer/Informatika, RPL, TI, MI",
+      "url": "see above",
+      "confidence": 3
+    },
+    {
+      "indicator": "new_entrants_teknik_informatika",
+      "value": 46035,
+      "unit": "orang",
+      "year": "2025 (TA 2024/25)",
+      "source": "Statistik Pendidikan Tinggi 2025, Kemdiktisaintek p.122",
+      "methodology": "PDDikti administrative census",
+      "url": "https://dikti.go.id/api/file/humas-production/books/2026/5/pdfs/14c84a6c-9d32-40d5-bc39-5cce1ecbfceb/Buku_Statistik_Pendidikan_Tinggi_Tahun_2025.pdf",
+      "confidence": 5
+    },
+    {
+      "indicator": "new_entrants_sistem_informasi",
+      "value": 48335,
+      "unit": "orang",
+      "year": "2025",
+      "source": "Statistik Pendidikan Tinggi 2025 p.122",
+      "methodology": "PDDikti administrative census",
+      "url": "same as above",
+      "confidence": 5
+    },
+    {
+      "indicator": "enrolled_teknik_informatika",
+      "value": 208348,
+      "unit": "orang",
+      "year": "2025",
+      "source": "Statistik PT 2025 p.166",
+      "methodology": "PDDikti administrative census",
+      "url": "same as above",
+      "confidence": 5
+    },
+    {
+      "indicator": "enrolled_sistem_informasi",
+      "value": 234983,
+      "unit": "orang",
+      "year": "2025",
+      "source": "Statistik PT 2025 p.166",
+      "methodology": "PDDikti administrative census",
+      "url": "same as above",
+      "confidence": 5
+    },
+    {
+      "indicator": "graduates_total_all_fields_highered",
+      "value": 2547717,
+      "unit": "orang",
+      "year": "2025",
+      "source": "Statistik PT 2025 p.204",
+      "methodology": "PDDikti administrative census (PTN+PTS+PTA+PTK)",
+      "url": "same as above",
+      "confidence": 5
+    },
+    {
+      "indicator": "prodi_total_all_fields",
+      "value": 34711,
+      "unit": "prodi aktif",
+      "year": "~2024",
+      "source": "statsindo.com via PDDikti",
+      "methodology": "PDDikti administrative aggregation",
+      "url": "https://www.statsindo.com/data/pendidikan-lanjutan/program-studi/",
+      "confidence": 3
+    },
+    {
+      "indicator": "dts_participants_realisasi_2021",
+      "value": 131204,
+      "unit": "orang",
+      "year": "2021",
+      "source": "Menkominfo via Setkab",
+      "methodology": "Official program realization statement",
+      "url": "https://setkab.go.id/akselerasi-transformasi-digital-pemerintah-perbanyak-target-peserta-pelatihan-talenta-digital-tahun-2022/",
+      "confidence": 4
+    },
+    {
+      "indicator": "dts_participants_target_2019",
+      "value": 25000,
+      "unit": "orang",
+      "year": "2019",
+      "source": "Setkab",
+      "methodology": "Official target",
+      "url": "https://www.setkab.go.id/kominfo-buka-pendaftaran-25-000-beasiswa-program-digital-talent-scholarship-2019/",
+      "confidence": 4
+    },
+    {
+      "indicator": "dts_participants_target_2020",
+      "value": 60000,
+      "unit": "orang",
+      "year": "2020",
+      "source": "Kominfo press release 222/HM/KOMINFO/12/2019",
+      "methodology": "Official target incl. Online Academy 20,300",
+      "url": "https://www.komdigi.go.id/berita/siaran-pers/detail/siaran-pers-no-222-hm-kominfo-12-2019",
+      "confidence": 4
+    },
+    {
+      "indicator": "dts_budget_2020",
+      "value": 16.4,
+      "unit": "Rp miliar",
+      "year": "2020",
+      "source": "DPR RI PA3KN policy brief (BPK audit basis)",
+      "methodology": "Treasury realization data",
+      "url": "https://repositori.dpr.go.id/id/eprint/322/",
+      "confidence": 4
+    },
+    {
+      "indicator": "dts_budget_2021",
+      "value": 122.6,
+      "unit": "Rp miliar",
+      "year": "2021",
+      "source": "same",
+      "methodology": "same",
+      "url": "same",
+      "confidence": 4
+    },
+    {
+      "indicator": "dts_participants_trained_2022",
+      "value": 200000,
+      "unit": "orang (target, freeze approx realisasi)",
+      "year": "2022",
+      "source": "Kominfo via sdmdigital.id",
+      "methodology": ">200k trained selected from 283,906 applicants (official statement)",
+      "url": "https://mobile.sdmdigital.id/artikel/latih-lebih-dari-200-ribu-peserta-dts-kominfo-akan-gelar-digiers-day-152",
+      "confidence": 4
+    },
+    {
+      "indicator": "dts_graduates_cumulative",
+      "value": 572072,
+      "unit": "orang (incl. 503,108 Microskill)",
+      "year": "through Oct 2025",
+      "source": "Komdigi via Indonesiabaik.infografis",
+      "methodology": "Official cumulative; classic DTS academies only 68,964",
+      "url": "https://indonesiabaik.id/infografis/cetak-talenta-digital-unggul-menuju-indonesia-maju",
+      "confidence": 3
+    },
+    {
+      "indicator": "dts_classic_academies_2025_composition",
+      "value": {
+        "DEA_TA": 28713,
+        "ProA_FGA_TSA": 20579,
+        "VSGA_SKKNI": 6192,
+        "GTA": 13480,
+        "Microskill": 503108
+      },
+      "unit": "persons graduated",
+      "year": "2025",
+      "source": "Komdigi via Indonesiabaik",
+      "methodology": "Official infographic",
+      "url": "same",
+      "confidence": 3
+    },
+    {
+      "indicator": "msib_batch1_participants",
+      "value": 13272,
+      "unit": "mahasiswa",
+      "year": "2021",
+      "source": "MUDIMA journal citing official MSIB records",
+      "methodology": "Official program count",
+      "url": "https://journal.formosapublisher.org/index.php/mudima/article/download/489",
+      "confidence": 3
+    },
+    {
+      "indicator": "msib_batch5_participants",
+      "value": 36728,
+      "unit": "mahasiswa",
+      "year": "2023",
+      "source": "Kemendikbudristek socialization deck",
+      "methodology": "Official batch counts (Magang 15,675 + SI 21,053)",
+      "url": "https://www.scribd.com/document/681881344/",
+      "confidence": 4
+    },
+    {
+      "indicator": "msib_batch6_participants",
+      "value": 47984,
+      "unit": "mahasiswa",
+      "year": "2024",
+      "source": "Kompas quoting Kemendikbudristek",
+      "methodology": "Official batch count; >150k applicants",
+      "url": "https://www.kompas.com/edu/read/2024/02/23/100452171/47984-mahasiswa-ikut-program-msib-angkatan-6-2024",
+      "confidence": 4
+    },
+    {
+      "indicator": "msib_cumulative_participants",
+      "value": 150000,
+      "unit": "mahasiswa (>150k, batches 1–7)",
+      "year": "2021–2025",
+      "source": "Kemdiktisaintek (Undana sosialisasi quoting official)",
+      "methodology": "Official cumulative",
+      "url": "https://kemdiktisaintek.go.id/news/article/undana-gelar-sosialisasi-program-msib-dan-merdeka-belajar-2024",
+      "confidence": 4
+    },
+    {
+      "indicator": "smk_total_students",
+      "value": 4876648,
+      "unit": "orang",
+      "year": "2025/26",
+      "source": "Direktorat SMK dashboard",
+      "methodology": "Dapodik administrative census, 14,391 SMKs",
+      "url": "https://smk.kemendikdasmen.go.id/statistik-smk",
+      "confidence": 4
+    },
+    {
+      "indicator": "smk_class12_cohort",
+      "value": 1529042,
+      "unit": "orang",
+      "year": "2025/26",
+      "source": "Direktorat SMK dashboard",
+      "methodology": "Dapodik grade-12 headcount (approx annual grad flow, all fields)",
+      "url": "same",
+      "confidence": 4
+    },
+    {
+      "indicator": "hacktiv8_alumni",
+      "value": 3100,
+      "unit": "orang (claimed 3,100+)",
+      "year": "~2025",
+      "source": "hacktiv8.com",
+      "methodology": "Self-reported marketing claim, unaudited",
+      "url": "https://www.hacktiv8.com/",
+      "confidence": 2
+    },
+    {
+      "indicator": "revou_alumni",
+      "value": 15000,
+      "unit": "orang (claimed 15,000+)",
+      "year": "~2025",
+      "source": "revou.co",
+      "methodology": "Self-reported marketing claim, unaudited",
+      "url": "https://www.revou.co/id",
+      "confidence": 2
+    },
+    {
+      "indicator": "bangkit_admitted_2021",
+      "value": 3000,
+      "unit": "mahasiswa (2,250 graduated)",
+      "year": "2021",
+      "source": "Medium participant account + Google Cloud blog",
+      "methodology": "Program cohort records, cross-verified",
+      "url": "https://cloud.google.com/blog/topics/public-sector/google-helps-indonesia-advance-education-cloud-machine-learning-and-mobile-development-through-bangkit-academy/",
+      "confidence": 3
+    },
+    {
+      "indicator": "smk_3_top_field_grad_share_tre_bm_tik",
+      "value": 80.2,
+      "unit": "% of SMK graduates (three fields combined)",
+      "year": "2019",
+      "source": "PSKP Kemendikdasmen Kajian Daya Serap Lulusan SMK",
+      "methodology": "Dapodik/ statistik SMK analysis",
+      "url": "https://pskp.kemendikdasmen.go.id/assets_front/images/produk/1-gtk/materi/Sesi_I_K1_Analisis_Daya_Serap_Lulusan_SMK_Berdasarkan_Kompetensi_Keahlian_-_Sudiyono_dkk.pdf",
+      "confidence": 3
+    },
+    {
+      "indicator": "tracer_unas_employed_1yr",
+      "value": 63,
+      "unit": "% working/entrepreneur (survey respondents)",
+      "year": "2023 (grads of 2022)",
+      "source": "UNAS Tracer Study Laporan 2023",
+      "methodology": "Self-administered university tracer survey, graduates of 2022",
+      "url": "https://tracerstudy.unas.ac.id/wp-content/uploads/2024/04/Laporan-Tracer-Study-2023-Lulusan-2022-2.pdf",
+      "confidence": 3
+    },
+    {
+      "indicator": "computing_tracer_employed_2yrs_national_estimate",
+      "value": 85,
+      "unit": "% (est range 85–93 within 2 years; extrapolated)",
+      "year": "2023–24",
+      "source": "synthesis of university-level tracer studies",
+      "methodology": "Extrapolation from Budi Luhur/Amikom/UNAS/Polteq/UNESA tracer reports",
+      "url": "multiple",
+      "confidence": 2
+    }
+  ],
+  "02-job-demand-by-role": {
+    "demand": [
+      {
+        "role": "software engineer",
+        "metric": "live_vacancies_linkedin",
+        "value": 1461,
+        "unit": "postings",
+        "source": "LinkedIn guest job search",
+        "year": "2026-11-09",
+        "confidence": 4,
+        "note": "keyword match, location=Indonesia, deduplicated"
+      },
+      {
+        "role": "software developer",
+        "metric": "live_vacancies_linkedin",
+        "value": 1402,
+        "unit": "postings",
+        "source": "LinkedIn guest job search",
+        "year": "2026-11-09",
+        "confidence": 4,
+        "note": "overlaps 'software engineer'"
+      },
+      {
+        "role": "programmer",
+        "metric": "live_vacancies_linkedin",
+        "value": 1339,
+        "unit": "postings",
+        "source": "LinkedIn guest job search",
+        "year": "2026-11-09",
+        "confidence": 4,
+        "note": "overlaps above"
+      },
+      {
+        "role": "frontend developer",
+        "metric": "live_vacancies_linkedin",
+        "value": 329,
+        "unit": "postings",
+        "source": "LinkedIn guest job search",
+        "year": "2026-11-09",
+        "confidence": 4,
+        "note": "+325 as 'frontend engineer'"
+      },
+      {
+        "role": "backend developer",
+        "metric": "live_vacancies_linkedin",
+        "value": 870,
+        "unit": "postings",
+        "source": "LinkedIn guest job search",
+        "year": "2026-11-09",
+        "confidence": 4,
+        "note": "by language: java 553, python 578, golang 413, node 284, php 201"
+      },
+      {
+        "role": "fullstack developer",
+        "metric": "live_vacancies_linkedin",
+        "value": 651,
+        "unit": "postings",
+        "source": "LinkedIn guest job search",
+        "year": "2026-11-09",
+        "confidence": 4,
+        "note": ""
+      },
+      {
+        "role": "mobile developer (all)",
+        "metric": "live_vacancies_linkedin",
+        "value": 271,
+        "unit": "postings",
+        "source": "LinkedIn guest job search",
+        "year": "2026-11-09",
+        "confidence": 4,
+        "note": "flutter 157, android 147, ios 103, react native 93"
+      },
+      {
+        "role": "devops engineer",
+        "metric": "live_vacancies_linkedin",
+        "value": 772,
+        "unit": "postings",
+        "source": "LinkedIn guest job search",
+        "year": "2026-11-09",
+        "confidence": 4,
+        "note": "SRE separately 750"
+      },
+      {
+        "role": "cloud engineer",
+        "metric": "live_vacancies_linkedin",
+        "value": 676,
+        "unit": "postings",
+        "source": "LinkedIn guest job search",
+        "year": "2026-11-09",
+        "confidence": 4,
+        "note": ""
+      },
+      {
+        "role": "data engineer",
+        "metric": "live_vacancies_linkedin",
+        "value": 772,
+        "unit": "postings",
+        "source": "LinkedIn guest job search",
+        "year": "2026-11-09",
+        "confidence": 4,
+        "note": ""
+      },
+      {
+        "role": "data analyst",
+        "metric": "live_vacancies_linkedin",
+        "value": 2151,
+        "unit": "postings",
+        "source": "LinkedIn guest job search",
+        "year": "2026-11-09",
+        "confidence": 4,
+        "note": "largest single IT keyword; BI 1357"
+      },
+      {
+        "role": "data scientist",
+        "metric": "live_vacancies_linkedin",
+        "value": 804,
+        "unit": "postings",
+        "source": "LinkedIn guest job search",
+        "year": "2026-11-09",
+        "confidence": 4,
+        "note": "ML engineer 405, AI engineer 653"
+      },
+      {
+        "role": "AI/ML engineer",
+        "metric": "live_vacancies_linkedin",
+        "value": 1058,
+        "unit": "postings",
+        "source": "LinkedIn guest job search",
+        "year": "2026-11-09",
+        "confidence": 4,
+        "note": "ML eng 405 + AI eng 653"
+      },
+      {
+        "role": "QA engineer / tester",
+        "metric": "live_vacancies_linkedin",
+        "value": 1851,
+        "unit": "postings",
+        "source": "LinkedIn guest job search",
+        "year": "2026-11-09",
+        "confidence": 4,
+        "note": "QA 1013 + tester 838"
+      },
+      {
+        "role": "cybersecurity",
+        "metric": "live_vacancies_linkedin",
+        "value": 611,
+        "unit": "postings",
+        "source": "LinkedIn guest job search",
+        "year": "2026-11-09",
+        "confidence": 4,
+        "note": "'cybersecurity' 601; near-duplicate spellings"
+      },
+      {
+        "role": "IT support",
+        "metric": "live_vacancies_linkedin",
+        "value": 859,
+        "unit": "postings",
+        "source": "LinkedIn guest job search",
+        "year": "2026-11-09",
+        "confidence": 4,
+        "note": "sysadmin 650, network engineer 460"
+      },
+      {
+        "role": "SAP consultant",
+        "metric": "live_vacancies_linkedin",
+        "value": 378,
+        "unit": "postings",
+        "source": "LinkedIn guest job search",
+        "year": "2026-11-09",
+        "confidence": 4,
+        "note": "ERP 572, Odoo 290"
+      },
+      {
+        "role": "cyber security engineer",
+        "metric": "rank_fastest_growing_jobs",
+        "value": 2,
+        "unit": "rank (of 15)",
+        "source": "LinkedIn Jobs on the Rise Indonesia 2025",
+        "year": "2025",
+        "confidence": 4,
+        "note": "title growth Jan2022–Jul2024"
+      },
+      {
+        "role": "SOC analyst",
+        "metric": "rank_fastest_growing_jobs",
+        "value": 3,
+        "unit": "rank (of 15)",
+        "source": "LinkedIn Jobs on the Rise Indonesia 2025",
+        "year": "2025",
+        "confidence": 4,
+        "note": "median prior exp 1.8 yrs"
+      },
+      {
+        "role": "IT project manager",
+        "metric": "rank_fastest_growing_jobs",
+        "value": 14,
+        "unit": "rank (of 15)",
+        "source": "LinkedIn Jobs on the Rise Indonesia 2025",
+        "year": "2025",
+        "confidence": 4,
+        "note": "top industries IT services, tech"
+      },
+      {
+        "role": "tech (all IT roles)",
+        "metric": "advertised_median_salary_growth",
+        "value": 9.1,
+        "unit": "% H1'24->H1'26",
+        "source": "Glints Labour Market Insights",
+        "year": "2026",
+        "confidence": 3,
+        "note": "Computer & Software category median 6.0M IDR/mo"
+      },
+      {
+        "role": "backend developer",
+        "metric": "advertised_median_salary_growth",
+        "value": 25.0,
+        "unit": "% H1'24->H1'26",
+        "source": "Glints Labour Market Insights",
+        "year": "2026",
+        "confidence": 3,
+        "note": "6.0M -> 7.5M; n≈100 postings w/ salary"
+      },
+      {
+        "role": "senior vs entry (all)",
+        "metric": "advertised_salary_growth",
+        "value": 20.8,
+        "unit": "% senior vs 11.1% entry",
+        "source": "Glints Labour Market Insights",
+        "year": "2026",
+        "confidence": 3,
+        "note": "senior/entry ratio 2.7x->2.9x"
+      },
+      {
+        "role": "digital talent (all)",
+        "metric": "talent_gap_projection",
+        "value": 3000000,
+        "unit": "people (lower bound; govt cites 3-6M) by 2030",
+        "source": "Kominfo via Antara",
+        "year": "2025",
+        "confidence": 2,
+        "note": "planning projection, methodology unpublished; World Bank/McKinsey variants cite ~9M"
+      },
+      {
+        "role": "fullstack developer",
+        "metric": "top_skills_in_postings",
+        "value": "JavaScript, React.js, MySQL, Node.js, PostgreSQL",
+        "unit": "skill list",
+        "source": "Glints skills report (Jan–Aug 2026 postings)",
+        "year": "2026",
+        "confidence": 3,
+        "note": ""
+      },
+      {
+        "role": "tech (all)",
+        "metric": "skill_share_of_tech_postings",
+        "value": {
+          "MySQL": 17,
+          "JavaScript": 14,
+          "Python": 13,
+          "PostgreSQL": 13,
+          "Node.js": 11,
+          "React.js": 10,
+          "Java": 10,
+          "SQL": 8,
+          "DataAnalysis": 5,
+          "ML": 4,
+          "AI": 4
+        },
+        "unit": "% of tech postings citing skill",
+        "source": "Glints skills report 2026",
+        "year": "2026",
+        "confidence": 3,
+        "note": ""
+      }
+    ],
+    "salary": [
+      {
+        "role": "software developer",
+        "level": "professional (RW band)",
+        "min": 440000000,
+        "max": 770000000,
+        "currency": "IDR",
+        "period": "year",
+        "source": "Robert Walters Indonesia Salary Survey",
+        "year": "2026",
+        "confidence": 3,
+        "note": "2025 band 400-700M"
+      },
+      {
+        "role": "data scientist",
+        "level": "professional (RW band)",
+        "min": 450000000,
+        "max": 850000000,
+        "currency": "IDR",
+        "period": "year",
+        "source": "Robert Walters Indonesia",
+        "year": "2026",
+        "confidence": 3,
+        "note": "unchanged vs 2025"
+      },
+      {
+        "role": "software developer",
+        "level": "junior-mid",
+        "min": 6000000,
+        "max": 7000000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Glints HR & Salary Survey 2024 (retail junior SWE/IT)",
+        "year": 2024,
+        "confidence": 3,
+        "note": "median min-max by industry varies 5-14M"
+      },
+      {
+        "role": "software engineer",
+        "level": "senior",
+        "min": 15000000,
+        "max": 35500000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Glints Survey 2024 (retail 15-20; new economy 28.5-35.5)",
+        "year": 2024,
+        "confidence": 3,
+        "note": ""
+      },
+      {
+        "role": "frontend developer",
+        "level": "average (all levels)",
+        "min": 20000000,
+        "max": 20000000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Michael Page Indonesia Salary Guide 2025",
+        "year": 2025,
+        "confidence": 3,
+        "note": "single average figure"
+      },
+      {
+        "role": "backend developer",
+        "level": "average (all levels)",
+        "min": 25000000,
+        "max": 25000000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Michael Page 2025",
+        "year": 2025,
+        "confidence": 3
+      },
+      {
+        "role": "fullstack developer",
+        "level": "average (all levels)",
+        "min": 30000000,
+        "max": 30000000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Michael Page 2025",
+        "year": 2025,
+        "confidence": 3
+      },
+      {
+        "role": "mobile developer",
+        "level": "average (all levels)",
+        "min": 25000000,
+        "max": 25000000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Michael Page 2025",
+        "year": 2025,
+        "confidence": 3
+      },
+      {
+        "role": "QA engineer",
+        "level": "average (all levels)",
+        "min": 23000000,
+        "max": 23000000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Michael Page 2025",
+        "year": 2025,
+        "confidence": 3
+      },
+      {
+        "role": "ERP functional (SAP/Odoo) consultant",
+        "level": "SME/average",
+        "min": 37000000,
+        "max": 37000000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Michael Page 2025",
+        "year": 2025,
+        "confidence": 3
+      },
+      {
+        "role": "tech lead",
+        "level": "average",
+        "min": 40000000,
+        "max": 40000000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Michael Page 2025",
+        "year": 2025,
+        "confidence": 3
+      },
+      {
+        "role": "IT manager",
+        "level": "average",
+        "min": 50000000,
+        "max": 50000000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Michael Page 2025",
+        "year": 2025,
+        "confidence": 3
+      },
+      {
+        "role": "devops engineer",
+        "level": "senior",
+        "min": 18000000,
+        "max": 27000000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Glints Survey 2024 (tech industry)",
+        "year": 2024,
+        "confidence": 3
+      },
+      {
+        "role": "SRE",
+        "level": "senior",
+        "min": 25000000,
+        "max": 38000000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Glints Survey 2024 (property)",
+        "year": 2024,
+        "confidence": 3
+      },
+      {
+        "role": "cybersecurity (head of)",
+        "level": "head",
+        "min": 1300000000,
+        "max": 1600000000,
+        "currency": "IDR",
+        "period": "year",
+        "source": "Robert Walters 2026",
+        "year": 2026,
+        "confidence": 3,
+        "note": "2025: 1.0-1.5B"
+      },
+      {
+        "role": "android developer",
+        "level": "junior-mid",
+        "min": 8000000,
+        "max": 12000000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Glints Survey 2024",
+        "year": 2024,
+        "confidence": 3
+      },
+      {
+        "role": "iOS developer",
+        "level": "junior-mid",
+        "min": 10000000,
+        "max": 15000000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Glints Survey 2024",
+        "year": 2024,
+        "confidence": 3
+      },
+      {
+        "role": "data analyst",
+        "level": "junior (advertised)",
+        "min": 4000000,
+        "max": 8000000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Glints salary list 2025",
+        "year": 2025,
+        "confidence": 3
+      },
+      {
+        "role": "data engineer",
+        "level": "junior (advertised)",
+        "min": 5000000,
+        "max": 7700000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Glints 2025",
+        "year": 2025,
+        "confidence": 3
+      },
+      {
+        "role": "fullstack developer",
+        "level": "senior",
+        "min": 13000000,
+        "max": 28000000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Glints Survey 2024 (tech 13-17, finance 15-28)",
+        "year": 2024,
+        "confidence": 3
+      },
+      {
+        "role": "backend developer",
+        "level": "senior",
+        "min": 11000000,
+        "max": 30000000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Glints Survey 2024 (tech 11-20, finance 16.7-23.3, media 20-30)",
+        "year": 2024,
+        "confidence": 3
+      },
+      {
+        "role": "QA",
+        "level": "senior",
+        "min": 15000000,
+        "max": 24000000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Glints Survey 2024 (finance)",
+        "year": 2024,
+        "confidence": 3
+      },
+      {
+        "role": "solution architect",
+        "level": "senior",
+        "min": 19000000,
+        "max": 34000000,
+        "currency": "IDR",
+        "period": "month",
+        "source": "Glints Survey 2024 (finance)",
+        "year": 2024,
+        "confidence": 3
+      }
+    ]
+  },
+  "03-government-programs": [
+    {
+      "program": "DTS",
+      "year": 2020,
+      "metric": "participants",
+      "target": 45000,
+      "realized": 58116,
+      "budget_idr": 16451343042,
+      "type": "REALIZED",
+      "source": "DPR RI Puskajiakn policy brief (LKj BPSDM Kominfo)",
+      "url": "https://repositori.dpr.go.id/id/eprint/322/",
+      "confidence": 5
+    },
+    {
+      "program": "DTS",
+      "year": 2021,
+      "metric": "participants",
+      "target": 62764,
+      "realized": 123772,
+      "budget_idr": 122616033402,
+      "type": "REALIZED",
+      "source": "DPR RI brief; Bappenas states 123412",
+      "url": "https://komens.bappenas.go.id/public/storage/files/Dt.4.1_Laporan_Hasil_Pengendalian_Pelaksanaan_Program_Pembangunan_Bidang_Politik_dan_Komunikasi_Tahun_2021_2021.pdf",
+      "confidence": 5
+    },
+    {
+      "program": "DTS",
+      "year": 2023,
+      "metric": "graduates",
+      "realized": 92192,
+      "type": "REALIZED",
+      "source": "Antara quoting Kabadan SDM Kominfo",
+      "url": "https://www.antaranews.com/berita/3922077/",
+      "confidence": 4
+    },
+    {
+      "program": "DTS",
+      "year": 2024,
+      "metric": "target_participants",
+      "target": 100000,
+      "type": "TARGET",
+      "source": "Antara",
+      "url": "https://www.antaranews.com/berita/3922077/",
+      "confidence": 4
+    },
+    {
+      "program": "DTS",
+      "year": 2025,
+      "metric": "cumulative_graduates_2018_2025",
+      "realized": 572072,
+      "detail": {
+        "core_dts": 68964,
+        "microskill": 503108
+      },
+      "as_of": "2025-10-03",
+      "type": "REALIZED",
+      "source": "Komdigi via IndonesiaBaik",
+      "url": "https://indonesiabaik.id/infografis/cetak-talenta-digital-unggul-menuju-indonesia-maju",
+      "confidence": 4
+    },
+    {
+      "program": "MSIB",
+      "batch": "1",
+      "year": 2021,
+      "realized": 13272,
+      "type": "REALIZED",
+      "source": "MUDIMA journal citing program data",
+      "url": "https://journal.formosapublisher.org/index.php/mudima/article/download/489/387/1392",
+      "confidence": 3
+    },
+    {
+      "program": "MSIB",
+      "batch": "1-5",
+      "year": 2023,
+      "realized": ">120000",
+      "type": "REALIZED",
+      "source": "Antara quoting MSIB head",
+      "url": "https://www.antaranews.com/berita/3819936/",
+      "confidence": 4
+    },
+    {
+      "program": "MSIB",
+      "batch": "5",
+      "year": 2023,
+      "realized": 36719,
+      "applicants": 98000,
+      "type": "REALIZED",
+      "source": "Medcom.id quoting Kemendikbudristek",
+      "url": "https://www.medcom.id/pendidikan/news-pendidikan/9K5DZdyk-36-ribu-mahasiswa-siap-ikut-msib-angkatan-ke-5",
+      "confidence": 4
+    },
+    {
+      "program": "MSIB",
+      "batch": "6",
+      "year": 2024,
+      "realized": 47984,
+      "applicants": ">150000",
+      "type": "REALIZED",
+      "source": "kemdikbud.go.id official",
+      "url": "https://www.kemdikbud.go.id/main/blog/2024/02/program-msib-angkatan-6-kemendikbudristek-siap-hasilkan-40000-lebih-talenta-muda-masa-depan",
+      "confidence": 5
+    },
+    {
+      "program": "MSIB",
+      "batch": "7",
+      "year": 2024,
+      "realized": 30228,
+      "partners": 379,
+      "universities": 839,
+      "type": "REALIZED",
+      "source": "kemdiktisaintek.go.id official",
+      "url": "https://kemdiktisaintek.go.id/news/article/msib-angkatan-7-resmi-dimulai",
+      "confidence": 5
+    },
+    {
+      "program": "Magang Nasional (MSIB successor)",
+      "year": 2025,
+      "quota": 100000,
+      "type": "REALIZED quota",
+      "source": "Menaker via media",
+      "url": "https://www.facebook.com/CEMPodomoro/posts/805475971589809",
+      "confidence": 3
+    },
+    {
+      "program": "Magang Nasional",
+      "year": 2026,
+      "quota": 150000,
+      "type": "TARGET",
+      "source": "Menaker Yassierli",
+      "url": "https://www.facebook.com/CEMPodomoro/posts/805475971589809",
+      "confidence": 3
+    },
+    {
+      "program": "GNLD",
+      "year": 2024,
+      "realized": 24640451,
+      "period": "2017–2023",
+      "type": "REALIZED self-reported",
+      "source": "Kominfo press release",
+      "url": "https://www.komdigi.go.id/berita/siaran-pers/detail/siaran-pers-no-07-hm-kominfo-01-2024-tentang-tingkatkan-literasi-digital-kominfo-latih-lebih-dari-24-juta-orang",
+      "confidence": 4
+    },
+    {
+      "program": "1000 Startup Digital",
+      "year": 2023,
+      "registrants": ">100000",
+      "startups": 1400,
+      "formal_jobs": 4000,
+      "informal_freelance_jobs": 20000,
+      "type": "REALIZED claim",
+      "source": "Menkominfo via Antara",
+      "url": "https://www.antaranews.com/berita/3843333/",
+      "confidence": 3
+    },
+    {
+      "program": "CPNS",
+      "year": 2024,
+      "total_formasi_national": 207247,
+      "type": "REALIZED openings",
+      "source": "Setkab/BKN",
+      "url": "https://setkab.go.id/wp-content/uploads/2024/08/1031Pengumuman_CPNS_2024.pdf",
+      "confidence": 4
+    },
+    {
+      "program": "CPNS Kominfo",
+      "year": 2024,
+      "formasi": 4215,
+      "type": "REALIZED openings",
+      "source": "Kominfo announcement",
+      "url": "https://web.komdigi.go.id/resource/",
+      "confidence": 4
+    },
+    {
+      "program": "SPBE",
+      "year": 2023,
+      "index": 2.79,
+      "institutions_evaluated": 621,
+      "type": "REALIZED",
+      "source": "KemenPANRB",
+      "url": "https://setkab.go.id/menteri-panrb-layanan-spbe-di-indonesia-terus-tuai-capaian-positif/",
+      "confidence": 5
+    },
+    {
+      "program": "SPBE",
+      "year": 2024,
+      "index": 3.12,
+      "institutions_evaluated": 615,
+      "type": "REALIZED",
+      "source": "KemenPANRB Kepmen 663/2024",
+      "url": "https://menpan.go.id/site/berita-terkini/indeks-spbe-nasional-meningkat-menteri-rini-penguatan-integrasi-layanan-publik-berbasis-digital",
+      "confidence": 5
+    },
+    {
+      "program": "BPJS Ketenagakerjaan",
+      "year": "2024-07",
+      "total_participants": 58610000,
+      "active_share_pct": 65.84,
+      "type": "REALIZED admin data",
+      "source": "Kemnaker satudata/data.go.id",
+      "url": "https://satudata.kemnaker.go.id/data/kumpulan-data/1913",
+      "confidence": 4
+    },
+    {
+      "program": "BPJS Ketenagakerjaan",
+      "year": "2025-04",
+      "active_participants": 39700000,
+      "bpu_informal": 8990000,
+      "type": "REALIZED",
+      "source": "BPJSTK",
+      "url": "https://www.bpjsketenagakerjaan.go.id/berita/29486/",
+      "confidence": 5
+    },
+    {
+      "metric": "digital_workers_estimate",
+      "year": 2023,
+      "value": 1090000,
+      "share_of_labor_force_pct": 0.75,
+      "labor_force": 144000000,
+      "type": "REALIZED (gov estimate, no methodology)",
+      "source": "Menkominfo Budi Arie via Bisnis",
+      "url": "https://ekonomi.bisnis.com/read/20231213/12/1723726/gaji-warga-ri-minimal-rp14-juta-jika-ingin-indonesia-jadi-negara-maju",
+      "confidence": 3
+    },
+    {
+      "metric": "digital_talent_need_target",
+      "year": 2030,
+      "value": 9000000,
+      "per_year": 600000,
+      "type": "TARGET",
+      "source": "Menko Perekonomian Airlangga (McKinsey/World Bank basis)",
+      "url": "https://voi.id/ekonomi/336549/",
+      "confidence": 4
+    },
+    {
+      "metric": "digital_talents_current_gov_claim",
+      "year": 2025,
+      "value": 3000000,
+      "target_2030": 12000000,
+      "type": "REALIZED claim + TARGET",
+      "source": "Antara",
+      "url": "https://en.antaranews.com/news/365497/",
+      "confidence": 3
+    },
+    {
+      "metric": "coder_target_indonesia_uae",
+      "year": 2025,
+      "value": 10000000,
+      "type": "TARGET",
+      "source": "Komdigi press release",
+      "url": "https://www.komdigi.go.id/berita/siaran-pers/detail/cetak-10-juta-coder-indonesia-uea-siapkan-generasi-muda-kuasai-ai-dan-ekonomi-digital",
+      "confidence": 3
+    },
+    {
+      "metric": "asn_total",
+      "year": 2025,
+      "value": 5600000,
+      "type": "REALIZED",
+      "source": "BKN",
+      "url": "https://www.bkn.go.id/bkn-pamerkan-transformasi-digital-transparansi-layanan-dalam-uji-keterbukaan-informasi-publik-2025/",
+      "confidence": 5
+    }
+  ],
+  "04-corporate-landscape": [
+    {
+      "company": "GoTo Group (GOTO)",
+      "metric": "employees_laid_off_pct",
+      "value": 1300,
+      "pct": 12,
+      "implied_base": 10800,
+      "date": "2022-11",
+      "source": "company statement via Katadata/MetroTV",
+      "url": "https://katadata.co.id/digital/teknologi/637b107575844/",
+      "confidence": 4
+    },
+    {
+      "company": "GoTo Group",
+      "metric": "headcount",
+      "value": 3888,
+      "date": "2023",
+      "source": "Revelio Labs",
+      "url": "https://www.reveliolabs.com/companies/goto-group/employees",
+      "confidence": 3
+    },
+    {
+      "company": "GoTo Group",
+      "metric": "headcount",
+      "value": 3521,
+      "date": "2024",
+      "source": "Revelio Labs",
+      "url": "https://www.reveliolabs.com/companies/goto-group/employees",
+      "confidence": 3
+    },
+    {
+      "company": "GoTo Group",
+      "metric": "layoff",
+      "value": 600,
+      "date": "2023-03",
+      "source": "CNN Indonesia/ecommurz",
+      "url": "https://ecommurz.com/layoff/",
+      "confidence": 4
+    },
+    {
+      "company": "Bukalapak (BUKA)",
+      "metric": "employees",
+      "value": 1815,
+      "date": "2022-12-31",
+      "source": "Annual Report 2022 (audited)",
+      "url": "https://s1.bukalapak.com/content/Bukalapak_Annual_Report_2022_Final_.pdf",
+      "confidence": 5
+    },
+    {
+      "company": "Bukalapak",
+      "metric": "employees",
+      "value": 1538,
+      "date": "2023",
+      "source": "Sustainability Report 2023",
+      "url": "https://s1.bukalapak.com/content/documents/websites/7/103411/2023_Sustainability_Report_Web_Ver_.pdf",
+      "confidence": 5
+    },
+    {
+      "company": "Blibli Tiket / Global Digital Niaga (BELI)",
+      "metric": "employees",
+      "value": 3609,
+      "date": "2022",
+      "source": "Sustainability Report 2022 (GRI 2-7)",
+      "url": "https://asset-about.blibli.com/2023/05/Sustainability-Report-2022-PT-Global-Digital-Niaga-Tbk-lowres.pdf",
+      "confidence": 5
+    },
+    {
+      "company": "Blibli (standalone)",
+      "metric": "employees",
+      "value": 2081,
+      "date": "2022-Q4",
+      "source": "BELI filings via Wikipedia",
+      "url": "https://id.wikipedia.org/wiki/Blibli",
+      "confidence": 4
+    },
+    {
+      "company": "tiket.com",
+      "metric": "employees",
+      "value": 2179,
+      "date": "2026",
+      "source": "LinkedIn",
+      "url": "https://www.linkedin.com/company/pt-global-tiket-network",
+      "confidence": 2
+    },
+    {
+      "company": "Traveloka",
+      "metric": "headcount",
+      "value": 2940,
+      "date": "2023",
+      "source": "Revelio Labs",
+      "url": "https://www.reveliolabs.com/companies/traveloka-indonesia/employees",
+      "confidence": 3
+    },
+    {
+      "company": "Traveloka",
+      "metric": "headcount",
+      "value": 3040,
+      "date": "2026",
+      "source": "Revelio Labs",
+      "url": "https://www.reveliolabs.com/companies/traveloka-indonesia/employees",
+      "confidence": 3
+    },
+    {
+      "company": "Ruangguru",
+      "metric": "employees",
+      "value": 6000,
+      "operator": ">",
+      "date": "2021-2024",
+      "source": "company website",
+      "url": "https://www.ruangguru.com/about-us",
+      "confidence": 3
+    },
+    {
+      "company": "Ruangguru",
+      "metric": "layoff",
+      "value": 200,
+      "date": "2022-11",
+      "source": "DailySocial",
+      "url": "https://dailysocial.id/post/ruangguru-layoff-2022",
+      "confidence": 3
+    },
+    {
+      "company": "Xendit",
+      "metric": "employees",
+      "value": 648,
+      "date": "2024-06",
+      "source": "LinkedIn/GetLatka; company '600+'",
+      "url": "https://www.xendit.co/en/company/",
+      "confidence": 3
+    },
+    {
+      "company": "Flip",
+      "metric": "employees",
+      "value": 667,
+      "date": "2026",
+      "source": "LinkedIn",
+      "url": "https://linkedin.com/company/flip.id",
+      "confidence": 2
+    },
+    {
+      "company": "Flip",
+      "metric": "employees",
+      "value": 400,
+      "operator": ">",
+      "date": "2022-H1",
+      "source": "company PR",
+      "url": "https://flip.id/en/berita-dan-media/siaran-pers/flip-secures-second-close-of-series-b",
+      "confidence": 4
+    },
+    {
+      "company": "Ajaib",
+      "metric": "layoff",
+      "value": 67,
+      "pct": 8,
+      "implied_base": 840,
+      "date": "2022-11",
+      "source": "company statement via bisnis.com",
+      "url": "https://teknologi.bisnis.com/read/20221208/266/1606654/",
+      "confidence": 4
+    },
+    {
+      "company": "Ajaib",
+      "metric": "employees",
+      "value": 784,
+      "date": "2025-12",
+      "source": "LinkedIn via GetLatka",
+      "url": "https://getlatka.com/companies/ajaib.co.id",
+      "confidence": 2
+    },
+    {
+      "company": "Stockbit",
+      "metric": "employees",
+      "value": 651,
+      "date": "2026",
+      "source": "Tracxn",
+      "url": "https://tracxn.com/d/companies/stockbit",
+      "confidence": 2
+    },
+    {
+      "company": "Shipper",
+      "metric": "layoff",
+      "value": 65,
+      "pct": 8,
+      "date": "2022-12",
+      "source": "CNBC Indonesia (official)",
+      "url": "https://www.cnbcindonesia.com/tech/20221213085136-37-396318/",
+      "confidence": 4
+    },
+    {
+      "company": "Shipper",
+      "metric": "headcount",
+      "value": 1470,
+      "date": "2023 (peak)",
+      "source": "Revelio Labs",
+      "url": "https://www.reveliolabs.com/companies/shipper/employees",
+      "confidence": 3
+    },
+    {
+      "company": "Shipper",
+      "metric": "headcount",
+      "value": 823,
+      "date": "2026",
+      "source": "Revelio Labs",
+      "url": "https://www.reveliolabs.com/companies/shipper/employees",
+      "confidence": 3
+    },
+    {
+      "company": "Sirclo",
+      "metric": "employees",
+      "value": 2000,
+      "date": "2022-01",
+      "source": "Bloomberg via ET HRWorld",
+      "url": "https://hr.economictimes.indiatimes.com/news/workplace-4-0/",
+      "confidence": 4
+    },
+    {
+      "company": "Sirclo",
+      "metric": "layoff",
+      "value": 160,
+      "pct": 8,
+      "date": "2022-11",
+      "source": "DailySocial/Bloomberg",
+      "url": "https://dailysocial.id/post/sirclo-layoff-2022",
+      "confidence": 4
+    },
+    {
+      "company": "Tokopedia",
+      "metric": "layoff",
+      "value": 450,
+      "date": "2024-06",
+      "source": "CNN Indonesia (post TikTok merger)",
+      "url": "https://ecommurz.com/layoff/",
+      "confidence": 4
+    },
+    {
+      "company": "Shopee Indonesia",
+      "metric": "layoff_pct",
+      "value": 3,
+      "unit": "pct",
+      "date": "2022-09",
+      "source": "Bloomberg/SCMP",
+      "url": "https://www.scmp.com/news/asia/southeast-asia/article/3193009/",
+      "confidence": 4
+    },
+    {
+      "company": "Grab Holdings (regional)",
+      "metric": "headcount",
+      "value": 12660,
+      "engineering_pct": 29.7,
+      "date": "2026-06",
+      "source": "Revelio Labs",
+      "url": "https://www.reveliolabs.com/companies/grab-holdings/employees",
+      "confidence": 3
+    },
+    {
+      "company": "Bank Jago (ARTO)",
+      "metric": "employees",
+      "value": 631,
+      "date": "2026-06-30",
+      "source": "stockanalysis.com from IDX filings",
+      "url": "https://stockanalysis.com/quote/idx/ARTO/employees/",
+      "confidence": 4
+    },
+    {
+      "company": "SeaBank Indonesia",
+      "metric": "employees",
+      "value": 1132,
+      "date": "2025",
+      "source": "id.Wikipedia citing SeaBank AR",
+      "url": "https://id.wikipedia.org/wiki/SeaBank",
+      "confidence": 3
+    },
+    {
+      "company": "BCA",
+      "metric": "employees",
+      "value": 27000,
+      "operator": "~",
+      "date": "2023",
+      "source": "Annual Report 2023 / press",
+      "url": "https://www.bca.co.id/-/media/Feature/Report/File/S8/Laporan-Tahunan/2024/20240215-buku-bca-ar-2023-ina-website.pdf",
+      "confidence": 5
+    },
+    {
+      "company": "BCA",
+      "metric": "hires_mainly_IT",
+      "value": 4000,
+      "operator": "~",
+      "date": "2023",
+      "source": "Annual Report 2023 p.29",
+      "url": "https://www.bca.co.id/-/media/Feature/Report/File/S8/Laporan-Tahunan/2024/20240215-buku-bca-ar-2023-ina-website.pdf",
+      "confidence": 5
+    },
+    {
+      "company": "Bank Mandiri",
+      "metric": "employees",
+      "value": 38247,
+      "date": "2020",
+      "source": "FY2020 analyst meeting deck",
+      "url": "https://www.bankmandiri.co.id/documents/38265486/",
+      "confidence": 4
+    },
+    {
+      "company": "Bank Mandiri",
+      "metric": "MDA_applicants_batch2",
+      "value": 24673,
+      "graduates": 600,
+      "date": "2023-2024",
+      "source": "viva/gadget (official)",
+      "url": "https://gadget.viva.co.id/viral/2533-",
+      "confidence": 4
+    },
+    {
+      "company": "Telkomsel",
+      "metric": "employees_incl_subsidiaries",
+      "value": 6455,
+      "date": "2023",
+      "source": "Annual Report 2023 (audited)",
+      "url": "https://www.telkomsel.com/sites/default/files/2025-13/Annual-Report-Telkomsel-2023--ID.pdf",
+      "confidence": 5
+    },
+    {
+      "company": "Indosat Ooredoo Hutchison (ISAT)",
+      "metric": "employees",
+      "value": 4041,
+      "date": "2023",
+      "source": "Annual Report 2023 (audited)",
+      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202407/a0cbffadb9_ce8f22c7be.pdf",
+      "confidence": 5
+    },
+    {
+      "company": "Indosat Ooredoo Hutchison",
+      "metric": "employees",
+      "value": 4202,
+      "date": "2025",
+      "source": "Annual Report 2025 (audited)",
+      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202604/d1bd119925_2fd9cadd6b.pdf",
+      "confidence": 5
+    },
+    {
+      "company": "XL Axiata",
+      "metric": "employees",
+      "value": 1575,
+      "date": "2021",
+      "source": "Integrated Annual Report 2021",
+      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202203/c9f2194790_269d8973f6.pdf",
+      "confidence": 5
+    },
+    {
+      "company": "Telkom Group",
+      "metric": "employee_change",
+      "value": -729,
+      "pct": -3,
+      "date": "2023",
+      "source": "Telkom Annual Report 2023",
+      "url": "http://www.telkom.co.id/minio/show/data/lampiran/1711937200650_original_Laporan%20Tahunan%20Telkom%202023_website.pdf",
+      "confidence": 4
+    },
+    {
+      "company": "Metrodata Electronics (MTDL)",
+      "metric": "headcount",
+      "value": 4077,
+      "date": "2023",
+      "source": "Revelio Labs",
+      "url": "https://www.reveliolabs.com/companies/metrodata-electronics/employees",
+      "confidence": 3
+    },
+    {
+      "company": "Telkomsigma (Sigma Cipta Caraka)",
+      "metric": "headcount",
+      "value": 6011,
+      "date": "2023 (peak)",
+      "source": "Revelio Labs",
+      "url": "https://www.reveliolabs.com/companies/sigma-cipta-caraka/employees",
+      "confidence": 3
+    },
+    {
+      "company": "Telkomsigma",
+      "metric": "headcount",
+      "value": 5321,
+      "date": "2026-03",
+      "source": "Revelio Labs",
+      "url": "https://www.reveliolabs.com/companies/sigma-cipta-caraka/employees",
+      "confidence": 3
+    },
+    {
+      "company": "Accenture Indonesia",
+      "metric": "employees",
+      "value": 1359,
+      "female_pct": 40.7,
+      "source": "company website (self-published)",
+      "url": "https://www.accenture.com/id-en/about/company-index",
+      "confidence": 4
+    },
+    {
+      "company": "IBM Indonesia",
+      "metric": "consulting_staff",
+      "value": 1000,
+      "operator": ">",
+      "date": "2023-11",
+      "source": "Bisnis.com (IBM statements)",
+      "url": "https://teknologi.bisnis.com/read/20231129/84/1719221/",
+      "confidence": 4
+    },
+    {
+      "company": "APTIKNAS",
+      "metric": "member_companies",
+      "value": 2000,
+      "operator": "~",
+      "source": "intimedia.id (association)",
+      "url": "https://intimedia.id/read/aptiknas-strengthens-ai-literacy",
+      "confidence": 3
+    },
+    {
+      "company": "Indonesia (ecosystem)",
+      "metric": "active_startups",
+      "value": 2100,
+      "operator": ">",
+      "source": "Startup Ranking/Catcha (via journal)",
+      "url": "https://journal.unpad.ac.id/cgi/viewcontent.php?article=1076&context=pjih",
+      "confidence": 3
+    },
+    {
+      "company": "Indonesia (ecosystem)",
+      "metric": "startups_2018_mapping",
+      "value": 992,
+      "source": "MIKTI mapping via journal",
+      "url": "https://journal.unpad.ac.id/cgi/viewcontent.php?article=1076&context=pjih",
+      "confidence": 3
+    },
+    {
+      "company": "eFishery",
+      "metric": "layoff",
+      "value": 300,
+      "date": "2025-02",
+      "note": "headcounts unreliable, fraud admitted",
+      "source": "Kompas via id.Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/EFishery",
+      "confidence": 2
+    },
+    {
+      "company": "BCA Finance",
+      "metric": "employees",
+      "value": 3523,
+      "date": "2022",
+      "source": "Annual Report 2022",
+      "url": "https://bcafinance.co.id/Media/Default/Laporan/Tahunan/",
+      "confidence": 5
+    }
+  ],
+  "05-macro-reports": [
+    {
+      "id": "origin-9m",
+      "claim": "Indonesia needs 9M digital talents by 2030 (~600k/yr)",
+      "source": "J.P. Morgan/McKinsey 'New Skills at Work' ASEAN-5 (Tan & Tang); carried by World Bank 'Preparing ICT Skills for Digital Economy: Indonesia within ASEAN Context'",
+      "year": [
+        2016,
+        2018
+      ],
+      "methodology": "non-public consultancy labor-demand model; WB carrier was 3-month desk research + qualitative; counts cumulative 2015-2030 shortage of skilled AND semi-skilled ICT workers",
+      "url": "https://www.almendron.com/tribuna/wp-content/uploads/2022/07/preparing-ict-skills-for-digital-economy.pdf",
+      "confidence": 3,
+      "verdict": "weak citation chain; widely misattributed (McKinsey 2018 / WEF 2015 / Kominfo)"
+    },
+    {
+      "id": "imdi-12m",
+      "claim": "Indonesia needs 12M digital talents by 2030",
+      "source": "Kominfo IMDI 2024",
+      "year": 2024,
+      "methodology": "Kominfo model built on BPS + Kemendikbudristek data; ~9M supplyable by universities, gap 3M, ~500k/yr",
+      "url": "https://intimedia.id/read/digital-talent-gap-in-indonesia-kominfo-releases-the-2024-indonesia-digital-society-index",
+      "confidence": 4,
+      "lineage_flag": "BPS-derived",
+      "verdict": "government demand-projection; supersedes 9M in official use"
+    },
+    {
+      "id": "bpsdm-456k",
+      "claim": "Indonesia needs ~456,000 digital talents per year",
+      "source": "BPSDM Komdigi internal study",
+      "year": [
+        2024,
+        2025
+      ],
+      "methodology": "internal BPSDM modeling using BPS data (described as more precise than WB/McKinsey)",
+      "url": "https://bpsdm.komdigi.go.id/berita-pengembangan-talenta-digital-dalam-menghadapi-tantangan-pada-era-perubahan-46-1926",
+      "confidence": 4,
+      "lineage_flag": "BPS"
+    },
+    {
+      "id": "gh-octoverse-2023",
+      "claim": "2.9M Indonesian developers on GitHub, +31% YoY, 3rd in APAC",
+      "source": "GitHub Octoverse 2023",
+      "year": 2023,
+      "methodology": "platform accounts (placement by profile location/IP)",
+      "url": "https://www.liputan6.com/tekno/read/5453801/",
+      "confidence": 4,
+      "caveat": "accounts not paid developers"
+    },
+    {
+      "id": "gh-octoverse-2025",
+      "claim": "4.37M Indonesian GitHub accounts 2025 (#8 globally), quadrupled since 2020, projected 8.7M by 2030; 5.27M by Q1 2026",
+      "source": "GitHub Octoverse 2025 / Innovation Graph",
+      "year": [
+        2025,
+        2026
+      ],
+      "methodology": "account-based, 5-model forecast mean for 2030",
+      "url": "https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/",
+      "confidence": 4,
+      "caveat": "see above"
+    },
+    {
+      "id": "slashdata-id",
+      "value": "Indonesia = 32% of 'rest of East Asia' developer population; derived absolute ~0.8M in 2022 (global 48.4M by Q3 2025; Indonesia per-country count NOT published)",
+      "source": "SlashData Developer Nation",
+      "year": [
+        2022,
+        2025
+      ],
+      "methodology": "bottom-up global model calibrated on GitHub/Stack Overflow activity + US/EU employment stats + 10k+/wave weighted surveys",
+      "url": "https://www.slashdata.co/blog/china-and-the-rest-of-east-asia-developer-market",
+      "confidence": 3,
+      "caveat": "Indonesia absolute derived by me from region shares"
+    },
+    {
+      "id": "evans",
+      "value": "Evans Data publishes per-country developer counts (incl. Indonesia) but paywalled; global ~27M professional devs 2024",
+      "source": "Evans Data Worldwide Developer Population Report",
+      "year": [
+        2024,
+        2025
+      ],
+      "methodology": "proprietary model + semi-annual Global Development Survey (185k panel)",
+      "url": "https://evansdata.com/devpopulation",
+      "confidence": 3,
+      "note": "data gap for Indonesia specifics"
+    },
+    {
+      "id": "so-survey",
+      "value": "Stack Overflow respondents from Indonesia: 632 (2021, 0.76%), 351 (2024, 0.6%), 180 (2025, 0.5%)",
+      "source": "Stack Overflow Developer Survey",
+      "year": [
+        2021,
+        2024,
+        2025
+      ],
+      "methodology": "self-selected unweighted online survey",
+      "url": "https://survey.stackoverflow.co/2025/developers",
+      "confidence": 4,
+      "caveat": "not representative; no IDN salary published"
+    },
+    {
+      "id": "linkedin-236k",
+      "claim": "~236K Indonesian software engineer/developer/programmer LinkedIn profiles (2023 keyword search)",
+      "source": "Indonesian tech blogger via LinkedIn search",
+      "year": 2023,
+      "methodology": "LinkedIn keyword search count — informal, unreproducible",
+      "url": "https://safarseptyadi.com/jumlah-programmer-indonesia-meningkat-pesat-menempati-9-di-dunia/",
+      "confidence": 2
+    },
+    {
+      "id": "app-economy",
+      "claim": "10,000 app-dev companies; 162,000 app-economy jobs (36K direct technical)",
+      "source": "Access Partnership for Google",
+      "year": 2023,
+      "methodology": "economic-impact modeling + app-store data",
+      "url": "https://www.cnbcindonesia.com/tech/20230911161150-37-471439/",
+      "confidence": 3
+    },
+    {
+      "id": "ai-talent-count",
+      "value": "AI talent ~28K (2019) → ~96K (2024), 0.06% of workforce; >70% reskilled",
+      "source": "LinkedIn-based report (per Kompas.id)",
+      "year": [
+        2019,
+        2024
+      ],
+      "methodology": "LinkedIn member profiles",
+      "url": "https://www.kompas.id/artikel/en-berdaulat-dengan-talenta-ai-indonesia",
+      "confidence": 3,
+      "caveat": "LinkedIn coverage of Indonesian workforce is low (flagged by Stanford HAI)"
+    },
+    {
+      "id": "ai-index-2025",
+      "value": "+191% AI talent concentration growth 2016–2024 (10th of 15)",
+      "source": "Stanford HAI AI Index 2025",
+      "year": 2025,
+      "methodology": "LinkedIn concentration (share of members with ≥2 AI skills or AI job)",
+      "url": "via https://www.idnresearchinstitute.com/english/indonesia-s-job-market-employment-confidence-index-falls-00-314l1-mt4n5g",
+      "confidence": 3
+    },
+    {
+      "id": "ai-index-2026",
+      "value": "+108% AI talent concentration 2019–25 (6th globally); +31.7% relative AI hiring growth 2025 — highest in world",
+      "source": "Stanford HAI AI Index 2026 / LinkedIn Economic Graph",
+      "year": 2026,
+      "url": "https://aiadoption.org/data/ai-talent-concentration-growth/",
+      "confidence": 4,
+      "caveat": "concentration ratio, not headcount"
+    },
+    {
+      "id": "jobs-on-rise-id",
+      "claim": "Top fastest-growing roles Indonesia 2025: Travel Consultant, Cyber Security Engineer, SOC Analyst (AI Engineer #1 for grads only)",
+      "source": "LinkedIn Jobs on the Rise 2025 Indonesia",
+      "year": 2025,
+      "methodology": "LinkedIn Economic Graph job-start growth ranking (2022-01 to 2024-07)",
+      "url": "https://www.kompas.com/edu/read/2025/01/15/165201771/",
+      "confidence": 4
+    },
+    {
+      "id": "econsea-2024",
+      "value": "Indonesia digital economy GMV $90B 2024 (+13%), e-comm $65B, 2030 $200-360B",
+      "source": "Google-Temasek-Bain e-Conomy SEA 2024",
+      "year": 2024,
+      "methodology": "Bain analysis + research partners + Kantar consumer survey + investor interviews",
+      "url": "https://services.google.com/fh/files/misc/indonesia_e_conomy_sea_2024_report.pdf",
+      "confidence": 4
+    },
+    {
+      "id": "econsea-2025",
+      "value": "GMV ≈$99B 2025 (+14%); e-comm $71B (2024 restated to $62B); payments GTV $538B; AI-app revenue +127%; 80% daily AI use",
+      "source": "e-Conomy SEA 2025",
+      "year": 2025,
+      "methodology": "same multi-method",
+      "url": "https://services.google.com/fh/files/misc/indonesia_e_conomy_sea_2025_report.pdf",
+      "confidence": 4
+    },
+    {
+      "id": "econsea-2018-talent",
+      "value": ">100K skilled internet-economy professionals across all SEA (2018), growing ~10%/yr",
+      "source": "e-Conomy SEA 2018",
+      "year": 2018,
+      "url": "https://www.thinkwithgoogle.com/_qs/documents/6847/Report_e-Conomy_SEA_2018_by_Google_Temasek2.pdf",
+      "confidence": 3,
+      "note": "order of magnitude vs '9M Indonesia' claim"
+    },
+    {
+      "id": "mckinsey-archipelago",
+      "claims": [
+        "online commerce to support ~26M jobs by 2022",
+        "$65B online commerce revenue by 2022",
+        "$150B digital GDP impact 2025 (2016 report)"
+      ],
+      "source": "McKinsey 'The Digital Archipelago' (2018) / 'Unlocking Indonesia's Digital Opportunity' (2016)",
+      "year": [
+        2016,
+        2018
+      ],
+      "methodology": "consumer survey + macro modeling; actual 2022 e-commerce ~$60B-ish → revenue/gmv projection ~2 years late / low",
+      "url": "https://www.mckinsey.com/~/media/mckinsey/featured%20insights/asia%20pacific/the%20digital%20archipelago%20how%20online%20commerce%20is%20driving%20indonesias%20economic%20development/the-digital-archipelago-how-online-commerce-is-driving-indonesias-economic-development.pdf",
+      "confidence": 4,
+      "verdict": "directional only"
+    },
+    {
+      "id": "kornferry",
+      "claim": "Indonesia TMT talent deficit 600K-1.2M by 2030",
+      "source": "Korn Ferry Global Talent Crunch",
+      "year": 2018,
+      "methodology": "global supply-demand model",
+      "url": "https://geekhunter.co/artikel/tech-talent-shortage-in-indonesia/",
+      "confidence": 3
+    },
+    {
+      "id": "gig-profiles",
+      "value": "171,033 Indonesian freelancer profiles across 9 platforms (Oct 2018); only 2,062 (1.2%) active in prior 28 days; Upwork: 13,945 profiles / 449 active",
+      "source": "Sucahyo et al. (DIODE)",
+      "year": 2018,
+      "methodology": "web scraping of Upwork/Fiverr/Sribulancer/Fastwork etc.",
+      "url": "https://diode.network/2019/10/15/numbers-type-and-income-of-online-gig-workers-in-indonesia/",
+      "confidence": 4,
+      "note": "data stale (2018)"
+    },
+    {
+      "id": "upwork-active",
+      "value": "<10,000 searchable Indonesian Upwork profiles with ≥$1 earnings; 169 above $100K; software-dev 37% of IDN freelancers",
+      "source": "LSE blog study (Permana)",
+      "year": 2023,
+      "methodology": "Upwork scrape/earnings analysis",
+      "url": "https://blogs.lse.ac.uk/seac/2023/11/13/the-gig-economy-as-a-stepping-stone-career-trajectories-of-online-platform-workers-in-indonesia/",
+      "confidence": 3
+    },
+    {
+      "id": "platform-livelihoods",
+      "claims": [
+        "~20M Indonesians earn some income via platforms (2022)",
+        "~4.5M exclusively",
+        "~2.25M active ride-hail/delivery gig workers"
+      ],
+      "source": "Caribou Digital / Mastercard Center report",
+      "year": [
+        2022,
+        2024
+      ],
+      "methodology": "triangulation of platform self-reports + World Bank surveys (author-acknowledged unreliable platform numbers)",
+      "url": "https://caribou.global/wp-content/uploads/2025/04/Indonesia-report-Final-Master-for-Web-1.pdf",
+      "confidence": 3
+    },
+    {
+      "id": "bps-freelance-flag",
+      "value": "BPS: 13.6M 'freelancers' (Feb 2026); 46.47M (2023)",
+      "source": "BPS Sakernas",
+      "year": [
+        2023,
+        2026
+      ],
+      "methodology": "national labor-force survey; definition = non-permanent workers incl. agriculture (informal casual labor, NOT digital freelancers)",
+      "url": "https://databoks.katadata.co.id/en/employment/statistics/6a3dd8b1c7e23/",
+      "confidence": 2,
+      "verdict": "BANNED per project rules; flagged for definitional misuse"
+    },
+    {
+      "id": "remote-71pct",
+      "value": "71% of Indonesian workers willing to remote-work for foreign employers (55% in 2020)",
+      "source": "JobStreet×BCG×The Network 'Decoding Global Talent 2024'",
+      "year": 2024,
+      "methodology": "global online panel survey, n=19,154 Indonesian (of 150k+)",
+      "url": "https://www.tempo.co/ekonomia/minat-pekerja-indonesia-ke-luar-negeri-turun-71-persen-pekerja-pilih-remote-working-49849",
+      "confidence": 3
+    },
+    {
+      "id": "logitech-hybrid",
+      "value": "62% prefer hybrid / 21% fully remote / 16% fully office",
+      "source": "Logitech Hybrid Work Trend Insights Indonesia 2023",
+      "year": 2023,
+      "methodology": "online survey n=500 Indonesian white-collar",
+      "url": "https://info.logitech.com/rs/201-WGH-889/images/Logitech-Hybrid-Work-Trend-Insights-Indonesia-2023.pdf",
+      "confidence": 3
+    },
+    {
+      "id": "hp-wri",
+      "value": "96% of Indonesian knowledge workers would trade 14-15% of salary for flexibility/WFA",
+      "source": "HP Work Relationship Index 2024",
+      "year": 2024,
+      "methodology": "survey n=1,000 IDN knowledge workers + 200 IT + 100 leaders",
+      "url": "https://tekno.kompas.com/read/2024/09/25/09010057/",
+      "confidence": 3
+    },
+    {
+      "id": "glints-salary",
+      "value": "Indonesia junior engineer salaries -7% YoY 2023, senior +2-3%; tech premium +29% vs non-tech",
+      "source": "Glints×Monk's Hill SEA Startup Tech Talent Report 2023/24",
+      "year": 2023,
+      "methodology": "proprietary salary dataset 10,000+ data points + 72-startup survey",
+      "url": "https://assets-global.website-files.com/...SEASTTR%202024.pdf",
+      "confidence": 3
+    },
+    {
+      "id": "wb-beyond-unicorns",
+      "claims": [
+        "Internet-using gig workers earn +6.2%/hr vs informal peers, 49 hrs/wk",
+        "13.2M Indonesians (10.4% of employed) engaged in e-commerce (2019)",
+        "71% sell only via social/chat"
+      ],
+      "source": "World Bank, Beyond Unicorns: Harnessing Digital Technologies for Inclusion in Indonesia",
+      "year": 2021,
+      "methodology": "household/firm surveys + online platform data; some official-stats lineage",
+      "url": "https://documents1.worldbank.org/curated/en/321071627050744463/pdf/Beyond-Unicorns-Harnessing-Digital-Technologies-for-Inclusion-in-Indonesia.pdf",
+      "confidence": 4,
+      "lineage_flag": "mixed official statistics"
+    },
+    {
+      "id": "aspiiluki-2m",
+      "claim": "~2M developers in Indonesia",
+      "source": "ASPIlUKI/PANDI statements (developerday.id launch)",
+      "year": 2026,
+      "methodology": "none given",
+      "url": "https://inet.detik.com/business/d-8620672/",
+      "confidence": 2,
+      "verdict": "no methodology; probably GitHub-influenced"
+    },
+    {
+      "id": "dts-100k",
+      "value": "Digital Talent Scholarship trains ~100k/yr (budget-capped)",
+      "source": "Kominfo/Komdigi (program data)",
+      "year": [
+        2022,
+        2025
+      ],
+      "methodology": "program completion counts",
+      "url": "https://www.cnnindonesia.com/teknologi/20241014092531-185-1154998/kominfo-klaim-talenta-digital-indonesia-melonjak-di-era-jokowi",
+      "confidence": 3,
+      "note": "output metrics only; excludes quality/outcome evidence"
+    }
+  ],
+  "07-freelance-informal-remote": [
+    {
+      "id": "sribu-1.3m",
+      "metric": "registered freelancers, all categories (platform claim)",
+      "value": 1300000,
+      "scope": "all categories not IT-only",
+      "source": "Sribu (ex Sribulancer) own media-kit page",
+      "year": "2024-2025",
+      "method": "self-published marketing copy, no audit",
+      "url": "https://go.sribu.com/id/media-kit/",
+      "confidence": 2,
+      "note": "Page also self-inconsistently claims 40,000+ and 50,000+ clients since 2012"
+    },
+    {
+      "id": "fastwork-150k",
+      "metric": "completed jobs, all categories, TH+ID+VN group (platform claim)",
+      "value": 150000,
+      "scope": "all categories, not Indonesia-only",
+      "source": "Fastwork Indonesia homepage",
+      "year": "2026",
+      "method": "self-published marketing copy",
+      "url": "https://fastwork.id/",
+      "confidence": 2
+    },
+    {
+      "id": "projects-live",
+      "metric": "IT-centric local freelance marketplace operational status",
+      "value": "live; active blog through Oct 2026; core categories: web/mobile/desktop dev",
+      "source": "projects.co.id homepage",
+      "year": "2026",
+      "method": "direct observation",
+      "url": "https://projects.co.id/",
+      "confidence": 4,
+      "note": "no user/project/revenue counts published; prominent escrow(rekber) model; published PPh21/23 freelancer tax guide"
+    },
+    {
+      "id": "sribulancer-defunct",
+      "metric": "original sribulancer.com status",
+      "value": "404; brand merged into Sribu",
+      "source": "direct fetch",
+      "year": "2026",
+      "method": "direct fetch",
+      "url": "https://www.sribulancer.com/",
+      "confidence": 4
+    },
+    {
+      "id": "kerja1001",
+      "metric": "local platform liveness",
+      "value": "unresolvable/likely defunct",
+      "source": "DNS failure",
+      "year": "2026",
+      "method": "direct fetch attempt",
+      "url": "https://www.kerja1001.com/",
+      "confidence": 1
+    },
+    {
+      "id": "turing-id",
+      "metric": "Indonesian developers on Turing",
+      "value": "NO PUBLISHED COUNT; country page 404",
+      "source": "turing.com",
+      "year": "2026",
+      "method": "direct fetch",
+      "url": "https://www.turing.com/countries/indonesia",
+      "confidence": 1,
+      "note": "'Indonesia top-5 supplier' claims unverified"
+    },
+    {
+      "id": "arc-dev",
+      "metric": "Indonesian talent on Arc.dev",
+      "value": "NO PUBLISHED COUNTRY COUNT FOUND",
+      "source": "arc.dev",
+      "year": "2026",
+      "method": "direct fetch",
+      "url": "https://arc.dev/",
+      "confidence": 2
+    },
+    {
+      "id": "deel-id",
+      "metric": "Deel Indonesia contractors/employees",
+      "value": "GAP - reports exist historically but no Indonesia figure retrievable; /press has zero 'Indonesia' occurrences; report URLs 404",
+      "source": "deel.com/press",
+      "year": "2026",
+      "method": "1MB page fetch + keyword scan",
+      "url": "https://www.deel.com/press",
+      "confidence": 1
+    },
+    {
+      "id": "oyster-remote-gaps",
+      "metric": "Oyster/Remote.com Indonesia figures",
+      "value": "GAP - report URLs 404",
+      "source": "remote.com, oysterhr.com probes",
+      "year": "2026",
+      "method": "direct fetch probes",
+      "url": "https://remote.com/platform-research-report",
+      "confidence": 1
+    },
+    {
+      "id": "payoneer-id",
+      "metric": "Indonesia freelance hourly rate (Payoneer)",
+      "value": "GAP - report URLs dead; blog reachable but no ID post accessible",
+      "source": "payoneer.com probes",
+      "year": "2026",
+      "method": "direct fetch probes + blog sitemap attempt",
+      "url": "https://www.payoneer.com/freelancer-insights-report/",
+      "confidence": 1
+    },
+    {
+      "id": "gigson",
+      "metric": "TaaS formalized freelance channel (Indonesian)",
+      "value": "Devcenter rebranded product 'Gigson by Devcenter': forward-deployed/managed developers, cross-border compliance handled; no volume published",
+      "source": "devcenter.co",
+      "year": "2026",
+      "method": "direct fetch",
+      "url": "https://www.devcenter.co/",
+      "confidence": 3
+    },
+    {
+      "id": "ekipa",
+      "metric": "Ekipa (TaaS candidate) operational status",
+      "value": "fetch failed (TLS error) - unverified",
+      "source": "ekipa.co probe",
+      "year": "2026",
+      "method": "direct fetch attempt",
+      "url": "https://www.ekipa.co/",
+      "confidence": 1
+    },
+    {
+      "id": "telkomsigma",
+      "metric": "Telkomsigma employee/vendor-outsourcing count",
+      "value": "GAP - site live but no count in rendered text",
+      "source": "telkomsigma.co.id",
+      "year": "2026",
+      "method": "direct fetch + keyword scan",
+      "url": "https://www.telkomsigma.co.id/",
+      "confidence": 1
+    },
+    {
+      "id": "e33g",
+      "metric": "E33G remote-worker KITAS take-up (applications)",
+      "value": "GAP - no figure retrievable this session",
+      "source": "n/a (immigration pages unreachable via direct fetch)",
+      "year": "2024-2026",
+      "method": "failed retrieval; search engines down",
+      "url": "-",
+      "confidence": 1,
+      "note": "verify via Ditjen Imigrasi statistics/press when search works"
+    },
+    {
+      "id": "aptiknas",
+      "metric": "APTIKNAS member-company count",
+      "value": "GAP - domains aptiknas.or.id / aptiknas.com unreachable",
+      "source": "DNS/connection failures",
+      "year": "2026",
+      "method": "direct fetch attempts",
+      "url": "-",
+      "confidence": 1
+    },
+    {
+      "id": "registered-vs-active",
+      "metric": "structural ratio: registered vs earning freelancers (IT slice)",
+      "value": "two+ orders of magnitude gap (1.3M registrations all-cat vs 40-50K clients served in 13yr locally; <10K ever earned >=$1K on Upwork per parent brief)",
+      "source": "inference combining verified platform claims + parent-session Upwork data",
+      "year": "2012-2026",
+      "method": "triangulation",
+      "url": "-",
+      "confidence": 2,
+      "note": "key modeling anchor for informal/market side: opt-in registrations massively overstate the active workforce"
+    }
+  ],
+  "08-regional-distribution": [
+    {
+      "id": "startupblink-jakarta-share",
+      "metric": "share_of_indonesia_startup_ecosystem_score_jakarta",
+      "value": 84.8,
+      "unit": "percent",
+      "source": "StartupBlink Global Startup Ecosystem Index",
+      "year": 2026,
+      "methodology": "composite index score of startups, quality, funding per city",
+      "url": "https://www.startupblink.com/startup-ecosystem/jakarta-id",
+      "confidence": 4
+    },
+    {
+      "id": "startupblink-jakarta-vs-bandung",
+      "metric": "jakarta_ecosystem_strength_vs_bandung",
+      "value": 1303,
+      "unit": "percent_stronger",
+      "source": "StartupBlink",
+      "year": 2026,
+      "methodology": "index score ratio",
+      "url": "https://www.startupblink.com/startup-ecosystem/jakarta-id",
+      "confidence": 4
+    },
+    {
+      "id": "linkedin-jakarta-jobs",
+      "metric": "linkedin_jobs_jakarta_share_snapshot",
+      "value": 55,
+      "unit": "percent_approx",
+      "source": "LinkedIn jobs pages live crawl (6000+/11000+)",
+      "year": 2026,
+      "methodology": "one-day live site counts, all roles",
+      "url": "https://www.linkedin.com/jobs/jobs-in-indonesia/",
+      "confidence": 3
+    },
+    {
+      "id": "startupblink-yogya",
+      "metric": "startups_yogyakarta",
+      "value": 61,
+      "unit": "companies",
+      "source": "StartupBlink",
+      "year": 2026,
+      "methodology": "index dataset",
+      "url": "https://www.startupblink.com/startup-ecosystem/yogyakarta-id",
+      "confidence": 4
+    },
+    {
+      "id": "startupblink-bandung-rank",
+      "metric": "global_rank_bandung",
+      "value": 268,
+      "unit": "rank",
+      "source": "StartupBlink",
+      "year": 2026,
+      "methodology": "index",
+      "url": "https://www.startupblink.com/startup-ecosystem/bandung-id",
+      "confidence": 4
+    },
+    {
+      "id": "bandung-grads",
+      "metric": "digital_ready_grads_per_year_bandung",
+      "value": 8000,
+      "unit": "persons/year",
+      "source": "Digital Districts (ITB+Telkom)",
+      "year": 2025,
+      "methodology": "compiled university output",
+      "url": "https://www.digitaldistricts.org/ecosystems/indonesia/bandung",
+      "confidence": 3
+    },
+    {
+      "id": "bandung-vc-share",
+      "metric": "national_vc_value_captured_bandung",
+      "value": 3,
+      "unit": "percent_under",
+      "source": "Digital Districts",
+      "year": 2025,
+      "methodology": "VC deployment by value, compiled",
+      "url": "https://www.digitaldistricts.org/ecosystems/indonesia/bandung",
+      "confidence": 3
+    },
+    {
+      "id": "bandung-brain-drain",
+      "metric": "bandung_grads_leaving_to_jakarta_in_18m",
+      "value": 33,
+      "unit": "percent",
+      "source": "Digital Districts",
+      "year": 2025,
+      "methodology": "graduate relocation estimate",
+      "url": "https://www.digitaldistricts.org/ecosystems/indonesia/bandung",
+      "confidence": 3
+    },
+    {
+      "id": "surabaya-funded-total",
+      "metric": "surabaya_startup_funding_to_date",
+      "value": 153,
+      "unit": "million_USD",
+      "source": "Digital Districts Surabaya",
+      "year": 2025,
+      "methodology": "compiled disclosed rounds",
+      "url": "https://www.digitaldistricts.org/ecosystems/indonesia/surabaya",
+      "confidence": 3
+    },
+    {
+      "id": "diy-software-companies",
+      "metric": "software_companies_diy_province",
+      "value": 610,
+      "unit": "companies",
+      "source": "POIData.io",
+      "year": 2026,
+      "methodology": "Google Maps POI listing extraction",
+      "url": "https://www.poidata.io/report/software-company/indonesia/special-region-of-yogyakarta",
+      "confidence": 2
+    },
+    {
+      "id": "kominfo-talent-need",
+      "metric": "digital_talent_need_2015_2030",
+      "value": 9,
+      "unit": "million_persons",
+      "source": "Kominfo/Komdigi citing World Bank & McKinsey",
+      "year": 2023,
+      "methodology": "foreign demand modeling restated by government",
+      "url": "https://money.kompas.com/read/2023/06/09/150600726/",
+      "confidence": 3
+    },
+    {
+      "id": "kominfo-supply",
+      "metric": "university_digital_talent_supply_per_year",
+      "value": {
+        "min": 100000,
+        "max": 200000
+      },
+      "unit": "persons/year",
+      "source": "Kominfo/Komdigi",
+      "year": 2023,
+      "methodology": "PT Dikti graduate statistics",
+      "url": "https://bpsdm.komdigi.go.id/berita-pengembangan-talenta-digital-...",
+      "confidence": 3
+    },
+    {
+      "id": "aniday-city-differential",
+      "metric": "it_mid_level_salary_vs_jakarta",
+      "value": {
+        "jakarta": "12-20M IDR",
+        "surabaya": "-25%",
+        "bandung": "-30%",
+        "semarang": "-38%",
+        "bali": "-35%",
+        "yogyakarta": "-45%"
+      },
+      "unit": "percent",
+      "source": "Aniday salary benchmarks",
+      "year": 2026,
+      "methodology": "EOR recruiter benchmark compilation",
+      "url": "https://aniday.com/en/blog/indonesia-salary-benchmarks-by-role-industry-and-city-3366",
+      "confidence": 3
+    },
+    {
+      "id": "jobstreet-se-salary-batam",
+      "metric": "avg_software_engineer_salary_batam",
+      "value": 14,
+      "unit": "million_IDR_per_month",
+      "source": "JobStreet advertised salary insight",
+      "year": 2026,
+      "methodology": "employer-disclosed salaries in job ads, per region",
+      "url": "https://id.jobstreet.com/id/career-advice/role/software-engineer/salary",
+      "confidence": 3
+    },
+    {
+      "id": "jobstreet-se-salary-id",
+      "metric": "software_engineer_salary_range_indonesia",
+      "value": "6-9M IDR/month",
+      "unit": "IDR",
+      "source": "JobStreet",
+      "year": 2026,
+      "methodology": "advertised salaries",
+      "url": "https://id.jobstreet.com/id/career-advice/role/software-engineer/salary",
+      "confidence": 3
+    },
+    {
+      "id": "globaldata-postings",
+      "metric": "active_tech_job_postings_indonesia",
+      "value": 2717,
+      "unit": "postings",
+      "source": "GlobalData job trends tracker",
+      "year": 2024,
+      "methodology": "aggregated online job postings tracked monthly",
+      "url": "https://www.globaldata.com/data-insights/macroeconomic/indonesia-technology-related-job-trends-2094630/",
+      "confidence": 3
+    },
+    {
+      "id": "logitech-remote-pref",
+      "metric": "employee_work_mode_preference",
+      "value": {
+        "hybrid": 62,
+        "full_remote": 21,
+        "full_office": 16
+      },
+      "unit": "percent",
+      "source": "Logitech Hybrid Work Trend Insights Indonesia",
+      "year": 2023,
+      "methodology": "online survey n=500 white-collar, Mar 2023",
+      "url": "https://info.logitech.com/rs/201-WGH-889/images/Logitech-Hybrid-Work-Trend-Insights-Indonesia-2023.pdf",
+      "confidence": 4
+    },
+    {
+      "id": "jobstreet-tech-count",
+      "metric": "tech_jobs_listed_jobstreet",
+      "value": 1314,
+      "unit": "jobs",
+      "source": "JobStreet meta description",
+      "year": 2026,
+      "methodology": "live site count",
+      "url": "https://id.jobstreet.com/tech-jobs",
+      "confidence": 3
+    },
+    {
+      "id": "surabaya-growth",
+      "metric": "surabaya_startup_base_growth_2025",
+      "value": 100,
+      "unit": "percent",
+      "source": "Digital Districts",
+      "year": 2025,
+      "methodology": "compiled",
+      "url": "https://www.digitaldistricts.org/ecosystems/indonesia/surabaya",
+      "confidence": 3
+    }
+  ],
+  "09-emerging-roles": [
+    {
+      "role": "AI/ML",
+      "metric": "relative AI hiring growth",
+      "value": 31.7,
+      "unit": "%",
+      "year": 2025,
+      "growth_or_level": "growth",
+      "source": "LinkedIn AI Index via Second Talent (2026)",
+      "confidence": 4
+    },
+    {
+      "role": "AI/ML",
+      "metric": "AI talent concentration growth 2019-2025",
+      "value": 108,
+      "unit": "%",
+      "year": 2025,
+      "growth_or_level": "growth",
+      "source": "LinkedIn via Second Talent (2026)",
+      "confidence": 4
+    },
+    {
+      "role": "AI/ML",
+      "metric": "AI talent headcount",
+      "value": 96000,
+      "unit": "persons",
+      "year": 2024,
+      "growth_or_level": "level (0.06% of workforce)",
+      "source": "LinkedIn AI Index (2024)",
+      "confidence": 4
+    },
+    {
+      "role": "AI/ML",
+      "metric": "AI wage premium (global, no Indonesia cut)",
+      "value": 56,
+      "unit": "%",
+      "year": 2025,
+      "growth_or_level": "level",
+      "source": "PwC Global AI Jobs Barometer 2025",
+      "confidence": 3
+    },
+    {
+      "role": "AI/ML",
+      "metric": "Indonesian businesses adopting AI",
+      "value": 18,
+      "unit": "million (47% YoY growth)",
+      "year": 2026,
+      "growth_or_level": "level+growth",
+      "source": "AWS Unlocking Indonesia's AI Potential",
+      "confidence": 4
+    },
+    {
+      "role": "AI/ML",
+      "metric": "businesses citing skills gap as main AI barier",
+      "value": 57,
+      "unit": "%",
+      "year": 2026,
+      "growth_or_level": "level",
+      "source": "AWS Unlocking Indonesia's AI Potential",
+      "confidence": 4
+    },
+    {
+      "role": "AI/ML",
+      "metric": "AI skills trained (Microsoft Elevate, 2 yrs)",
+      "value": 2400000,
+      "unit": "persons",
+      "year": 2026,
+      "growth_or_level": "level",
+      "source": "Microsoft (2026)",
+      "confidence": 3
+    },
+    {
+      "role": "AI/ML",
+      "metric": "Microsoft-recognized credentials issued",
+      "value": 1500000,
+      "unit": "credentials",
+      "year": 2026,
+      "growth_or_level": "level",
+      "source": "Microsoft (2026)",
+      "confidence": 3
+    },
+    {
+      "role": "AI/ML",
+      "metric": "developers in Indonesia",
+      "value": 3100000,
+      "unit": "persons",
+      "year": 2024,
+      "growth_or_level": "level (3rd in APAC GitHub)",
+      "source": "Microsoft/GitHub (2024)",
+      "confidence": 3
+    },
+    {
+      "role": "Cloud",
+      "metric": "APAC whole cloud CAGR incl. Indonesia",
+      "value": 22.2,
+      "unit": "% CAGR 2025-28",
+      "year": 2025,
+      "growth_or_level": "growth",
+      "source": "IDC (2025)",
+      "confidence": 3
+    },
+    {
+      "role": "Cloud",
+      "metric": "AWS Jakarta Region investment",
+      "value": 5,
+      "unit": "billion USD (15 yrs)",
+      "year": 2021,
+      "growth_or_level": "level",
+      "source": "AWS Economic Impact Study",
+      "confidence": 3
+    },
+    {
+      "role": "Cloud",
+      "metric": "AWS Jakarta supply-chain FTEs",
+      "value": 24700,
+      "unit": "jobs/yr avg",
+      "year": "2021-2035",
+      "growth_or_level": "level",
+      "source": "AWS EIS",
+      "confidence": 3
+    },
+    {
+      "role": "Cloud",
+      "metric": "Indonesians trained by AWS (cloud+AI)",
+      "value": 1300000,
+      "unit": "cumulative persons",
+      "year": 2026,
+      "growth_or_level": "level",
+      "source": "AWS (2026-08)",
+      "confidence": 3
+    },
+    {
+      "role": "Cloud",
+      "metric": "Indonesians trained by AWS",
+      "value": 800000,
+      "unit": "cumulative persons",
+      "year": 2025,
+      "growth_or_level": "level",
+      "source": "AWS (2025-02)",
+      "confidence": 3
+    },
+    {
+      "role": "Cloud",
+      "metric": "Indonesians trained by AWS",
+      "value": 200000,
+      "unit": "cumulative persons",
+      "year": 2022,
+      "growth_or_level": "level",
+      "source": "AWS (2022-01)",
+      "confidence": 3
+    },
+    {
+      "role": "Cybersecurity",
+      "metric": "orgs struggling to hire qualified cyber candidates",
+      "value": 73,
+      "unit": "%",
+      "year": 2022,
+      "growth_or_level": "level (3rd worst of 29 countries)",
+      "source": "Fortinet Skills Gap 2022",
+      "confidence": 4
+    },
+    {
+      "role": "Cybersecurity",
+      "metric": "leaders seeing skills gap as risk",
+      "value": 50,
+      "unit": "%",
+      "year": 2022,
+      "growth_or_level": "level",
+      "source": "Fortinet Skills Gap 2022",
+      "confidence": 4
+    },
+    {
+      "role": "Cybersecurity",
+      "metric": "global cyber workforce gap",
+      "value": 4.8,
+      "unit": "million (+19% YoY)",
+      "year": 2024,
+      "growth_or_level": "gap",
+      "source": "ISC2 2024 Workforce Study",
+      "confidence": 4
+    },
+    {
+      "role": "Cybersecurity",
+      "metric": "APAC cyber workforce growth",
+      "value": 11.8,
+      "unit": "% (+960k workers)",
+      "year": 2023,
+      "growth_or_level": "growth",
+      "source": "ISC2 (2024)",
+      "confidence": 3
+    },
+    {
+      "role": "Cybersecurity",
+      "metric": "orgs citing lack of security skills as breach cause",
+      "value": 68,
+      "unit": "%",
+      "year": 2025,
+      "growth_or_level": "level",
+      "source": "Fortinet 2025 Skills Gap",
+      "confidence": 4
+    },
+    {
+      "role": "Cybersecurity",
+      "metric": "detected anomalies against Indonesia",
+      "value": 403990813,
+      "unit": "events",
+      "year": 2023,
+      "growth_or_level": "level",
+      "source": "BSSN (via Kemnaker SKKNI 2025)",
+      "confidence": 3
+    },
+    {
+      "role": "Cybersecurity",
+      "metric": "unverified claim: unfilled cyber vacancies",
+      "value": 45000,
+      "unit": "vacancies",
+      "year": 2026,
+      "growth_or_level": "UNVERIFIED",
+      "source": "sikatin blog attributing Kemenkominfo — no primary source",
+      "confidence": 1
+    },
+    {
+      "role": "Cybersecurity",
+      "metric": "attacks on Indonesia (vendor telemetry)",
+      "value": 14909665,
+      "unit": "blocked attacks",
+      "year": 2025,
+      "growth_or_level": "level",
+      "source": "Kaspersky via ANTARA",
+      "confidence": 2
+    },
+    {
+      "role": "DevOps/SRE",
+      "metric": "cloud/DevOps/SRE postings growth (unverified)",
+      "value": 45,
+      "unit": "% YoY",
+      "year": 2025,
+      "growth_or_level": "growth (VENDOR CLAIM)",
+      "source": "ACE recruiting blog",
+      "confidence": 1
+    },
+    {
+      "role": "DevOps/SRE",
+      "metric": "APAC cloud-native adoption jump",
+      "value": 84,
+      "unit": "% of orgs (from 40%)",
+      "year": 2024,
+      "growth_or_level": "level+growth",
+      "source": "CNCF 2024 survey",
+      "confidence": 3
+    },
+    {
+      "role": "Cross",
+      "metric": "digital talent need by 2030",
+      "value": 12,
+      "unit": "million (supply ~3M)",
+      "year": 2025,
+      "growth_or_level": "-government plan",
+      "source": "Komdigi/Nezar Patria via ANTARA",
+      "confidence": 2
+    },
+    {
+      "role": "Cross",
+      "metric": "digital talent demand per year",
+      "value": 453000,
+      "unit": "persons/yr (min est)",
+      "year": 2025,
+      "growth_or_level": "level (Kearney says 600k)",
+      "source": "Komdigi BPSDM/ANTARA",
+      "confidence": 2
+    },
+    {
+      "role": "Cross",
+      "metric": "indonesia AI optimism",
+      "value": 69,
+      "unit": "% optimistic",
+      "year": 2025,
+      "growth_or_level": "level",
+      "source": "BCG AI at Work APAC",
+      "confidence": 3
+    },
+    {
+      "role": "Cross",
+      "metric": "projected salary increase 2027",
+      "value": 5.5,
+      "unit": "%",
+      "year": 2027,
+      "growth_or_level": "projection",
+      "source": "Aon SEA study (2026-09)",
+      "confidence": 3
+    }
+  ],
+  "10-bps-methodology-audit": {
+    "bps_audit_verdict": {
+      "tpt_series": "USABLE_WITH_CAVEATS",
+      "lapangan_usaha_17cat_j_infokom": "USABLE_WITH_CAVEATS_national_only",
+      "kbli62_5digit": "USABLE_WEAK_national_trend_only",
+      "formal_informal_share": "USABLE_WITH_CAVEATS_series_break_2025",
+      "wages_infokom": "USABLE_WITH_CAVEATS_employees_only",
+      "nov2025_round": "AVOID",
+      "pandemic_levels_2020_2021": "AVOID_for_levels_usable_for_direction"
+    },
+    "sample_sizes": {
+      "feb_households": "75000-76900",
+      "aug_households": "300000-307880",
+      "rounds": [
+        "Feb",
+        "Aug",
+        "Nov(new 2025)"
+      ]
+    },
+    "infokom_employment": {
+      "feb2022": "1.09M",
+      "aug2023_delta": "-20k",
+      "feb2025": "1.25M",
+      "ict_2018": "894k"
+    },
+    "wages_infokom": {
+      "aug2023": "Rp5.13M",
+      "aug2024": "Rp4.98M",
+      "trend": "declined_during_tech_winter"
+    },
+    "corruption_or_tampering_evidence": "not_found",
+    "careless_claim_assessment": "partially_supported_operations_disruption_and_small_domain_noise_yes_fabrication_no",
+    "alternatives": [
+      "BPJS_Ketenagakerjaan_48.65M_active_no_sector_cut",
+      "Kemnaker_PHK_monthly",
+      "GitHub_Octoverse_6.34M_ID_accounts_2026",
+      "SlashData_global_model",
+      "ILO_platform_work_1.5pct",
+      "Komdigi_demand_side"
+    ]
+  },
+  "13-enterprise-demand": {
+    "it_spend": [
+      {
+        "metric": "Indonesia public cloud services market",
+        "year": 2021,
+        "value_usd_m": 538.29,
+        "growth_pct": 38.6,
+        "source": "IDC (via Huawei whitepaper)",
+        "confidence": 3
+      },
+      {
+        "metric": "Indonesia public cloud services market",
+        "year": 2024,
+        "value_usd_m": 1000,
+        "source": "IDC (via Huawei whitepaper)",
+        "confidence": 3
+      },
+      {
+        "metric": "Indonesia digital transformation market",
+        "year": 2025,
+        "value_usd_m": 24370,
+        "growth_pct": 16.7,
+        "cagr_2020_25_pct": 16.0,
+        "source": "Ken Research",
+        "confidence": 3
+      },
+      {
+        "metric": "Indonesia digital software solutions (ERP/CRM/etc.)",
+        "year": 2025,
+        "value_usd_m": 1390,
+        "cagr_pct": 8.76,
+        "source": "Credence Research",
+        "confidence": 2
+      },
+      {
+        "metric": "ASEAN-6 ICT spending",
+        "year": 2025,
+        "value_usd_m": 171000,
+        "cagr_pct": 5.8,
+        "source": "IDC press release 2025-04-24",
+        "confidence": 4
+      },
+      {
+        "metric": "ASEAN IT spending growth",
+        "year": 2024,
+        "growth_pct": 15.0,
+        "source": "IDC Black Book 2025-06-26",
+        "confidence": 4
+      },
+      {
+        "metric": "ASEAN IT spending growth",
+        "year": 2025,
+        "growth_pct": 5.9,
+        "source": "IDC Black Book 2025-06-26",
+        "confidence": 4
+      },
+      {
+        "metric": "Government digital connectivity spend",
+        "year": 2025,
+        "value_idr_t": 10.58,
+        "source": "Ken Research (secondary)",
+        "confidence": 2
+      },
+      {
+        "metric": "Worldwide overall IT spend (context only)",
+        "year": 2025,
+        "value_usd_b": 5747.317,
+        "growth_pct": 9.3,
+        "source": "Gartner 3Q24 PR",
+        "confidence": 5,
+        "note": "worldwide, not Indonesia"
+      }
+    ],
+    "investments": [
+      {
+        "company": "Microsoft",
+        "amount_usd_b": 1.7,
+        "start": 2024,
+        "duration": "4 years",
+        "purpose": "cloud+AI infra",
+        "talent_claim": "AI skilling 840,000",
+        "verification": "verified via MS PR + Reuters",
+        "confidence": 5
+      },
+      {
+        "company": "Indosat+NVIDIA",
+        "amount_usd_m": 200,
+        "start": 2024,
+        "purpose": "Surakarta AI data center",
+        "talent_claim": null,
+        "verification": "DCD",
+        "confidence": 4
+      },
+      {
+        "company": "Indosat AI factory",
+        "amount_usd_m": 1000,
+        "by": 2027,
+        "purpose": "AI factory fleet",
+        "talent_claim": "train 1,000,000 by 2027",
+        "verification": "DCD interview",
+        "confidence": 3
+      },
+      {
+        "company": "Zankore by Indosat (w/ NVIDIA, Nokia, Ooredoo)",
+        "amount_usd_m": 800,
+        "start": 2026,
+        "capacity": "1GW target; 200MW by H1-2027",
+        "verification": "DCD/FutureCIO Nov 2026",
+        "confidence": 4
+      },
+      {
+        "company": "BDx-Lintasarta DC JV",
+        "amount_usd_m": 300,
+        "start": 2022,
+        "verification": "DCD",
+        "confidence": 3
+      },
+      {
+        "company": "CoreWeave Indonesia",
+        "capacity_mw": 360,
+        "start": 2026,
+        "verification": "DCD mention",
+        "confidence": 2
+      },
+      {
+        "company": "AWS Jakarta",
+        "amount_usd_b": 5,
+        "jobs_yr": 24700,
+        "verification": "prior task",
+        "confidence": 4
+      }
+    ],
+    "adoption": [
+      {
+        "survey": "ADBI Asia-Pacific",
+        "finding": "Indonesia enterprise cloud adoption <30% (2020-21)",
+        "year": 2024,
+        "confidence": 3
+      },
+      {
+        "survey": "IDC Indonesia Enterprise Survey",
+        "finding": "hybrid cloud top plan 32.7%; financial services private cloud 42.9%",
+        "year": 2022,
+        "confidence": 3
+      },
+      {
+        "survey": "Mekari/Litbang Kompas",
+        "finding": "73% of cloud non-users plan adoption within 2 years",
+        "year": 2024,
+        "confidence": 3
+      },
+      {
+        "survey": "Alibaba Cloud/NielsenIQ",
+        "finding": "94% of cloud users raise investment; 92% plan full migration",
+        "year": 2022,
+        "confidence": 3
+      },
+      {
+        "survey": "IDC APAC cloud sourcing (N=784)",
+        "finding": "~90% multi-cloud; cloud skills shortage top challenge",
+        "year": 2024,
+        "confidence": 4
+      },
+      {
+        "survey": "SAP cycle (global)",
+        "finding": "ECC maintenance ends 2027; +75% more SAP capacity needed to clear backlog (Basis Technologies)",
+        "year": 2026,
+        "confidence": 3
+      }
+    ],
+    "budgets": [
+      {
+        "org": "Bank BNI",
+        "item": "IT capex 2024",
+        "value_idr_t": 1.9,
+        "source": "Bisnis.com",
+        "confidence": 4
+      },
+      {
+        "org": "Bank Mandiri",
+        "item": "IT capex 2024 and 2025",
+        "value_idr_t": 3.0,
+        "note": "~70% absorbed by Nov 2025",
+        "source": "Bisnis/Kontan",
+        "confidence": 4
+      },
+      {
+        "org": "Bank BRI",
+        "item": "IT share of capex 2024 (~57% of Rp7-8T total capex)",
+        "value_idr_t": "4.0-4.6",
+        "source": "Bisnis.com",
+        "confidence": 3
+      },
+      {
+        "org": "Bank BTN",
+        "item": "IT capex 2025",
+        "value_idr_t": 1.0,
+        "note": "98% absorbed",
+        "source": "Kontan",
+        "confidence": 4
+      },
+      {
+        "org": "Telkom",
+        "item": "group capex FY2024 (>50% digital connectivity incl IT systems)",
+        "value_idr_t": 24.5,
+        "source": "TLKM FY24 Info Memo",
+        "confidence": 4
+      },
+      {
+        "org": "XL Axiata",
+        "item": "capex FY2024",
+        "value_idr_t": 7.38,
+        "source": "XL AR 2024",
+        "confidence": 4
+      },
+      {
+        "org": "XL-Smartfren",
+        "item": "merger value",
+        "value_idr_t": 104,
+        "date": "2024-12-11",
+        "confidence": 4
+      },
+      {
+        "org": "Telkomsel",
+        "item": "FY2024 revenue (for scale)",
+        "value_idr_t": 113.3,
+        "source": "Telkomsel AR 2024",
+        "confidence": 4
+      },
+      {
+        "org": "IOH",
+        "item": "FY2023 revenue (for scale)",
+        "value_idr_t": 51.2,
+        "confidence": 3
+      },
+      {
+        "org": "XL Axiata",
+        "item": "FY2024 revenue; data+digital = 92%",
+        "value_idr_t": 34.4,
+        "confidence": 4
+      },
+      {
+        "org": "Metrodata Electronics",
+        "item": "ICT distribution sales 2025 (bottom-up ICT demand proxy)",
+        "value_idr_t": 27.2,
+        "note": "+8.1% y/y 2025; weakeners: soft government spending",
+        "confidence": 4
+      }
+    ],
+    "hiring_surveys": [
+      {
+        "survey": "Aon Salary Increase & Turnover (SEA/EAP)",
+        "date": "2025-10",
+        "findings": {
+          "budgeted_increase_indonesia_2026_pct": 5.9,
+          "hot_jobs": {
+            "IT": 24,
+            "AI_ML": 21,
+            "cybersecurity": 20
+          },
+          "firms_with_hiring_retention_challenges_pct": 42,
+          "hardest_roles": "IT, engineering, sales",
+          "new_hire_premium_range_pct": "1.3-8.2"
+        },
+        "confidence": 4
+      },
+      {
+        "survey": "Robert Walters Indonesia Salary Survey",
+        "date": "2025-01",
+        "N": 400,
+        "findings": {
+          "top_talent_increment_pct": "20-30",
+          "skills_based_hiring": "mainstream"
+        },
+        "confidence": 3
+      },
+      {
+        "survey": "Michael Page Indonesia Talent Trends 2025",
+        "date": "2025-06",
+        "N_indonesia": null,
+        "note": "registration-gated; 2024 edition N Indonesia = 972 (of 12,940 APAC)",
+        "confidence": 3
+      },
+      {
+        "survey": "PwC Workforce Hopes & Fears Indonesia 2025",
+        "findings": {
+          "expect_proficiency_investment_increase_pct": 51,
+          "digital_talent_competition": "cited, no count"
+        },
+        "confidence": 3
+      }
+    ],
+    "gaps": [
+      "Gartner Indonesia-specific IT spending PR nonexistent 2023-26 (Indonesia only via paywalled databook)",
+      "IDC Indonesia country ICT total not public",
+      "Government TI procurement spend not aggregated (only SPBE clearance process exists)",
+      "LPSE TI procurement totals unavailable publicly",
+      "BCA IT spend line item not found in AR slices reviewed",
+      "APINDO or business association digitalization survey with count items not found",
+      "soe non-bank/telco digital budgets not aggregated",
+      "Google/Alibaba/Apple Indonesia data-center investments not confirmed via primary reports (no DC-specific announcement found for 2024-2026)",
+      "Michael Page,akit Robert Walters headcount expansion % not quotable without gated PDFs",
+      "SAP Indonesia-specific migration counts unknown",
+      "mid-size bank core-banking replacements not aggregated.",
+      "Aon 2025 covers SEA leading industries including Indonesia technology=5.9% top of SEA."
+    ]
+  },
+  "14-data-rescue": [
+    {
+      "id": "so-dev-survey-2024-idn",
+      "target": 1,
+      "status": "RETRIEVED",
+      "year": 2024,
+      "method": "GitHub mirror of official zip -> curl -> python3 CSV filter",
+      "url": "https://raw.githubusercontent.com/sumanndass/StackOverflow-Survey-2024-Python-EDA/main/stack-overflow-developer-survey-2024.zip",
+      "confidence": 5,
+      "data": {
+        "n_idn": 354,
+        "share_pct": 0.54,
+        "dev_by_profession": 226,
+        "full_time_incl_mixed_rows": 206,
+        "freelancer_mention_rows": 90,
+        "remote_hybrid_pct_of_answers": 41.0,
+        "remote_pct_of_answers": 28.6,
+        "inperson_pct_of_answers": 30.5,
+        "devtype_fullstack_pct": 32.2,
+        "devtype_backend_pct": 19.5,
+        "devtype_mobile_pct": 6.5,
+        "median_comp_usd_all": 7360,
+        "median_comp_idr_all": 96000000,
+        "median_comp_usd_prof_dev": 11040,
+        "median_comp_idr_prof_dev": 100000000,
+        "median_yearscodepro_prof_dev": 7.5,
+        "age_18_34_pct": 78.3
+      }
+    },
+    {
+      "id": "payoneer-freelancer-2023",
+      "target": 2,
+      "status": "PARTIAL",
+      "year": 2023,
+      "method": "r.jina.ai live page",
+      "url": "https://www.payoneer.com/resources/business/the-payoneer-2023-freelancer-insights-report/",
+      "confidence": 5,
+      "data": {
+        "global_women_usd_hr": 22,
+        "global_men_usd_hr": 24,
+        "raised_rates_pct": 38,
+        "n": 2000,
+        "countries": 122
+      }
+    },
+    {
+      "id": "payoneer-freelancer-2022",
+      "target": 2,
+      "status": "PARTIAL",
+      "year": 2022,
+      "method": "r.jina.ai live page",
+      "url": "https://www.payoneer.com/resources/news-events/2022-global-freelancer-income-report-the-ongoing-rise-of-the-freelance-revolution/",
+      "confidence": 5,
+      "data": {
+        "global_avg_usd_hr": 28,
+        "women_usd_hr": 23,
+        "men_usd_hr": 28
+      }
+    },
+    {
+      "id": "payoneer-freelancer-2020",
+      "target": 2,
+      "status": "PARTIAL",
+      "year": 2020,
+      "method": "curl direct PDF",
+      "url": "https://pubs.payoneer.com/images/2020-Freelancer-Income-Report.pdf",
+      "confidence": 5,
+      "data": {
+        "global_avg_usd_hr": 21,
+        "n": 7000,
+        "asia_82pct_under35": true
+      }
+    },
+    {
+      "id": "payoneer-freelancer-2015",
+      "target": 2,
+      "status": "PARTIAL",
+      "year": 2015,
+      "method": "curl direct PDF (lirneasia mirror)",
+      "url": "https://lirneasia.net/wp-content/uploads/2015/06/freelancer_report_EN_2015.pdf",
+      "confidence": 3,
+      "data": {
+        "indonesia_hours_per_week": 33.5,
+        "note": "chart text-layer pairing ambiguous",
+        "global_avg_usd_hr": 21,
+        "n": 23006
+      }
+    },
+    {
+      "id": "deel-global-hiring-2024-2025",
+      "target": 3,
+      "status": "FAILED",
+      "year": 2024,
+      "method": "r.jina.ai (consentwalled)",
+      "url": "https://www.deel.com/global-hiring-report-2024/",
+      "confidence": 2,
+      "data": null,
+      "blocker": "consent-wall; no public country tables; Indonesia figures not published openly"
+    },
+    {
+      "id": "oyster-global-employment-report",
+      "target": 3,
+      "status": "FAILED",
+      "year": null,
+      "method": "r.jina.ai",
+      "url": "https://www.oysterhr.com/resources/report/global-employment-report",
+      "confidence": 2,
+      "data": null,
+      "blocker": "404 removed"
+    },
+    {
+      "id": "e33g-kitas-takeup",
+      "target": 4,
+      "status": "FAILED",
+      "year": 2024,
+      "method": "imigrasi.go.id fetch, Google News RSS ID+EN, secondary sources",
+      "url": "https://www.imigrasi.go.id/wna/daftar-visa-indonesia/E33G",
+      "confidence": 2,
+      "data": {
+        "min_income_usd": 60000,
+        "duration": "1 year",
+        "launched": "2024"
+      },
+      "blocker": "no issuance statistics published in reachable sources; imigrasi.go.id 403 to proxies; archive.org offline"
+    },
+    {
+      "id": "michaelpage-id-salary-guide-2026",
+      "target": 5,
+      "status": "PARTIAL",
+      "year": 2026,
+      "method": "curl + r.jina.ai live site",
+      "url": "https://www.michaelpage.co.id/salary-guide",
+      "confidence": 3,
+      "data": {
+        "median_yearly_idr_all_sectors": 660000000,
+        "salary_dissatisfied_pct": 24,
+        "salary_satisfied_pct": 72
+      },
+      "blocker": "full role×level tech tables only inside gated interactive tool / lead-gen download; no public PDF"
+    },
+    {
+      "id": "kalibrr-job-report",
+      "target": 6,
+      "status": "FAILED",
+      "year": 2024,
+      "method": "webfetch + Google News RSS",
+      "url": "https://www.kalibrr.com/resources/jobs-report/",
+      "confidence": 1,
+      "data": null,
+      "blocker": "404; no alternate location found"
+    },
+    {
+      "id": "aptiknas-members",
+      "target": 7,
+      "status": "FAILED",
+      "year": null,
+      "method": "curl live + planned archive (archive down)",
+      "url": "https://www.aptiknas.org/",
+      "confidence": 1,
+      "data": null,
+      "blocker": "live domain = parked placeholder page; web.archive.org offline"
+    },
+    {
+      "id": "komdigi-dts-recap",
+      "target": 8,
+      "status": "PARTIAL",
+      "year": 2026,
+      "method": "curl + jina",
+      "url": "https://data.komdigi.go.id/opendata/dataset/jumlah-peserta-kompeten-berdasarkan-akademi",
+      "confidence": 2,
+      "data": {
+        "dataset_exists": true,
+        "resource": "XLSX updated 2026-11-06"
+      },
+      "blocker": "download URL points to internal RFC1918 host 172.30.103.58:5000 — externally unreachable"
+    },
+    {
+      "id": "linkedin-jotr-indonesia-2025",
+      "target": 9,
+      "status": "PARTIAL",
+      "year": 2025,
+      "method": "curl raw HTML of LinkedIn talent blog",
+      "url": "https://www.linkedin.com/business/talent/blog/talent-acquisition/worlds-fastest-growing-jobs-2025",
+      "confidence": 4,
+      "data": {
+        "top3": [
+          "Travel consultant",
+          "Cyber security engineer",
+          "Security operations center analyst"
+        ],
+        "also_on_list": [
+          "Food and beverage supervisor",
+          "Psychotherapist/psychologist"
+        ],
+        "roles_per_country": 15,
+        "method_note": "ranking of fastest-growing roles over 3 years"
+      },
+      "blocker": "full ranked 15 + growth % only in gated LinkedIn Pulse article"
+    }
+  ],
+  "15-verification-synthesis": {
+    "meta": {
+      "country": "Indonesia",
+      "as_of": "2026-11-09",
+      "confidence_scale": "1-5 (5=administrative census/audited; 4=official or verified method; 3=survey/vendor w/ described method; 2=weak/self-reported/derived; 1=unverifiable)",
+      "freshness_legend": {
+        "live": "snapshot 2026-11",
+        "current": "2025-2026",
+        "recent": "2023-2024",
+        "stale": "2018-2022"
+      },
+      "bps_policy": "BPS figures carry file-10 verdicts; used only with caveats where verdict = usable-with-caveats"
+    },
+    "headline_kpis": {
+      "employed_it_professionals": {
+        "range_low": 700000,
+        "range_high": 1200000,
+        "point_estimate": 950000,
+        "year": 2025,
+        "source": "Synthesis triangulation: BPS Sakernas cat-J 1.25M; KBLI-62 band 580-870k; Kominfo 1.09M; ADBI 894k(2018); embedded-IT uplift; freelance uplift",
+        "confidence": 2,
+        "freshness": "current",
+        "definition": "people earning their living from IT work, incl. freelance IT; excludes telecom/broadcast-only roles",
+        "assumptions": [
+          "category J minus 30-50% telecom/broadcast/publishing",
+          "+10-20% in-house IT coded in other industries (outstaffing sits in Jasa Profesional, 2.53M)",
+          "+5-15% informal IT freelancers"
+        ]
+      },
+      "professional_software_engineer_core": {
+        "range_low": 300000,
+        "range_high": 600000,
+        "point_estimate": 450000,
+        "year": 2025,
+        "source": "bounded by LinkedIn ~236K profiles (floor; low LinkedIn coverage) and SlashData-derived coder population (ceiling incl. non-professionals)",
+        "confidence": 2,
+        "freshness": "current"
+      },
+      "broader_digital_fluency_workforce": {
+        "range_low": 2500000,
+        "range_high": 4000000,
+        "point_estimate": 3000000,
+        "year": 2025,
+        "source": "Komdigi '3 juta digital talents' framing + IMDI framework tiers",
+        "confidence": 2,
+        "freshness": "current",
+        "definition": "workers using substantive digital skills incl. non-IT digital occupations"
+      },
+      "platform_economy_earners": {
+        "some_income_via_platforms": 20000000,
+        "exclusively": 4500000,
+        "active_gig_delivery_ridehail": 2250000,
+        "year": "2022-2024",
+        "source": "Caribou Digital/Mastercard triangulation of platform self-reports + WB surveys",
+        "confidence": 3,
+        "freshness": "recent",
+        "note": "context tier, not IT professionals"
+      },
+      "github_accounts": {
+        "value": 4370000,
+        "year": 2025,
+        "q1_2026": 5270000,
+        "source": "GitHub Octoverse 2025 / Innovation Graph",
+        "confidence": 4,
+        "freshness": "current",
+        "honesty_label": "ACCOUNTS NOT PROFESSIONALS - funnel-top only"
+      },
+      "talent_gap_narratives": [
+        {
+          "claim": "9M digital talents needed by 2030 (~600k/yr)",
+          "honesty_label": "CITATION-CHAIN RHETORIC",
+          "what_it_measures": "cumulative 2015-2030 shortfall of skilled AND semi-skilled ICT workers",
+          "origin": "JPM/McKinsey New Skills at Work 2016 (non-public model) via World Bank 2018 desk review; misattributed 3 ways by officials",
+          "source": "WB 'Preparing ICT Skills for Digital Economy' 2018",
+          "year": 2018,
+          "confidence": 3,
+          "freshness": "stale"
+        },
+        {
+          "claim": "12M digital talents by 2030 (gap ~3M; ~500k/yr)",
+          "honesty_label": "GOVERNMENT PLANNING PROJECTION",
+          "what_it_measures": "demand projection for all digital-skill levels, built on BPS + education-ministry data",
+          "source": "Kominfo IMDI 2024",
+          "year": 2024,
+          "confidence": 4,
+          "freshness": "recent",
+          "lineage_flag": "BPS-derived"
+        },
+        {
+          "claim": "~456k digital talents needed/year",
+          "honesty_label": "CURRENT OFFICIAL PLANNING NUMBER (BPS-lineage, unverifiable inputs)",
+          "note": "ministry drifted 450k->453k->456k->600k/yr across 18 months of statements",
+          "source": "BPSDM Komdigi internal modeling on BPS data",
+          "year": 2025,
+          "confidence": 4,
+          "freshness": "current"
+        },
+        {
+          "claim": "oversupply of ~151,495 digital-skilled graduates 2021-2025 (~30.3k/yr)",
+          "honesty_label": "ACADEMIC FLOW MODEL - entry-level graduates vs broad ICT occupation growth; Kominfo-funded; demand input BPS-derived",
+          "detail": "supply 3,372,392 graduates vs demand 3,220,897 occupations; 2016-20 actuals were a 392,219 deficit",
+          "source": "Gayatri et al., Sustainability 15(1):754 (BRIN), verified full text",
+          "year": 2022,
+          "confidence": 4,
+          "freshness": "stale"
+        },
+        {
+          "claim": "IMPLICATION: no genuine market-demand estimate exists; real condition = skill/seniority MISMATCH (entry oversupply + senior shortage)",
+          "honesty_label": "SYNTHESIS VERDICT",
+          "evidence": "senior advertised pay +20.8% vs entry +11.1% (Glints 2026); fresh grads' hardest job search on record (LPEM UI 2026); counter-offer wars (Michael Page 2025)",
+          "confidence": 3,
+          "freshness": "live"
+        }
+      ],
+      "benchmark_anchors": {
+        "bps_category_J_employment": {
+          "value": 1250000,
+          "year": "Feb 2025",
+          "source": "BPS Sakernas via Databoks",
+          "confidence": 4,
+          "freshness": "current",
+          "caveat": "includes telecom/publishing/broadcast; national level only"
+        },
+        "adbi_ict_sector_2018": {
+          "value": 894000,
+          "year": 2018,
+          "source": "ADBI WP 1258 (Sakernas 2018)",
+          "confidence": 4,
+          "freshness": "stale"
+        },
+        "kominfo_digital_workers_claim": {
+          "value": 1090000,
+          "year": 2023,
+          "source": "Menkominfo via Bisnis.com, methodology unpublished",
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        "kornferry_tmt_deficit": {
+          "range": "600k-1.2M by 2030",
+          "year": 2018,
+          "source": "Korn Ferry Global Talent Crunch",
+          "confidence": 3,
+          "freshness": "stale",
+          "note": "order-of-magnitude comparator exposing definitional inflation of 9M"
+        }
+      }
+    },
+    "demand_by_role": {
+      "method_note": "LinkedIn guest job-search counts, location=Indonesia, snapshot 9 Nov 2026; keyword overlap means DO NOT SUM across role families; not total market (misses non-LinkedIn boards, remote-global)",
+      "live_linkedin_vacancies_2026_11_09": [
+        {
+          "role": "data analyst",
+          "value": 2151,
+          "source": "LinkedIn guest job search",
+          "confidence": 4,
+          "freshness": "live",
+          "note": "BI 1,357; largest single IT keyword"
+        },
+        {
+          "role": "software engineer/developer/programmer (overlapping)",
+          "value": "[1461, 1402, 1339]",
+          "source": "LinkedIn guest",
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "role": "QA engineer/tester (overlapping)",
+          "value": "[1013, 838]",
+          "source": "LinkedIn guest",
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "role": "backend developer",
+          "value": 870,
+          "note": "by language: java 553, python 578, golang 413, node 284, php 201",
+          "source": "LinkedIn guest",
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "role": "IT support",
+          "value": 859,
+          "note": "sysadmin 650, network engineer 460",
+          "source": "LinkedIn guest",
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "role": "AI/ML engineer (combined)",
+          "value": 1058,
+          "note": "AI eng 653 + ML eng 405",
+          "source": "LinkedIn guest",
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "role": "data engineer",
+          "value": 772,
+          "source": "LinkedIn guest",
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "role": "devops engineer (SRE separately 750)",
+          "value": 772,
+          "source": "LinkedIn guest",
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "role": "cloud engineer",
+          "value": 676,
+          "source": "LinkedIn guest",
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "role": "web developer",
+          "value": 608,
+          "source": "LinkedIn guest",
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "role": "cybersecurity",
+          "value": "[611, 601]",
+          "source": "LinkedIn guest",
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "role": "fullstack developer",
+          "value": 651,
+          "source": "LinkedIn guest",
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "role": "frontend developer",
+          "value": "[329, 325]",
+          "source": "LinkedIn guest",
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "role": "ERP (ERP 572, SAP 378, Odoo 290)",
+          "value": 572,
+          "source": "LinkedIn guest",
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "role": "mobile developer (all)",
+          "value": "[271, 157, 147, 103, 93]",
+          "note": "mobile, flutter, android, ios, react native",
+          "source": "LinkedIn guest",
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "role": "data scientist",
+          "value": 804,
+          "source": "LinkedIn guest",
+          "confidence": 4,
+          "freshness": "live"
+        }
+      ],
+      "fastest_growing_roles": [
+        {
+          "role": "cyber security engineer",
+          "rank": 2,
+          "of": 15,
+          "source": "LinkedIn Jobs on the Rise Indonesia 2025 (title growth Jan2022-Jul2024)",
+          "year": 2025,
+          "confidence": 4,
+          "freshness": "recent"
+        },
+        {
+          "role": "SOC analyst",
+          "rank": 3,
+          "of": 15,
+          "source": "LinkedIn JoR 2025",
+          "year": 2025,
+          "confidence": 4,
+          "freshness": "recent"
+        },
+        {
+          "role": "project manager (IT industry prominent)",
+          "rank": 14,
+          "of": 15,
+          "source": "LinkedIn JoR 2025",
+          "year": 2025,
+          "confidence": 4,
+          "freshness": "recent"
+        },
+        {
+          "role": "AI engineer (graduates only)",
+          "rank": 1,
+          "of": 3,
+          "source": "LinkedIn Grad Guide 2025 (Jan 2022-Dec 2024)",
+          "year": 2025,
+          "confidence": 4,
+          "freshness": "recent",
+          "note": "AI roles NOT in overall top-15 - Indonesia's 2022-24 growth was security-led, not AI-led"
+        }
+      ],
+      "skill_demand_shares_pct_of_tech_postings": {
+        "MySQL": 17,
+        "JavaScript": 14,
+        "Python": 13,
+        "PostgreSQL": 13,
+        "Node.js": 11,
+        "React.js": 10,
+        "Java": 10,
+        "SQL": 8,
+        "DataAnalysis": 5,
+        "ML": 4,
+        "AI": 4,
+        "source": "Glints skills report (Jan-Aug 2026 postings)",
+        "year": 2026,
+        "confidence": 3,
+        "freshness": "live"
+      },
+      "tech_job_postings_tracker": {
+        "active_postings": 2717,
+        "month": "Jan 2024",
+        "delta": "-8.9% since Oct 2023",
+        "source": "GlobalData job-postings tracker",
+        "confidence": 3,
+        "freshness": "recent"
+      }
+    },
+    "salaries": {
+      "method_note": "Two families, never to be plotted on one unlabeled axis: [glints] = advertised medians/ranges from postings, junior-skewed, SME-heavy; [mp] = recruiter-placement averages, senior-skewed, MNC/large-local; [rw] = recruiter annual bands. IDR/month unless stated.",
+      "advertised_market": [
+        {
+          "role": "computer & software (category median)",
+          "metric": "advertised_median",
+          "value_m": 6.0,
+          "source": "Glints LMI",
+          "year": "H1 2026",
+          "confidence": 3,
+          "freshness": "live",
+          "note": "+9.1% vs H1 2024 (5.5M); n~15k disclosed-salary postings"
+        },
+        {
+          "role": "backend developer (senior bucket)",
+          "metric": "advertised_median",
+          "value_m": 7.5,
+          "source": "Glints LMI",
+          "year": "H1 2026",
+          "confidence": 3,
+          "freshness": "live",
+          "note": "+25% in 2 yrs"
+        },
+        {
+          "role": "national median all roles",
+          "value_m": 3.5,
+          "source": "Glints",
+          "year": "H1 2026",
+          "confidence": 3,
+          "freshness": "live"
+        }
+      ],
+      "role_level_bands": [
+        {
+          "role": "software engineer",
+          "level": "junior-mid (cross-industry)",
+          "min_m": 6.0,
+          "max_m": 14.0,
+          "source": "Glints HR & Salary Survey 2024",
+          "year": 2024,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "role": "software engineer",
+          "level": "senior",
+          "min_m": 15.0,
+          "max_m": 35.5,
+          "source": "Glints Survey 2024 (retail 15-20; new economy 28.5-35.5)",
+          "year": 2024,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "role": "backend developer",
+          "level": "junior-mid",
+          "min_m": 7.0,
+          "max_m": 11.0,
+          "source": "Glints Survey 2024",
+          "year": 2024,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "role": "backend developer",
+          "level": "senior",
+          "min_m": 11.0,
+          "max_m": 30.0,
+          "source": "Glints 2024 (tech 11-20; finance 16.7-23.3; media 20-30)",
+          "year": 2024,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "role": "frontend developer",
+          "level": "junior-mid",
+          "min_m": 7.0,
+          "max_m": 13.0,
+          "source": "Glints 2024",
+          "year": 2024,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "role": "frontend developer",
+          "level": "senior",
+          "min_m": 11.0,
+          "max_m": 40.0,
+          "source": "Glints 2024 (tech 11-23; finance 20-40)",
+          "year": 2024,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "role": "fullstack developer",
+          "level": "junior-mid",
+          "min_m": 7.3,
+          "max_m": 13.3,
+          "source": "Glints 2024",
+          "year": 2024,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "role": "fullstack developer",
+          "level": "senior",
+          "min_m": 13.0,
+          "max_m": 28.0,
+          "source": "Glints 2024 (tech 13-17; finance 15-28)",
+          "year": 2024,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "role": "android developer",
+          "level": "junior-mid",
+          "min_m": 8.0,
+          "max_m": 12.0,
+          "source": "Glints 2024",
+          "year": 2024,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "role": "iOS developer",
+          "level": "junior-mid",
+          "min_m": 10.0,
+          "max_m": 15.0,
+          "source": "Glints 2024",
+          "year": 2024,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "role": "devops engineer",
+          "level": "senior (tech)",
+          "min_m": 18.0,
+          "max_m": 27.0,
+          "source": "Glints 2024",
+          "year": 2024,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "role": "SRE",
+          "level": "senior (property)",
+          "min_m": 25.0,
+          "max_m": 38.0,
+          "source": "Glints 2024",
+          "year": 2024,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "role": "QA automation",
+          "level": "junior-mid",
+          "min_m": 6.0,
+          "max_m": 10.0,
+          "source": "Glints 2024",
+          "year": 2024,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "role": "QA",
+          "level": "senior (finance)",
+          "min_m": 15.0,
+          "max_m": 24.0,
+          "source": "Glints 2024",
+          "year": 2024,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "role": "data analyst",
+          "level": "junior (advertised)",
+          "min_m": 4.0,
+          "max_m": 8.0,
+          "source": "Glints salary list 2025",
+          "year": 2025,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "role": "data engineer",
+          "level": "junior (advertised)",
+          "min_m": 5.0,
+          "max_m": 7.7,
+          "source": "Glints 2025",
+          "year": 2025,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "role": "data scientist",
+          "level": "junior (advertised)",
+          "min_m": 4.0,
+          "max_m": 8.0,
+          "source": "Glints 2025",
+          "year": 2025,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "role": "solution architect",
+          "level": "senior (finance)",
+          "min_m": 19.0,
+          "max_m": 34.0,
+          "source": "Glints 2024",
+          "year": 2024,
+          "confidence": 3,
+          "freshness": "recent"
+        }
+      ],
+      "recruiter_placed_averages_mp2025": [
+        {
+          "role": "frontend developer",
+          "value_m": 20
+        },
+        {
+          "role": "QA engineer",
+          "value_m": 23
+        },
+        {
+          "role": "backend developer",
+          "value_m": 25
+        },
+        {
+          "role": "mobile developer",
+          "value_m": 25
+        },
+        {
+          "role": "fullstack developer",
+          "value_m": 30
+        },
+        {
+          "role": "ERP functional (SME)",
+          "value_m": 37
+        },
+        {
+          "role": "tech lead",
+          "value_m": 40
+        },
+        {
+          "role": "IT GRC manager",
+          "value_m": 40
+        },
+        {
+          "role": "IT manager",
+          "value_m": 50
+        },
+        {
+          "role": "solution architect",
+          "value_m": 55
+        },
+        {
+          "role": "engineering manager",
+          "value_m": 67
+        },
+        {
+          "role": "head of engineering",
+          "value_m": 81
+        },
+        {
+          "role": "head of IT",
+          "value_m": 85
+        },
+        {
+          "role": "VP engineering",
+          "value_m": 108
+        },
+        {
+          "source": "Michael Page Indonesia Salary Guide 2025 (~5,000 benchmark pts)",
+          "year": 2025,
+          "confidence": 3,
+          "freshness": "recent",
+          "honesty_label": "AVERAGES SENIOR-SHOT: placed professionals at MNC/large locals - upper band of market"
+        }
+      ],
+      "recruiter_annual_bands_rw2026": [
+        {
+          "role": "software developer",
+          "min_pa": 440000000,
+          "max_pa": 770000000,
+          "source": "Robert Walters 2026",
+          "year": 2026,
+          "confidence": 3,
+          "freshness": "current"
+        },
+        {
+          "role": "data scientist",
+          "min_pa": 450000000,
+          "max_pa": 850000000,
+          "source": "RW 2026",
+          "year": 2026,
+          "confidence": 3,
+          "freshness": "current"
+        },
+        {
+          "role": "head of cyber security",
+          "min_pa": 1300000000,
+          "max_pa": 1600000000,
+          "source": "RW 2026",
+          "year": 2026,
+          "confidence": 3,
+          "freshness": "current"
+        },
+        {
+          "role": "CTO/CIO",
+          "min_pa": 1900000000,
+          "max_pa": 3200000000,
+          "source": "RW 2026",
+          "year": 2026,
+          "confidence": 3,
+          "freshness": "current"
+        }
+      ],
+      "trend_signals": [
+        {
+          "metric": "senior vs entry advertised salary growth",
+          "senior_pct": 20.8,
+          "entry_pct": 11.1,
+          "ratio": "2.7x -> 2.9x",
+          "source": "Glints LMI",
+          "year": "H1'24-H1'26",
+          "confidence": 3,
+          "freshness": "live"
+        },
+        {
+          "metric": "annual increments (counter-offer culture in fin-services tech)",
+          "value": "5-8%",
+          "source": "Michael Page 2025",
+          "year": 2025,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "metric": "projected salary increase 2026/2027 (Indonesia top of SEA)",
+          "value": 5.9,
+          "unit": "%",
+          "source": "Aon Salary Increase Survey (Oct 2025)",
+          "year": 2025,
+          "confidence": 4,
+          "freshness": "current"
+        },
+        {
+          "metric": "tech employees earn premium vs non-tech (SEA startups)",
+          "value": 29,
+          "unit": "%",
+          "source": "Glints x Monk's Hill 2024",
+          "year": 2024,
+          "confidence": 3,
+          "freshness": "recent"
+        }
+      ]
+    },
+    "supply_pipeline": {
+      "higher_education": [
+        {
+          "metric": "computing graduates/yr (all target majors, S1+D)",
+          "est_range": "70,000-85,000",
+          "source": "PDDikti bottom-up (TI 35,919 + SI 25,866 verified; Ilmu Komputer/RPL/TI/MI est 10-20k)",
+          "year": "2023/24",
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "metric": "Teknik Informatika graduates",
+          "value": 35919,
+          "source": "PDDikti via Detik/JawaPos",
+          "year": "2023/24",
+          "confidence": 4,
+          "freshness": "recent"
+        },
+        {
+          "metric": "Sistem Informasi graduates",
+          "value": 25866,
+          "source": "PDDikti",
+          "year": "2023/24",
+          "confidence": 4,
+          "freshness": "recent"
+        },
+        {
+          "metric": "new entrants TI",
+          "value": 46035,
+          "source": "Statistik Pendidikan Tinggi 2025 p.122 (PDDikti census)",
+          "year": 2025,
+          "confidence": 5,
+          "freshness": "current"
+        },
+        {
+          "metric": "new entrants SI",
+          "value": 48335,
+          "source": "Statistik PT 2025",
+          "year": 2025,
+          "confidence": 5,
+          "freshness": "current"
+        },
+        {
+          "metric": "enrolled TI + SI (all years)",
+          "value": 443331,
+          "source": "Statistik PT 2025 p.166",
+          "year": 2025,
+          "confidence": 5,
+          "freshness": "current"
+        },
+        {
+          "metric": "total HE graduates all fields",
+          "value": 2547717,
+          "source": "Statistik PT 2025 p.204",
+          "year": 2025,
+          "confidence": 5,
+          "freshness": "current"
+        }
+      ],
+      "vocational_smk": [
+        {
+          "metric": "SMK students (all fields)",
+          "value": 4876648,
+          "schools": 14391,
+          "source": "Direktorat SMK dashboard (Dapodik)",
+          "year": "2025/26",
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "metric": "class-12 cohort (approx annual grad flow, all fields)",
+          "value": 1529042,
+          "source": "Direktorat SMK dashboard",
+          "year": "2025/26",
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "metric": "TIK share of SMK grads (only as top-3-field combo, TRE+BM+TIK)",
+          "value": 80.2,
+          "unit": "% combined",
+          "source": "PSKP Kemendikdasmen kajian",
+          "year": 2019,
+          "confidence": 3,
+          "freshness": "stale"
+        }
+      ],
+      "dts_core": [
+        {
+          "year": 2020,
+          "realized": 58116,
+          "budget_idr_bn": 16.4,
+          "source": "DPR RI PA3KN brief (audited LKj BPSDM)",
+          "confidence": 5,
+          "freshness": "stale"
+        },
+        {
+          "year": 2021,
+          "realized": 123772,
+          "budget_idr_bn": 122.6,
+          "source": "DPR RI brief (audited); Bappenas 123,412; ministry press said 131,204 - use audited",
+          "confidence": 4,
+          "freshness": "stale"
+        },
+        {
+          "year": 2022,
+          "realized_min": 200000,
+          "source": "Kominfo via sdmdigital.id (283,906 applicants)",
+          "confidence": 4,
+          "freshness": "stale"
+        },
+        {
+          "year": 2023,
+          "graduated": 92192,
+          "source": "Antara quoting Kabadan SDM",
+          "confidence": 4,
+          "freshness": "recent"
+        },
+        {
+          "year": 2024,
+          "note": "full-year total NOT published; only executing-center subtotals",
+          "confidence": 2,
+          "freshness": "recent"
+        },
+        {
+          "metric": "cumulative graduates 2018-Oct 2025",
+          "value": 572072,
+          "decomposition": {
+            "core_academies": 68964,
+            "microskill": 503108
+          },
+          "source": "Komdigi via Indonesiabaik infographic",
+          "confidence": 3,
+          "freshness": "current",
+          "honesty_label": "88% is low-intensity Microskill; supply-relevant core is ~69k cumulative; BPK audit found participant data unreconcilable"
+        }
+      ],
+      "msib": [
+        {
+          "batch": 1,
+          "year": 2021,
+          "participants": 13272,
+          "source": "MUDIMA journal citing program data",
+          "confidence": 3,
+          "freshness": "stale"
+        },
+        {
+          "batch": "1-4",
+          "cumulative_min": 93000,
+          "source": "Tirto citing Kemendikbudristek",
+          "year": 2023,
+          "confidence": 3,
+          "freshness": "recent",
+          "note": "batches 2-4 not individually published"
+        },
+        {
+          "batch": 5,
+          "year": 2023,
+          "participants": 36719,
+          "applicants": 98000,
+          "source": "Medcom quoting MSIB head",
+          "confidence": 4,
+          "freshness": "recent"
+        },
+        {
+          "batch": "1-5",
+          "cumulative_min": 120000,
+          "source": "Antara quoting official",
+          "year": "Nov 2023",
+          "confidence": 4,
+          "freshness": "recent"
+        },
+        {
+          "batch": 6,
+          "year": 2024,
+          "participants": 47984,
+          "applicants": ">150,000",
+          "source": "kemdikbud.go.id official",
+          "confidence": 5,
+          "freshness": "recent"
+        },
+        {
+          "batch": 7,
+          "year": "2024/25",
+          "participants": 30228,
+          "partners": 379,
+          "universities": 839,
+          "source": "kemdiktisaintek.go.id (final batch)",
+          "confidence": 5,
+          "freshness": "recent"
+        },
+        {
+          "metric": "cumulative through batch 7 - best estimate",
+          "value": 198000,
+          "est_range": "195k-200k",
+          "source": "synthesis: sum of official batch counts (batches 2-4 bounded only)",
+          "confidence": 2,
+          "freshness": "recent",
+          "honesty_label": "official floor is '>150k' (stated mid-cycle); all fields, tech-share never published"
+        }
+      ],
+      "bootcamps": [
+        {
+          "program": "Bangkit (Google/GOTO/Traveloka)",
+          "cohort": "~3,000 admitted/yr; 2,250 graduated 2021",
+          "source": "Google Cloud blog + participant accounts",
+          "confidence": 3,
+          "freshness": "stale"
+        },
+        {
+          "program": "Hacktiv8 (self-reported)",
+          "alumni": 3100,
+          "source": "hacktiv8.com",
+          "confidence": 2,
+          "freshness": "current",
+          "honesty_label": "CONTEXT-ONLY, marketing figure"
+        },
+        {
+          "program": "RevoU (self-reported)",
+          "alumni": 15000,
+          "source": "revou.co",
+          "confidence": 2,
+          "freshness": "current",
+          "honesty_label": "CONTEXT-ONLY, marketing figure"
+        }
+      ],
+      "employer_pipeline_evidence": [
+        {
+          "metric": "BCA hires 'mainly IT' 2023",
+          "value": 4000,
+          "source": "BCA Annual Report 2023 p.29 (audited)",
+          "confidence": 5,
+          "freshness": "recent"
+        },
+        {
+          "metric": "Bank Mandiri My Digital Academy batch-2 graduates funneled to ODP-IT",
+          "value": 600,
+          "applicants": 24673,
+          "source": "official statements via viva/gadget",
+          "confidence": 4,
+          "freshness": "recent"
+        }
+      ],
+      "absorption_gaps_note": "no credible national '% of computing grads employed in-field' figure exists; university tracers suggest 70-75% working within 1 yr, 85-93% within 2 yrs (extrapolation, conf 2)"
+    },
+    "formal_informal": {
+      "formal_economy_context": [
+        {
+          "metric": "BPJS Ketenagakerjaan active participants",
+          "value": 39700000,
+          "of_which_bpu_informal": 8990000,
+          "source": "BPJSTK",
+          "year": "Apr 2025",
+          "confidence": 5,
+          "freshness": "current",
+          "note": "no KBLI-sector cut published - formal IT employment cannot be derived from BPJS"
+        },
+        {
+          "metric": "informal employment share (all sectors)",
+          "value": 57.7,
+          "unit": "%",
+          "source": "BPS (usable-with-caveats; series break Feb 2025 - 21st ICLS redefinition)",
+          "year": "Nov 2025",
+          "confidence": 3,
+          "freshness": "live-as-of-but-round-AVOID",
+          "honesty_label": "tech freelancers/remote contractors systematically MISCLASSIFIED as informal"
+        }
+      ],
+      "informal_it_evidence": [
+        {
+          "metric": "1000 Startup Digital program job outcomes (only govt formal/informal split found)",
+          "formal_permanent": 4000,
+          "informal_freelance": 20000,
+          "ratio": "5:1 informal:formal",
+          "source": "Menkominfo via Antara",
+          "year": 2023,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "metric": "DTS PROA intake composition",
+          "already_employed_pct": 83,
+          "unemployed_pct": 17,
+          "source": "bpsdm.komdigi.go.id",
+          "year": 2024,
+          "confidence": 4,
+          "freshness": "recent"
+        },
+        {
+          "metric": "Upwork: Indonesian profiles ever earning >=$1",
+          "value": "<10,000",
+          "above_100k_usd": 169,
+          "source": "LSE (Permana) scrape analysis",
+          "year": 2023,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "metric": "registered freelancer profiles across 9 platforms (2018)",
+          "value": 171033,
+          "active_28d": 2062,
+          "active_pct": 1.2,
+          "source": "Sucahyo et al. (DIODE) web scrape",
+          "year": 2018,
+          "confidence": 4,
+          "freshness": "stale"
+        },
+        {
+          "metric": "registered-vs-active structural gap (IT slice)",
+          "value": "2+ orders of magnitude",
+          "source": "file-07 triangulation (Sribu/Fastwork claims vs Upwork earners)",
+          "confidence": 2,
+          "freshness": "current",
+          "honesty_label": "KEY MODELING ANCHOR: registrations massively overstate active workforce"
+        },
+        {
+          "metric": "semi-formal TaaS/body-shop channel (Gigson by Devcenter)",
+          "status": "verified existence, no volumes published",
+          "source": "devcenter.co direct fetch",
+          "confidence": 3,
+          "freshness": "live"
+        }
+      ],
+      "government_employment": [
+        {
+          "metric": "CPNS 2024 total formasi (all fields)",
+          "value": 207247,
+          "source": "Setkab/BKN",
+          "year": 2024,
+          "confidence": 4,
+          "freshness": "recent"
+        },
+        {
+          "metric": "Kominfo/Komdigi CPNS 2024 formasi",
+          "value": 4215,
+          "source": "Kominfo announcement",
+          "year": 2024,
+          "confidence": 4,
+          "freshness": "recent"
+        },
+        {
+          "metric": "national count of IT-role civil servants",
+          "value": null,
+          "note": "DATA GAP - does not exist publicly"
+        },
+        {
+          "metric": "government IT demand runs through procurement (SPBE index 3.12, 615 institutions evaluated) not payroll",
+          "value": 3.12,
+          "source": "KemenPANRB (Kepmen)",
+          "year": 2024,
+          "confidence": 5,
+          "freshness": "recent"
+        }
+      ],
+      "freelance_remote_summary": {
+        "modeling_note": "Government programs operate pre-employment (DTS 572k cumulative is training, not jobs); local-platform freelance-IT is small in earnings terms; formalized remote contracting grows via TaaS/EOR rails (Gigson) but publishes no volumes;",
+        "magnitude_order": "registered supply ~1.4M+ profiles vs <10K ever earning >=$1 on Upwork: the genuinely active IT freelance/remote segment is likely in the low tens of thousands"
+      }
+    },
+    "regional": {
+      "jakarta_concentration": [
+        {
+          "metric": "LinkedIn jobs in Jakarta vs national (all roles, 1-day snapshot)",
+          "value_pct": 55,
+          "source": "LinkedIn jobs pages live crawl",
+          "year": "Nov 2026",
+          "confidence": 3,
+          "freshness": "live"
+        },
+        {
+          "metric": "share of national startup-ecosystem score (StartupBlink)",
+          "value_pct": 84.8,
+          "source": "StartupBlink 2026",
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "metric": "Greater Jakarta share of newest ICT postings (sample, non-random)",
+          "value_pct": 70,
+          "source": "JobStreet feed sample",
+          "confidence": 2,
+          "freshness": "live",
+          "honesty_label": "CONTEXT-ONLY"
+        }
+      ],
+      "city_salary_differentials_mid_it": [
+        {
+          "city": "Jakarta",
+          "band": "12-20jt/mo (baseline)"
+        },
+        {
+          "city": "Surabaya",
+          "vs_jakarta_pct": -25
+        },
+        {
+          "city": "Bandung",
+          "vs_jakarta_pct": -30
+        },
+        {
+          "city": "Bali/Semarang",
+          "vs_jakarta_pct": -38
+        },
+        {
+          "city": "Yogyakarta",
+          "vs_jakarta_pct": -45
+        },
+        {
+          "source": "Aniday recruiter benchmarks 2026",
+          "year": 2026,
+          "confidence": 3,
+          "freshness": "live"
+        },
+        {
+          "note": "outlier: Batam/Bintan/Kepri has HIGHEST advertised SWE average at 14jt/mo (JobStreet advertised-salary aggregation, conf 3, live); JobStreet national SWE typical band 6-9jt/mo"
+        }
+      ],
+      "secondary_hubs": [
+        {
+          "city": "Bandung",
+          "facts": {
+            "digital_ready_grads_per_yr": 8000,
+            "vc_value_share_pct_under": 3,
+            "grads_leaving_to_jakarta_18m_pct": 33
+          },
+          "source": "Digital Districts 2025",
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "city": "Yogyakarta",
+          "facts": {
+            "software_companies_diy": 610,
+            "source_conf": 2,
+            "label": "POI-scrape, context-only"
+          },
+          "confidence": 2,
+          "freshness": "current"
+        },
+        {
+          "city": "Surabaya",
+          "facts": {
+            "startup_funding_to_date_usd_m": 153
+          },
+          "source": "Digital Districts 2025",
+          "confidence": 3,
+          "freshness": "recent"
+        }
+      ],
+      "gap_note": "no BPS-free per-province IT workforce count exists; provincial split must be modeled from vacancy + graduate geography"
+    },
+    "emerging": {
+      "ai": [
+        {
+          "metric": "relative AI-hiring growth (fastest in world)",
+          "value_pct": 31.7,
+          "source": "LinkedIn AI Index 2026 via Second Talent",
+          "year": 2025,
+          "confidence": 4,
+          "freshness": "current"
+        },
+        {
+          "metric": "AI-talent concentration growth 2019-25",
+          "value_pct": 108,
+          "source": "LinkedIn/Stanford HAI AI Index 2026",
+          "confidence": 4,
+          "freshness": "current"
+        },
+        {
+          "metric": "AI talent headcount",
+          "value": 96000,
+          "note": "0.06% of workforce; was 28K in 2019; >70% reskilled from other professions",
+          "source": "LinkedIn-based report via Kompas.id",
+          "year": 2024,
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "metric": "Indonesian businesses adopting AI",
+          "value_m": 18,
+          "growth_pct_yoy": 47,
+          "source": "AWS Unlocking Indonesia's AI Potential (Access Partnership)",
+          "year": 2026,
+          "confidence": 4,
+          "freshness": "current"
+        },
+        {
+          "metric": "businesses citing digital-skills gap as main AI barrier",
+          "value_pct": 57,
+          "source": "AWS 2026",
+          "year": 2026,
+          "confidence": 4,
+          "freshness": "current"
+        },
+        {
+          "metric": "AI trained by Microsoft Elevate (2 yrs)",
+          "value": 2400000,
+          "credentials_issued": 1500000,
+          "source": "Microsoft (self-reported program counts)",
+          "year": 2026,
+          "confidence": 3,
+          "freshness": "current",
+          "honesty_label": "training tickets, not employment"
+        },
+        {
+          "metric": "AI wage premium Indonesia",
+          "value": null,
+          "note": "NO Indonesia-specific figure exists; global PwC barometer 56% - do not localize"
+        },
+        {
+          "metric": "AI-app consumer revenue growth H1'24->H1'25 (highest in SEA)",
+          "value_pct": 127,
+          "source": "e-Conomy SEA 2025",
+          "confidence": 4,
+          "freshness": "current"
+        }
+      ],
+      "cloud_infrastructure": [
+        {
+          "metric": "Microsoft Indonesia investment",
+          "value_usd_b": 1.7,
+          "period": "2024-2028",
+          "verified": "Microsoft PR + Reuters",
+          "confidence": 5,
+          "freshness": "current"
+        },
+        {
+          "metric": "AWS Jakarta region investment / modeled jobs-yr",
+          "value_usd_b": 5,
+          "jobs_yr": 24700,
+          "source": "AWS Economic Impact Study",
+          "confidence": 3,
+          "freshness": "recent",
+          "honesty_label": "modeled job-years incl supply chain, not payroll"
+        },
+        {
+          "metric": "Indosat-NVIDIA Surakarta AI DC + AI-factory (train 1M by 2027 claim)",
+          "value_usd_m": 200,
+          "total_by_2027_usd_m": 1000,
+          "source": "DCD reporting of company statements",
+          "confidence": 3,
+          "freshness": "current"
+        },
+        {
+          "metric": "Zankore by Indosat (Ooredoo/Nokia/NVIDIA)",
+          "value_usd_m": 800,
+          "capacity": "200MW by H1-2027, 1GW long-term",
+          "source": "DCD/FutureCIO",
+          "year": 2026,
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "metric": "enterprise cloud adoption",
+          "value_pct_under": 30,
+          "source": "ADBI Policy Brief 2024-1",
+          "confidence": 3,
+          "freshness": "recent",
+          "note": "lowest APAC tier - large forward hiring headroom"
+        },
+        {
+          "metric": "public cloud services market",
+          "value_usd_m": "~1,000 (2024F, from 538 2021)",
+          "source": "IDC via Huawei white paper",
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "metric": "APAC whole-cloud CAGR",
+          "value_pct": 22.2,
+          "to": 2028,
+          "source": "IDC",
+          "confidence": 3,
+          "freshness": "current"
+        }
+      ],
+      "cybersecurity": [
+        {
+          "metric": "orgs reporting difficulty hiring qualified cyber candidates",
+          "value_pct": 73,
+          "note": "3rd worst of 29 countries; only 50% see gap as risk (perception lag)",
+          "source": "Fortinet Skills Gap 2022",
+          "year": 2022,
+          "confidence": 4,
+          "freshness": "stale"
+        },
+        {
+          "metric": "Indonesia cyber workforce gap figure",
+          "value": null,
+          "note": "NO credible Indonesia-specific number exists - ISC2 publishes APAC only (4.8M global gap 2024, conf 4, but no ID cut); '45,000 unfilled' is folklore (rejected)"
+        },
+        {
+          "metric": "orgs citing lack of security skills as breach cause (global 2025)",
+          "value_pct": 68,
+          "source": "Fortinet 2025 Skills Gap",
+          "confidence": 4,
+          "freshness": "recent"
+        },
+        {
+          "metric": "BSSN detected anomalies (threat pressure)",
+          "value": 403990813,
+          "year": 2023,
+          "source": "BSSN via Kemnaker SKKNI 2025",
+          "confidence": 3,
+          "freshness": "recent",
+          "note": "threat pressure well evidenced; workforce quantification is NOT a data gap the dashboard can close"
+        }
+      ]
+    },
+    "market_conditions": {
+      "layoffs": [
+        {
+          "metric": "all-sector PHK (JKP claimants, formal-sector lower bound)",
+          "series": {
+            "2022": 25114,
+            "2023": 64855,
+            "2024": 77965,
+            "2025": 88519,
+            "2026_jan_oct": 72336
+          },
+          "source": "Kemnaker Satudata",
+          "confidence": 4,
+          "freshness": "live"
+        },
+        {
+          "metric": "tech/startup layoff events since 2020",
+          "events": 149,
+          "companies": 107,
+          "headcount_floor": 8722,
+          "est_true_range": "10,000-15,000 reported events 2022-25 (silent layoffs prevalent)",
+          "peak": "2022 Q4 (GoTo 1,300)",
+          "source": "ecommurz crowdsourced tracker",
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "metric": "GoTo trajectory (verified)",
+          "series": {
+            "pre_nov2022": "~10,800-11,000",
+            "2023": 3888,
+            "2024_company": 3352,
+            "2025_company": 3553,
+            "mid_2026_revelio_est": 3375
+          },
+          "source": "company layoff statements + Revelio Labs + GOTO FY2025 audited FS (verified this session)",
+          "confidence": 4,
+          "freshness": "live",
+          "honesty_label": "FY2025 audited-report disclosure: 3,553 permanent employees at 31 Dec 2025 (3,352 at 31 Dec 2024) - ~70% peak-to-trough collapse 2022-24, then stabilization; Tokopedia tech-unit cuts resumed 2026"
+        },
+        {
+          "metric": "role pattern",
+          "value": "2022-23 cuts protected engineering partially; 2024-26 waves hit engineering directly (Tokopedia waves 2024/25/26, Accelbyte, Xendit, Populix)",
+          "confidence": 3,
+          "freshness": "recent"
+        }
+      ],
+      "tightness": [
+        {
+          "metric": "voluntary attrition - Emerging Tech (peak-froth datapoint)",
+          "value_pct": 15,
+          "year": 2022,
+          "source": "Mercer TRS 2022 (550 orgs)",
+          "confidence": 4,
+          "freshness": "stale"
+        },
+        {
+          "metric": "Indonesia employers expecting more active hiring H2-2025",
+          "value_pct": 42,
+          "source": "JobStreet by SEEK HCB 2025",
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "metric": "APAC employers struggling to fill roles (Indonesia NOT sampled - any 'Indonesia 77%' in press is APAC misattribution)",
+          "value_pct": 77,
+          "source": "ManpowerGroup Talent Shortage 2025 (n=40,413)",
+          "confidence": 4,
+          "freshness": "recent"
+        },
+        {
+          "metric": "counter-offer war / 5-8% increments for scarce professionals",
+          "source": "Michael Page 2025",
+          "confidence": 3,
+          "freshness": "recent"
+        },
+        {
+          "metric": "BPS info-comm avg wage (employees)",
+          "series": {
+            "Aug2023_m": 5.13,
+            "Aug2024_m": 4.98
+          },
+          "source": "BPS (usable-with-caveats; employees only, category-J broad)",
+          "confidence": 4,
+          "freshness": "recent",
+          "note": "decline during tech winter = credibility cross-check"
+        }
+      ],
+      "macro_context": [
+        {
+          "metric": "digital economy GMV",
+          "value_usd_b": 90,
+          "year": 2024,
+          "note": "+13%; largest in SEA; e-comm restated 65->62",
+          "source": "e-Conomy SEA 2024",
+          "confidence": 4,
+          "freshness": "recent"
+        },
+        {
+          "metric": "digital economy GMV",
+          "value_usd_b": 99,
+          "year": 2025,
+          "note": "+14%; 2030 range $180-360B",
+          "source": "e-Conomy SEA 2025",
+          "confidence": 4,
+          "freshness": "current"
+        },
+        {
+          "metric": "audit-verified big-tech hiring signals",
+          "value": "BCA ~4,000 hires 2023 'mainly IT' (AR, conf 5); Aon: IT/AI/cyber hottest 2026 roles, 42% firms with hiring challenges",
+          "confidence": 4,
+          "freshness": "current"
+        },
+        {
+          "metric": "enterprise IT budgets (examples)",
+          "value": "Mandiri IT capex Rp3T; BNI Rp1.9T; BRI ~Rp4-4.6T; BTN Rp1T; Telkom capex Rp24.5T (>50% digital conn.)",
+          "source": "director statements via Bisnis/Kontan + audited filings",
+          "confidence": 4,
+          "freshness": "recent",
+          "note": "Inpres 1/2025 efficiency cut (Rp256.1T) damped govt IT spend 2025 (Metrodata AR)"
+        }
+      ]
+    },
+    "source_credibility": {
+      "bps_verdicts": {
+        "sakernas_TPT": "USABLE_WITH_CAVEATS",
+        "category_J_17cat": "USABLE_WITH_CAVEATS_national_only",
+        "kbli62_5digit": "USABLE_WEAK_national_trend_only_never_point_estimate",
+        "formal_informal_share": "USABLE_WITH_CAVEATS_series_break_Feb2025",
+        "wages_infokom": "USABLE_WITH_CAVEATS_employees_only",
+        "nov2025_round": "AVOID",
+        "fabrication_assessment": "NOT SUPPORTED - weaknesses are fitness-for-purpose at granular tech detail, not fabrication; aggregates track external benchmarks"
+      },
+      "tier_1_sources": [
+        "PDDikti/Statistik Pendidikan Tinggi 2025 (administrative census)",
+        "Audited annual reports & IDX filings (Bukalapak, Blibli, Telkomsel, IOH, BCA, XL, GOTO FY2025 FS)",
+        "DPR RI PA3KN policy brief (BPK-audit basis) for DTS",
+        "KemenPANRB SPBE evaluations",
+        "BPJS Ketenagakerjaan active-participant series",
+        "Direktorat SMK Dapodik dashboard",
+        "GOTO FY2025 audited financial statements (employee count, verified this session)"
+      ],
+      "tier_2_sources": [
+        "LinkedIn Economic Graph products (JoR, AI Index) - trend/rank only, coverage bias flagged",
+        "Glints salary/postings data - advertised not paid, junior-skewed, label method",
+        "Michael Page/Robert Walters recruiter guides - placed-market upper band, senior-skewed",
+        "e-Conomy SEA - published method, annual restatements (±5%)",
+        "Kemnaker Satudata JKP series - formal-sector lower bound",
+        "Fortinet/ISC2 (no Indonesia cut in ISC2)",
+        "Aon/Mercer employer surveys",
+        "GitHub Octoverse - account trends only"
+      ],
+      "banned_or_reduce": [
+        "BPS: see verdicts above",
+        "All government 'digital talent need' figures - planning projections with no public methodology (use only with honesty labels)",
+        "Bootcamp self-reported alumni counts",
+        "All conf-1 vendor blog growth claims",
+        "Gig-economy registered-user counts (registered >= 100x active)"
+      ]
+    }
+  },
+  "16-it-services-sector": [
+    {
+      "metric": "IT services market size 2024",
+      "value_usd_bn": 6.32,
+      "source": "Verified Market Research",
+      "year": 2024,
+      "method": "modeled estimate",
+      "url": "https://www.verifiedmarketresearch.com/product/indonesia-it-services-market/",
+      "confidence": 3
+    },
+    {
+      "metric": "IT services market size 2025",
+      "value_usd_bn": 4.76,
+      "source": "Mordor Intelligence",
+      "year": 2025,
+      "method": "proprietary: 9mo actuals+Q4 proj, provider roll-up triangulation",
+      "url": "https://www.mordorintelligence.com/industry-reports/indonesia-it-services-market",
+      "confidence": 3
+    },
+    {
+      "metric": "IT services market size 2026",
+      "value_usd_bn": 5.41,
+      "source": "Mordor Intelligence",
+      "year": 2026,
+      "method": "same",
+      "url": "https://www.mordorintelligence.com/industry-reports/indonesia-it-services-market",
+      "confidence": 3
+    },
+    {
+      "metric": "IT services market forecast 2031",
+      "value_usd_bn": 9.52,
+      "source": "Mordor Intelligence",
+      "year": 2031,
+      "method": "CAGR 11.97%",
+      "url": "https://www.mordorintelligence.com/industry-reports/indonesia-it-services-market",
+      "confidence": 3
+    },
+    {
+      "metric": "IT services market size 2025 alt",
+      "value_usd_bn": 5.6,
+      "source": "Ken Research",
+      "year": 2025,
+      "method": "modeled; CAGR 12% to 11.05bn 2031",
+      "url": "https://www.kenresearch.com/industry-reports/indonesia-it-services-market",
+      "confidence": 3
+    },
+    {
+      "metric": "Cloud/SaaS impl share of IT services 2026",
+      "pct": 29.83,
+      "source": "Mordor Intelligence",
+      "year": 2026,
+      "method": "segment share",
+      "url": "https://www.mordorintelligence.com/industry-reports/indonesia-it-services-market",
+      "confidence": 3
+    },
+    {
+      "metric": "BFSI share of IT services spending 2026",
+      "pct": 22.38,
+      "source": "Mordor Intelligence",
+      "year": 2026,
+      "method": "segment share",
+      "url": "https://www.mordorintelligence.com/industry-reports/indonesia-it-services-market",
+      "confidence": 3
+    },
+    {
+      "metric": "BPO market size 2024",
+      "value_usd_bn": 1.93,
+      "source": "Verified Market Research",
+      "year": 2024,
+      "method": "modeled; CAGR 10.2% to 3.56bn 2029",
+      "url": "https://www.verifiedmarketresearch.com/product/indonesia-business-process-outsourcing-services-market/",
+      "confidence": 3
+    },
+    {
+      "metric": "BPO market size 2022",
+      "value_usd_bn": 1.92,
+      "source": "SkyQuest",
+      "year": 2022,
+      "method": "modeled; CAGR 10.1% 2023-30",
+      "url": "https://www.skyquestt.com/report/indonesia-business-process-outsourcing-market",
+      "confidence": 3
+    },
+    {
+      "metric": "ICT market size (all ICT, broader)",
+      "value_usd_bn": 41.99,
+      "source": "GlobalData",
+      "year": 2023,
+      "method": "modeled; CAGR 16.34% to 89.49bn 2028",
+      "url": "https://www.globaldata.com/store/report/indonesia-ict-market-analysis/",
+      "confidence": 3
+    },
+    {
+      "metric": "ICT service exports (BoP)",
+      "value_usd_bn": 3.76,
+      "source": "World Bank WDI / IMF BoP",
+      "year": 2024,
+      "method": "balance of payments, official",
+      "url": "https://tradingeconomics.com/indonesia/ict-service-exports-bop-us-dollar-wb-data.html",
+      "confidence": 4
+    },
+    {
+      "metric": "ICT service exports share of services exports",
+      "pct": 9.62,
+      "source": "World Bank WDI series",
+      "year": 2025,
+      "method": "BoP",
+      "url": "https://economicsapi.com/indonesia/tech/ict-service-exports-share",
+      "confidence": 3
+    },
+    {
+      "metric": "GSLI Indonesia rank",
+      "rank": 5,
+      "source": "A.T. Kearney GSLI (via Kontan)",
+      "year": 2016,
+      "method": "offshore attractiveness index",
+      "url": "https://english.kontan.co.id/news/indonesia-a-potential-hub-for-outsourcing-gsli",
+      "confidence": 3
+    },
+    {
+      "metric": "BCA internal IT staff",
+      "count": 1400,
+      "source": "Liputan6 (BCA director statement)",
+      "year": 2022,
+      "method": "executive statement, plus 2000 IT hires planned to 2023",
+      "url": "https://www.liputan6.com/bisnis/read/5037765/bca-butuh-2000-tenaga-it-hingga-2023-siapa-minat",
+      "confidence": 3
+    },
+    {
+      "metric": "BCA total employees",
+      "count": 27707,
+      "source": "stockanalysis.com from filings",
+      "year": 2026,
+      "method": "company filing",
+      "url": "https://stockanalysis.com/quote/idx/BBCA/employees/",
+      "confidence": 4
+    },
+    {
+      "metric": "Bank Mandiri outsourcing workers (all functions)",
+      "count": 18000,
+      "source": "BeritaSatu",
+      "year": 2012,
+      "method": "media statement vs 46k total staff",
+      "url": "https://www.beritasatu.com/ekonomi/27498/bank-mandiri-tidak-terkendala-aturan-alih-daya",
+      "confidence": 2
+    },
+    {
+      "metric": "Projected ICT workforce need",
+      "count": 1979418,
+      "source": "Kemnaker (via Warta Ekonomi)",
+      "year": 2025,
+      "method": "govt demand projection",
+      "url": "https://wartaekonomi.co.id/read515228/",
+      "confidence": 2
+    }
+  ],
+  "17-workforce-composition": [
+    {
+      "domain": "gender_production",
+      "metric": "female_share_engineering_students",
+      "value": 27.88,
+      "unit": "percent",
+      "of_total": 1619754,
+      "source": "Kemdiktisaintek Buku Statistik Pendidikan Tinggi 2025, Grafik 5.4 (PDDikti census, TA 2024/25)",
+      "year": 2025,
+      "n": 1619754,
+      "url": "https://dikti.go.id/api/file/humas-production/books/2026/5/pdfs/14c84a6c-9d32-40d5-bc39-5cce1ecbfceb/Buku_Statistik_Pendidikan_Tinggi_Tahun_2025.pdf",
+      "confidence": 4,
+      "note": "bidang Teknik aggregate; no per-prodi gender split in book"
+    },
+    {
+      "domain": "gender_production",
+      "metric": "female_share_itb_teknik_informatika",
+      "value": 18.4,
+      "unit": "percent",
+      "of_total": 3647,
+      "source": "itb-stats.netlify.app dashboard, PDDikti records",
+      "year": 2025,
+      "n": 3647,
+      "url": "https://itb-stats.netlify.app/",
+      "confidence": 3,
+      "note": "cumulative records, not cohort"
+    },
+    {
+      "domain": "gender_production",
+      "metric": "female_share_ipb_ilmu_komputer",
+      "value": 54.9,
+      "unit": "percent",
+      "of_total": 364,
+      "source": "IPB University Profil Gender report",
+      "year": 2021,
+      "n": 364,
+      "url": "https://sustainability.ipb.ac.id/wp-content/uploads/2022/11/Profil-Gender.pdf",
+      "confidence": 4,
+      "note": "active students; counter-example to engineering-institute pattern"
+    },
+    {
+      "domain": "gender_production",
+      "metric": "new_entrants_teknik_informatika",
+      "value": 46035,
+      "unit": "persons",
+      "source": "Statistik Pendidikan Tinggi 2025 Grafik 4.5",
+      "year": 2025,
+      "url": "https://data.kemdiktisaintek.go.id/publikasi/buku-statistik-pendidikan-tinggi-2025",
+      "confidence": 4
+    },
+    {
+      "domain": "gender_production",
+      "metric": "new_entrants_sistem_informasi",
+      "value": 48335,
+      "unit": "persons",
+      "source": "Statistik Pendidikan Tinggi 2025 Grafik 4.5",
+      "year": 2025,
+      "url": "https://data.kemdiktisaintek.go.id/publikasi/buku-statistik-pendidikan-tinggi-2025",
+      "confidence": 4
+    },
+    {
+      "domain": "gender_production",
+      "metric": "national_female_share_all_enrolled",
+      "value": 55.9,
+      "unit": "percent",
+      "of_total": 10754154,
+      "source": "Kemdiktisaintek dashboard",
+      "year": 2025,
+      "n": 10754154,
+      "url": "https://data.kemdiktisaintek.go.id/dashboard/mahasiswa",
+      "confidence": 4
+    },
+    {
+      "domain": "gender_workforce",
+      "metric": "women_share_ict_employment",
+      "value": 28.0,
+      "unit": "percent",
+      "of_total": 614778,
+      "source": "BPS Sakernas Aug 2019 (methodology described in ILO wcms_809359)",
+      "year": 2019,
+      "n": 614778,
+      "url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/@asia/@ro-bangkok/@ilo-jakarta/documents/publication/wcms_809359.pdf",
+      "confidence": 4
+    },
+    {
+      "domain": "gender_workforce",
+      "metric": "women_share_tech_workforce_mckinsey",
+      "value": 27,
+      "unit": "percent",
+      "source": "McKinsey 2020 via Indonesia Business Post",
+      "year": 2020,
+      "url": "https://indonesiabusinesspost.com/787/Politics/a-closer-look-at-gender-inequality-in-indonesias-tech-industry",
+      "confidence": 2
+    },
+    {
+      "domain": "gender_workforce",
+      "metric": "women_share_tech_workforce_bcg",
+      "value": 22,
+      "unit": "percent",
+      "source": "BCG 2020 via Antara/Kominfo",
+      "year": 2020,
+      "url": "https://www.antaranews.com/berita/2836325/peran-wanita-di-industri-digital-bantu-pengarusutamaan-gender",
+      "confidence": 2
+    },
+    {
+      "domain": "gender_workforce",
+      "metric": "women_exec_share_tech_indonesia",
+      "value": 12,
+      "unit": "percent",
+      "source": "Women in Tech Indonesia 2020 report via IBP",
+      "year": 2020,
+      "url": "https://indonesiabusinesspost.com/787/Politics/a-closer-look-at-gender-inequality-in-indonesias-tech-industry",
+      "confidence": 2
+    },
+    {
+      "domain": "gender_workforce",
+      "metric": "women_share_goto_workforce",
+      "value": 33.54,
+      "unit": "percent",
+      "of_total": 3527,
+      "source": "GoTo 2024 Sustainability Report S-01",
+      "year": 2024,
+      "n": 3527,
+      "url": "https://disclosures.ifc.org/project-detail/ESRS/47627/goto-en",
+      "confidence": 3,
+      "note": "company disclosure, limited assurance, image incentive; senior-level 21.6% F (16/61)"
+    },
+    {
+      "domain": "gender_workforce",
+      "metric": "gender_pay_gap_professionals_indonesia",
+      "value": 33.33,
+      "unit": "percent",
+      "source": "Statista/ILO modeled estimates",
+      "year": 2025,
+      "url": "https://www.statista.com/statistics/1664306/indonesia-gender-wage-gap-among-professionals-and-technicians/",
+      "confidence": 3,
+      "note": "all professionals/technicians, not IT-specific; 38.68% in 2022"
+    },
+    {
+      "domain": "gender_workforce",
+      "metric": "dev_gender_pay_gap_lower_middle_income",
+      "value": 36.6,
+      "unit": "percent",
+      "source": "Cross-country study on SO Dev Survey 2022 microdata, doi 10.1186/s12651-025-00407-z",
+      "year": 2022,
+      "n": 53507,
+      "url": "https://doi.org/10.1186/s12651-025-00407-z",
+      "confidence": 3,
+      "note": "income-group value, Indonesia not isolated; sticky floor at entry quantile"
+    },
+    {
+      "domain": "fresh_grad",
+      "metric": "itb_mean_first_job_wait",
+      "value": 2.11,
+      "unit": "months",
+      "source": "ITB Tracer Study 2025",
+      "year": 2025,
+      "n": 3274,
+      "url": "https://www.detik.com/edu/perguruan-tinggi/d-8517399/durasi-nganggur-fresh-graduate-itb-rata-rata-berapa-bulan",
+      "confidence": 4,
+      "note": "89.4% response; 2018 cohort"
+    },
+    {
+      "domain": "fresh_grad",
+      "metric": "ui_median_first_job_wait",
+      "value": 2,
+      "unit": "months",
+      "source": "UI Tracer Study 2025",
+      "year": 2025,
+      "n": 4518,
+      "url": "https://dataloka.id/humaniora/7858/gaji-masa-tunggu-kerja-lulusan-ui-ugm-itb-ipb/",
+      "confidence": 4,
+      "note": "2024 grads; 53.4% response; 81.2% employed <6mo"
+    },
+    {
+      "domain": "fresh_grad",
+      "metric": "ugm_employed_within_6_months",
+      "value": 91.61,
+      "unit": "percent",
+      "source": "UGM Tracer Study 2025",
+      "year": 2025,
+      "n": 4988,
+      "url": "https://alumni.ugm.ac.id/wp-content/uploads/sites/293/2026/02/Laporan-Tahunan-Tracer-Study-2025-1.pdf",
+      "confidence": 4,
+      "note": "2024 grads; 73.9% overall response"
+    },
+    {
+      "domain": "fresh_grad",
+      "metric": "ui_fasilkom_median_salary",
+      "value": 9000000,
+      "unit": "IDR_per_month",
+      "source": "UI Tracer Study 2025 (2024 grads)",
+      "year": 2025,
+      "n": 4518,
+      "url": "https://kumparan.com/kumparannews/segini-gaji-lulusan-ui-itb-dan-ugm-di-tracer-study-2025-27W9WZk7aTe",
+      "confidence": 4
+    },
+    {
+      "domain": "fresh_grad",
+      "metric": "ugm_median_salary",
+      "value": 6000000,
+      "unit": "IDR_per_month",
+      "source": "UGM Tracer Study 2025",
+      "year": 2025,
+      "n": 6365,
+      "url": "https://alumni.ugm.ac.id/wp-content/uploads/sites/293/2026/02/Laporan-Tahunan-Tracer-Study-2025-1.pdf",
+      "confidence": 4
+    },
+    {
+      "domain": "fresh_grad",
+      "metric": "itb_teknik_informatika_median_salary",
+      "value": 11040000,
+      "unit": "IDR_per_month",
+      "source": "ITB Tracer Study 2025",
+      "year": 2025,
+      "n": 3274,
+      "url": "https://dataloka.id/humaniora/7858/gaji-masa-tunggu-kerja-lulusan-ui-ugm-itb-ipb/",
+      "confidence": 3,
+      "note": "2018 cohort ~6yrs experience — NOT fresh-grad salary"
+    },
+    {
+      "domain": "fresh_grad",
+      "metric": "binus_employed_at_graduation",
+      "value": 80.1,
+      "unit": "percent",
+      "source": "BINUS press release Wisuda 69",
+      "year": 2024,
+      "n": "undisclosed",
+      "url": "https://www.binus.edu/2024/07/10/tantangan-gen-z-nganggur-dijawab-binus-university/",
+      "confidence": 2,
+      "note": "marketing incentive; no N; BINUS 2015 data: 75% pre-graduation, N=2,955"
+    },
+    {
+      "domain": "fresh_grad",
+      "metric": "bootcamp_infield_employment_180d",
+      "value": 86.9,
+      "unit": "percent",
+      "source": "Hacktiv8 CIRR-format report H1-2023 FSJS",
+      "year": 2023,
+      "n": 194,
+      "url": "https://www.hacktiv8.com/outcomes",
+      "confidence": 3,
+      "note": "51.5% full-time, 33.1% internship/contract; median base Rp85.5M/yr"
+    },
+    {
+      "domain": "entry_difficulty",
+      "metric": "applicants_per_posting",
+      "value": 200,
+      "unit": "applicants",
+      "source": "Jobstreet CEO statement, Tech in Asia via Bisnis.com",
+      "year": 2023,
+      "url": "https://teknologi.bisnis.com/read/20231019/84/1705728/jobstreet-bongkar-biang-kerok-fresh-graduate-makin-sulit-dapat-kerja",
+      "confidence": 3,
+      "note": "all-industry; 2/3 of big-company openings entry-level"
+    },
+    {
+      "domain": "entry_difficulty",
+      "metric": "applicants_per_posting",
+      "value": 400,
+      "unit": "applicants",
+      "source": "Jobstreet Indonesia sales director via NusaBali",
+      "year": 2026,
+      "url": "https://www.nusabali.com/berita/232007/ratusan-pelamar-berebut-satu-lowongan-kerja",
+      "confidence": 3,
+      "note": "23M seeker profiles; thousands for popular roles"
+    },
+    {
+      "domain": "entry_difficulty",
+      "metric": "maganghub_applicants_per_slot",
+      "value": 6,
+      "unit": "ratio",
+      "source": "Manpower Minister statement via Suara",
+      "year": 2026,
+      "n": {
+        "applicants": 300000,
+        "slots": 50000
+      },
+      "url": "https://yoursay.suara.com/kolom/2026/11/03/100000/maganghub-dan-potret-suram-pasar-kerja-kala-fresh-graduate-berebut-posisi",
+      "confidence": 3
+    },
+    {
+      "domain": "salary_structure",
+      "metric": "junior_software_engineer_base_range_idr",
+      "value": "4300000-14600000",
+      "unit": "IDR_per_month",
+      "source": "MHV/Glints SEA Tech Talent Compensation Report",
+      "year": 2021,
+      "n": 1000,
+      "url": "https://glints.com/id/lowongan/gaji-software-developer/",
+      "confidence": 3,
+      "note": "senior Rp20-41M; proprietary Glints DB + 175-respondent survey"
+    },
+    {
+      "domain": "career_switchers",
+      "metric": "pct_it_workers_non_cs_background_indonesia",
+      "value": null,
+      "unit": "percent",
+      "source": "not found in searches",
+      "confidence": 0,
+      "note": "DATA GAP; SO 2024 global proxy: 66% degreed vs 49% learned-to-code at school; Indonesia n=351 too small"
+    },
+    {
+      "domain": "age",
+      "metric": "goto_workforce_share_age_25_35",
+      "value": 68.6,
+      "unit": "percent",
+      "of_total": 3527,
+      "source": "GoTo 2024 Annual Report S-02",
+      "year": 2024,
+      "n": 3527,
+      "url": "https://id.scribd.com/document/916298220/f8dad7d4c0-a1fdcacb7f",
+      "confidence": 3,
+      "note": "18-25: 6.6%; >45: 3.8%; zero senior-level under 25"
+    },
+    {
+      "domain": "age",
+      "metric": "genz_share_linkedin_indonesia_members",
+      "value": 36,
+      "unit": "percent",
+      "of_total": 35790000,
+      "source": "LinkedIn Indonesia head, via SBM ITB",
+      "year": 2025,
+      "url": "https://www.sbm.itb.ac.id/2025/08/28/gen-zs-work-challenges-from-lack-of-literacy-to-ai-disruption/",
+      "confidence": 3,
+      "note": "membership, not workforce; urban/white-collar skew"
+    }
+  ]
+}

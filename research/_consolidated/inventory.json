@@ -1,0 +1,101 @@
+{
+  "files": {
+    "01-education-pipeline.md": {
+      "title": "INDONESIA IT WORKFORCE STUDY \u2014 TALENT SUPPLY PIPELINE (Higher Education, Vocational, Bootcamps, Government Programs)",
+      "bytes": 28853,
+      "json_blocks_found": 1,
+      "json_parsed": 1
+    },
+    "02-job-demand-by-role.md": {
+      "title": "Indonesia IT Workforce \u2014 DEMAND SIDE: Job Demand by Role",
+      "bytes": 28420,
+      "json_blocks_found": 1,
+      "json_parsed": 1
+    },
+    "03-government-programs.md": {
+      "title": "GOVERNMENT POLICY & PROGRAMS \u2014 INDONESIA IT WORKFORCE (FORMAL vs NON-FORMAL)",
+      "bytes": 27280,
+      "json_blocks_found": 1,
+      "json_parsed": 1
+    },
+    "04-corporate-landscape.md": {
+      "title": "Indonesia IT Workforce Study \u2014 Corporate Landscape (Who Employs IT Workers)",
+      "bytes": 28554,
+      "json_blocks_found": 1,
+      "json_parsed": 1
+    },
+    "05-macro-reports.md": {
+      "title": "Macro Reports & Workforce Size Estimates \u2014 Indonesia IT Workforce Study",
+      "bytes": 46261,
+      "json_blocks_found": 1,
+      "json_parsed": 1
+    },
+    "06-salary-deep-dive.md": {
+      "title": "Indonesia IT Workforce \u2014 Salary Deep-Dive (Levels, Total Comp, Trends, Company-Type Variation)",
+      "bytes": 34089,
+      "json_blocks_found": 0,
+      "json_parsed": 0
+    },
+    "07-freelance-informal-remote.md": {
+      "title": "07 \u2014 Freelance & Informal IT Economy + Remote Work for Foreign Employers (Market Side)",
+      "bytes": 20560,
+      "json_blocks_found": 1,
+      "json_parsed": 1
+    },
+    "08-regional-distribution.md": {
+      "title": "Regional Distribution of Indonesia's IT Workforce & Jobs",
+      "bytes": 18935,
+      "json_blocks_found": 1,
+      "json_parsed": 1
+    },
+    "09-emerging-roles.md": {
+      "title": "Emerging Roles \u2014 AI, Cloud, Security, Platform/DevOps (Forward-Looking Demand Signals)",
+      "bytes": 25288,
+      "json_blocks_found": 1,
+      "json_parsed": 1
+    },
+    "10-bps-methodology-audit.md": {
+      "title": "BPS Methodology Audit \u2014 Sakernas & Tech-Workforce Statistics Verdict",
+      "bytes": 23569,
+      "json_blocks_found": 1,
+      "json_parsed": 1
+    },
+    "12-market-tightness.md": {
+      "title": "12 \u2014 MARKET TIGHTNESS: Layoffs Timeline, Hiring Difficulty, Attrition (Indonesia IT Workforce)",
+      "bytes": 20761,
+      "json_blocks_found": 1,
+      "json_parsed": 0
+    },
+    "13-enterprise-demand.md": {
+      "title": "13 \u2014 Enterprise IT Demand Drivers: Spend, Investment, Hiring Plans Outside Tech Companies (Indonesia)",
+      "bytes": 23194,
+      "json_blocks_found": 1,
+      "json_parsed": 1
+    },
+    "14-data-rescue.md": {
+      "title": "Data Rescue \u2014 Indonesia IT Workforce Study (Agent 14)",
+      "bytes": 18922,
+      "json_blocks_found": 1,
+      "json_parsed": 1
+    },
+    "15-verification-synthesis.md": {
+      "title": "15 \u2014 Verification & Synthesis: Reconciliation, Quality Gate, Curated Dashboard Dataset",
+      "bytes": 56345,
+      "json_blocks_found": 1,
+      "json_parsed": 1
+    },
+    "16-it-services-sector.md": {
+      "title": "Indonesia IT Services & Outsourcing Sector \u2014 Market Size + Formal Employment",
+      "bytes": 17551,
+      "json_blocks_found": 1,
+      "json_parsed": 1
+    },
+    "17-workforce-composition.md": {
+      "title": "Workforce Composition \u2014 Gender in Indonesian Tech + Fresh-Grad Entry Conditions",
+      "bytes": 28299,
+      "json_blocks_found": 1,
+      "json_parsed": 1
+    }
+  },
+  "total_bytes": 446881
+}
