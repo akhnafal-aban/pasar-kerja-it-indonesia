@@ -17,7 +17,7 @@
 html{background:var(--paper);color-scheme:light}
 @media(pointer:fine){html{overscroll-behavior:none}}
 body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums;touch-action:manipulation}
-.board{max-width:1240px;margin:0 auto;padding:0 32px 80px}
+.board{max-width:1240px;margin:0 auto;padding:0 32px 160px}
 a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--hair)}
 a:hover{border-bottom-color:var(--ink)}
 :focus-visible{outline:2px solid var(--red);outline-offset:2px}
@@ -199,7 +199,7 @@ table.vt{width:100%;border-collapse:collapse;font-size:12.5px}
 .rej-item .rw{font-size:11.5px;color:var(--mut)}
 .rej-item .rw b{color:var(--red);font-family:var(--mono);font-style:normal}
 
-footer{margin-top:80px;padding:18px 0 8px;border-top:2px solid var(--ink);color:var(--mut);font-size:12px;line-height:1.8}
+footer{margin-top:80px;padding:18px 0 16px;border-top:2px solid var(--ink);color:var(--mut);font-size:12px;line-height:1.8}
 footer b{color:var(--ink)}
 
 .pv{cursor:pointer}
@@ -214,7 +214,7 @@ footer b{color:var(--ink)}
 
 @media(max-width:1100px){.kpis{grid-template-columns:repeat(3,1fr)}.kpi:nth-child(3n+1){border-left:0;padding-left:0}.kpi:nth-child(n+4){border-top:1px solid var(--hair)}}
 @media(max-width:900px){
-  .board{padding:0 18px 60px}.top{margin:0 -18px;padding:0 18px}
+  .board{padding:0 18px 120px}.top{margin:0 -18px;padding:0 18px}
   .hero{grid-template-columns:1fr;gap:36px;padding-top:40px}
   .g2,.g3,.g3v,.ledger,.ladderrows{grid-template-columns:1fr}
   .ledger{border-bottom:1px solid var(--ink)}
