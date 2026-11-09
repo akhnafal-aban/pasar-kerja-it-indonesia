@@ -34,6 +34,7 @@ research/_consolidated/tables.md → tabel salary/layoff/talent-series
 
 ## Cara baca angka
 
+- **Hover / klik tiap angka** → tooltip: `S:` sumber, `C:` cara hitung/metode, `conf` kepercayaan + berkas asal. Klik luar = tutup. Mobile: tap
 - Bandingkan **arah + urutan**, bukan desimal. Ambang ketidakpastian menempel di tiap label
 - Meter kepercayaan 5-segmen: `4–5` resmi/audited · `3` survei bermetode · `≤2` konteks doang
 - Dua keluarga gaji jangan dicampur: advertised (Glints/NodeFlair = lantai pasar, skew junior) vs placement (Michael Page/RW = plafon, skew senior)
