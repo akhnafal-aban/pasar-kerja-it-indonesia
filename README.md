@@ -15,6 +15,7 @@ Buka `index.html` = semua chart jalan. No CDN, no build, no dependency.
 **Riset = 19 AI agent paralel, 17 domain.**
 
 - Max 5 agent jalan bareng. Satu slot bebas → agent baru domain lain. Nol duplikasi kerja
+- **Demand diukur lintas platform**: LinkedIn (keyword live), JobStreet (SSR SEO), Kalibrr (endpoint resmi, scope ID terverifikasi), Indeed (tier N+), + karir.com/projects.co.id/fastwork sebagai pembanding. Basis hitung tiap platform beda → bandingkan urutan per kolom, bukan angka mentah antar platform
 - Tiap domain → 1 berkas riset. Format wajib: headline table, temuan per-sumber + URL, metodologi tiap angka, JSON machine-readable, data gaps
 - Label wajib tiap angka: `[sumber :: tahun :: metodologi :: confidence 1-5]`. Angka tanpa metodologi = ditolak
 - **BPS diblokir** semua agent riset. 1 agent khusus audit metodologi BPS (Sakernas/KBLI): verdict per seri → pakai-dengan-catatan / lemah / hindari. Hanya seri lolos audit masuk dashboard, selalu bawa caveat

@@ -185,6 +185,9 @@ table.vt{width:100%;border-collapse:collapse;font-size:12.5px}
 .vt td{padding:9px 6px;border-bottom:1px solid var(--hair);color:var(--mut);vertical-align:top}
 .vt td b{color:var(--ink);font-family:var(--mono);font-weight:600}
 .vv-ok{color:var(--ink)}.vv-warn{color:var(--ink)}.vv-bad{color:var(--red)}
+.vt th.num,.vt td.num{text-align:right;font-family:var(--mono)}
+.vt th.num{font-size:10px}
+.vt td.num{color:var(--ink);font-weight:600;white-space:nowrap}
 
 /* tooltip: kartu kertas tajam */
 .tip{position:fixed;z-index:99;background:#FFFFFF;border:1px solid var(--ink);border-radius:0;padding:14px 16px;font-size:12px;color:var(--ink);max-width:300px;line-height:1.55;pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .12s,transform .12s;box-shadow:4px 4px 0 rgba(20,22,26,.08)}
@@ -212,7 +215,7 @@ footer b{color:var(--ink)}
 [data-enter="3"]{animation-delay:.24s}
 @media(max-width:900px){.pvhint{display:none}}
 
-@media(max-width:1100px){.kpis{grid-template-columns:repeat(3,1fr)}.kpi:nth-child(3n+1){border-left:0;padding-left:0}.kpi:nth-child(n+4){border-top:1px solid var(--hair)}}
+@media(max-width:1100px){.kpis{grid-template-columns:repeat(3,1fr)}.kpi:nth-child(3n+1){border-left:0;padding-left:0}.kpi:nth-child(n+4){border-top:1px solid var(--hair)}.g5-2{grid-template-columns:1fr}}
 @media(max-width:900px){
   .board{padding:0 18px 120px}.top{margin:0 -18px;padding:0 18px}
   .hero{grid-template-columns:1fr;gap:36px;padding-top:40px}
@@ -271,7 +274,7 @@ footer b{color:var(--ink)}
 <section class="sec" id="demand">
   <div class="sec-head"><span class="sec-title">Demand per role</span>
   <span class="tag warn">hitungan keyword - jangan dijumlah antar-baris (overlap)</span></div>
-  <p class="sec-sub">Snapshot lowongan aktif di LinkedIn (guest search, lokasi=Indonesia, <b>9 Nov 2026</b>). Ini <b>proxy demand</b> - bukan total pasar; kedalaman pasar unik nasional jauh lebih kecil (GlobalData Jan 2024: 2.717 lowongan tech aktif terlacak). Data role di bawah mewakili frekuensi label, berguna untuk <b>perbandingan relatif antar role</b>.</p>
+  <p class="sec-sub">Snapshot lowongan aktif di LinkedIn (guest search, lokasi=Indonesia, <b>9 Nov 2026</b>). Ini <b>proxy demand</b> - bukan total pasar; kedalaman pasar unik nasional jauh lebih kecil (GlobalData Jan 2024: 2.717 lowongan tech aktif terlacak). Matriks di bawah melebarkan pengukuran ke <b>JobStreet, Kalibrr, Indeed</b> dengan basis hitung berbeda per kolom - bandingkan urutan per platform, bukan angka mentah antar platform.</p>
   <div class="row g5-2">
     <div class="panel">
       <h3>Lowongan aktif per label role · LinkedIn, 9 Nov 2026</h3>
@@ -294,6 +297,23 @@ footer b{color:var(--ink)}
         <div class="stat amb"><div class="sv">~0</div><div class="sk">AI Engineer absen dari 15 besar Indonesia, padahal 15/21 negara lain memuatnya. Hanya #1 untuk fresh grad.</div><div class="ss">JoR 2025 + LinkedIn Grad Guide</div></div>
       </div>
       <div class="srcnote">Pertumbuhan relatif AI hiring Indonesia +31,7% adalah yang tercepat di dunia (AI Index 2026) - tapi dari basis kecil: 96 rb jiwa AI talent = 0,06% angkatan kerja.</div>
+    </div>
+  </div>
+  <div class="row g5-2" style="margin-top:44px">
+    <div class="panel">
+      <h3>Matriks lowongan lintas platform</h3>
+      <div class="chart-wrap" id="plat-matrix"></div>
+      <div class="srcnote">Baca per kolom, bukan lintas kolom: basis hitung tiap platform beda (keyword live vs halaman SEO vs API vs tier). Baris QA di JobStreet menarik QA non-IT (QC pabrik/lab); devops dan cybersecurity di Kalibrr tergabung ke judul "software engineer".</div>
+    </div>
+    <div class="panel">
+      <h3>Catatan per platform</h3>
+      <div class="stats">
+        <div class="stat neg" tabindex="0" data-tip="S: karir.com live search, 9 Nov 2026<br>C: hitungan hasil SSR per keyword; total seluruh platform 161 lowongan<br><b>conf 4 · file 24</b>"><div class="sv">161</div><div class="sk">karir.com: total lowongan di seluruh platform - demand IT nyaris nol, keyword IT mayoritas 0 hasil (sinyal: pasar terkonsentrasi di 4 platform utama)</div></div>
+        <div class="stat neu" tabindex="0" data-tip="S: JobStreet SSR per lokasi, software engineer & data analyst, 9 Nov 2026<br>C: share hasil ber-lokasi Jakarta<br><b>conf 4 · file 20</b>"><div class="sv">62,8% / 70,8%</div><div class="sk">share Jakarta di JobStreet: software engineer / data analyst - menguatkan panel geografi dengan basis non-LinkedIn</div></div>
+        <div class="stat neg" tabindex="0" data-tip="S: projects.co.id live (escrow freelance lokal), 9 Nov 2026<br>C: 135 proyek aktif, 19.019 gig, 1,74 jt user; proyek populer 100-300 bid<br><b>conf 5 · file 24</b>"><div class="sv">100-300 bid</div><div class="sk">per proyek populer di projects.co.id - rasio supply:demand freelance lokal ~100:1, segar dari sumber</div></div>
+        <div class="stat amb" tabindex="0" data-tip="S: fastwork.id via r.jina.ai, 9 Nov 2026<br>C: hitungan gig per kategori pasca-hydration; ini PENAWARAN jasa (supply), bukan lowongan<br><b>conf 5 · file 24</b>"><div class="sv">10.720 gig</div><div class="sk">fastwork web dev = supply pekerja lepas, bukan demand - sengaja tidak dimasukkan matriks</div></div>
+        <div class="stat amb" tabindex="0" data-tip="S: upwork.com, 9 Nov 2026<br>C: semua jalur search freelancer diblok Cloudflare 403 + CAPTCHA; verifikasi anonim tidak mungkin<br><b>FAILED jujur · file 24</b>"><div class="sv">blocked</div><div class="sk">upwork: bot-wall efektif - profil Indonesia aktif tak bisa diverifikasi anonim; klaim jumlah yang beredar jangan dipakai</div></div>
+      </div>
     </div>
   </div>
 </section>
@@ -788,7 +808,34 @@ donut($("#so-dev"),SO_DEV,"Tipe developer");
 (()=>{const tb=$("#bps-table");BPS_ROWS.slice(1).forEach(r=>{const tr=document.createElement("tr");
  tr.innerHTML=`<td><b>${r[0]}</b></td><td>${r[1]}</td>`;tb.appendChild(tr)})})();
 
+/* matriks lintas platform: tanggal 9 Nov 2026 assize */
+const PLATB=[
+ ["LinkedIn","guest search keyword live, lokasi Indonesia, 9 Nov 2026; overlap antar role; jangan dijumlah","3 · file 02"],
+ ["JobStreet","SSR halaman SEO 'N lowongan kerja X di Indonesia' (id.jobstreet.com), 9 Nov 2026; SE cross-check event jobs_count","4-5 · file 20"],
+ ["Kalibrr","endpoint resmi /kjs/job_board/search?text=X&country=Indonesia, 9 Nov 2026; field count; scope terverifikasi","4-5 · file 22"],
+ ["Indeed","SSR title tier 'N+ lowongan' id.indeed.com, 9 Nov 2026; lower-bound kelipatan 100; campur sponsored/duplikat","3 · file 21"]
+];
+const PLATR=[
+ ["software engineer",[1461,"developer 1.402 dan programmer 1.339 = keyword terpisah (overlap)"],[2026,"cross-check dua arah via event analytics"],[276,""],[300,"tier dari title"]],
+ ["backend",[870,""],[827,""],[321,""],[200,"tier"]],
+ ["frontend",[329,"keyword kembar 325 = hasil hampir identik, jangan dijumlah"],[412,""],[312,""],[100,"tier"]],
+ ["mobile",[271,"Flutter 157, Android 147, iOS 103, RN 93"],[281,""],[396,"menonjol di Kalibrr - khas listing startup"],[100,"tier"]],
+ ["devops",[772,"SRE terpisah 750"],[565,""],[19,"role tergabung ke judul 'software engineer' - artefak pencocokan teks"],[100,"tier"]],
+ ["cloud",[676,""],[837,""],[114,""],[100,"tier"]],
+ ["data engineer",[772,""],[930,""],[404,""],[600,"tier"]],
+ ["data analyst",[2151,"BI 1.357 terpisah - label terbesar"],[1972,""],[428,"tertinggi di Kalibrr"],[300,"tier"]],
+ ["QA",[1013,"kembar 'tester' 838 overlap"],[2979,"slug 'qa-jobs' menarik juga QA non-IT (QC pabrik, lab) - baca hati-hati"],[55,""],[100,"tier; sebagian non-IT"]],
+ ["cybersecurity",[611,"kembar 601"],[902,""],[10,"tergabung ke judul lain - bukan berarti tanpa permintaan"],[200,"tier"]]
+];
+$("#plat-matrix").innerHTML=(()=>{let h='<table class="vt"><tr><th>role</th>'+PLATB.map((p,i)=>`<th class="num" tabindex="0" data-tip="<b>S:</b> ${p[1]}<br><b>conf ${p[2]}</b>">${p[0]}</th>`).join("")+"</tr>";
+ PLATR.forEach(r=>{
+  h+=`<tr><td><b>${r[0]}</b></td>`;
+  [0,1,2,3].forEach(i=>{const v=r[i+1];
+   h+=`<td class="num pv" tabindex="0" data-tip="<b>S:</b> ${PLATB[i][0]}, 9 Nov 2026<br><b>C:</b> ${PLATB[i][1]}${v[1]?`<br>${v[1]}`:""}<br><b>conf ${PLATB[i][2]}</b>">${i==3?String(v[0])+"+":fmtID(v[0])}</td>`;});
+  h+="</tr>";});
+ return h+"</table>";})();
 paintW();
+
 </script>
 
 <script>
